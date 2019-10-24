@@ -131,7 +131,7 @@ function main63(){
 				$(".idx_content li:gt("+idx+")").stop(true,false).animate({'top':'60%'},spd,eft);
 				section.eq(idx).addClass('active').stop(true,false).animate({'top':'0%'},spd,eft).siblings().removeClass("active");
 				section.eq(idx).find('.section_wrap').stop(true,false).animate({'top':'0%'},spd,eft);
-				$(".index_wrap").removeClass("scroll");
+				$("#wrap").removeClass("scroll");
 				console.log('up');
 			}else{//Down
 				$(".idx_content li:lt("+idx+")").stop(true,false).animate({'top':'-100%'},spd,eft);

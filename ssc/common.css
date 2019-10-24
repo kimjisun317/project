@@ -5,6 +5,7 @@
 *******************************************/
 
 /* Reset */
+
 html,body,div,header,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
 a,abbr,address,big,cite,code,del,dfn,em,font,img,ins,q,s,samp,small,strike,strong,sub,sup,tt,var,
 b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,figure {color:#333; font-family:'NS','돋움',​dotum,sans-serif; font-size:14px; font-weight:300; letter-spacing:-0.3px; line-height:1.571em; border:0 none; margin:0; padding:0;}
@@ -61,15 +62,13 @@ body.h_hidden {overflow:hidden;}
 #container.pd_none_layout {padding-bottom:0;}
 #container.visual_container .h1_title {background-repeat:no-repeat; background-position:center 0; overflow:hidden; }
 
-#wrap.ver_fff #header {background-color:transparent;}
-#wrap.ver_fff .menu_open {border:1px solid #fff;}
+
+/* #wrap.ver_fff .menu_open {border:1px solid #fff;}
 #wrap.ver_fff .menu_open .bt_style > div {background-color:#fff !important;}
 #wrap.ver_fff .logo63 img {margin-top:-71px;}
-#wrap.ver_fff .h1_title h1:after {background-color:#fff;}
+#wrap.ver_fff .h1_title h1:after {background-color:#fff;} */
 
-@media screen and (min-width:1921px) {
-	#container.visual_container .h1_title {background-size:100% auto; max-width:100%; width:100%;}
-}
+
 
 #contents {}
 
