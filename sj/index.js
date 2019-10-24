@@ -3,13 +3,14 @@ $(document).ready(function() {
 	var $body = $("body");
 	if($body.outerWidth() > 1024){
 		main63();
+		setHeight();
 	}
-	setHeight();
+	
 	
 
-	$(window).resize(function() {		
+	/* $(window).resize(function() {		
 		setHeight();		
-	}); //이부분 없애야 하는지 헷갈림, 도메인올리고 노트북, 모바일로 봤을 때 확인해보고 문제없으면 삭제
+	}); */ //이부분 없애야 하는지 헷갈림, 도메인올리고 노트북, 모바일로 봤을 때 확인해보고 문제없으면 삭제
 
 	
 	

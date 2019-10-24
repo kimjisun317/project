@@ -92,3 +92,11 @@
 /* footer */
 #wrap.index_wrap #footer {background-color:#fff; position:fixed; left:0; bottom:-100px; transition-duration:0.8s; -webkit-transition-duration:0.8s;}
 #wrap.index_wrap.scroll #footer {bottom:0;}
+
+
+@media all and (max-width:767px){
+	.ind {display:none;}
+	.section,
+	.section_container,
+	.content {overflow: visible; position: inherit;}
+}
