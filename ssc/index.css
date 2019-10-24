@@ -7,7 +7,7 @@
 #container {padding-top:0; padding-bottom:0;}
 #wrap.scroll {margin-top:-80px;}
 
-.index {}
+.index {margin:0; padding:0;}
 .index .idx_content {position:relative;}
 .section {overflow:hidden; position:absolute; left:0; top:0; height:100%; width:100%;}
 .section .visual_bg {background-repeat:no-repeat; background-position:center 0; background-size:cover; display:none; position:absolute; left:0; top:0; height:100%; width:100%;}
@@ -34,7 +34,7 @@
 .section_wrap {position:relative; left:0; top:0; height:100%;}
 /* .section_container {overflow:hidden; position:absolute; right:0; left:0; top:32%; margin:0 auto; height:545px; width:1180px; z-index:1;border:2px solid red;} */
 
-.content {overflow:hidden; width:100%; height:auto; z-index: 1; position:absolute; right:0; left:0; top:32%; margin:0 auto;}
+.content {border:1px solid red; overflow:hidden; width:100%; height:auto; z-index: 1; position:absolute; right:0; left:0; top:32%; margin:0 auto;}
 .content .idx_h1_title {overflow:hidden; text-align:center; margin-bottom:202px;}
 .content .idx_h1_title h1 {display:inline-block; position:relative; padding-bottom:12px; height:13px;}
 .content .idx_h1_title h1:after {background-color:#fff; content:""; opacity:0; position:absolute; right:0; left:0; bottom:0; margin:0 auto; height:2px; width:1px;}
@@ -89,9 +89,6 @@
 .ind span + span {margin-top:20px;}
 .ind span.active {background-color:#f37321; transform:scale(1.6);}
 
-/* footer */
-#wrap.index_wrap #footer {background-color:#fff; position:fixed; left:0; bottom:-100px; transition-duration:0.8s; -webkit-transition-duration:0.8s;}
-#wrap.index_wrap.scroll #footer {bottom:0;}
 
 
 @media all and (max-width:767px){
