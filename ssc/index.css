@@ -27,7 +27,7 @@
 /* bg type visual */
 #scene1.type2 .visual_bg {background: #f5f5f5; display:block;}
 #scene2.type2 .visual_bg {background: #fff; display:block;}
-#scene3.type2 .visual_bg {background-image:url(/gmi/section03_bg.jpg); display:block;}
+#scene3.type2 .visual_bg {background-image:url(../gmi/section03_bg.jpg); display:block;}
 
 /* 컨텐츠 영역 layout */
 .section_wrap {position:relative; left:0; top:0; height:100%;}
