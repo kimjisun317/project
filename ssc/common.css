@@ -5,7 +5,7 @@
 
 html,body,div,header,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
 a,abbr,address,big,cite,code,del,dfn,em,font,img,ins,q,s,samp,small,strike,strong,sub,sup,tt,var,
-b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,figure {color:#333; font-family:'NS','돋움',​dotum,sans-serif; font-size:14px; font-weight:300; letter-spacing:-0.3px; line-height:1.571em; border:0 none; margin:0; padding:0;}
+b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,figure {color:#000; font-family: 'Noto Sans KR', sans-serif, '돋움', ​dotum; font-size:14px; font-weight:400; letter-spacing:-0.3px; line-height:1.571em; border:0 none; margin:0; padding:0;}
 
 html {box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
 *, *:before, *:after {box-sizing: inherit;}
@@ -55,11 +55,7 @@ article, aside, canvas, video, details, embed, figcaption, figure, footer, heade
 
 
 
-/* HEADER */
-#header {background-color:#fff; box-sizing:border-box; position:fixed; left:0; top:0; transition-duration:0.5s; -webkit-transition-duration:0.5s; padding-right:50px; padding-left:50px; height:130px; width:100%; z-index:999;}
 
-/* GNB */
-#gnb {position:relative;}
 
 /* common style */
 
@@ -67,6 +63,9 @@ article, aside, canvas, video, details, embed, figcaption, figure, footer, heade
 
 .hidden {opacity:0;}
 .visible {opacity:1;}
+
+
+.f_white {color:#fff !important;}
 
 
 /* BUTTON */
@@ -83,13 +82,4 @@ article, aside, canvas, video, details, embed, figcaption, figure, footer, heade
 .btn:hover span {color:#fff;}
 .btn:hover span:after {background-position:0 -15px;}
 
-/* 휠아이콘 */
-.icon_wheel {overflow:hidden; border:1px solid #fff; border-radius:20px; box-sizing:border-box; position:absolute; height:42px; width:30px;}
-.icon_wheel .arrow {background:url(../images/common/arrow_wheel.gif) no-repeat 0 0; display:block; position:absolute; left:50%; margin-left:-5px; height:6px; width:10px;}
-.icon_wheel .arrow.top {opacity:0.5; top:13px; animation:arrowTop 1s infinite; -webkit-animation:arrowTop 1s infinite;}
-.icon_wheel .arrow.bt {animation:arrowBt 0.5s 0.4s infinite; -webkit-animation:arrowBt 0.5s 0.4s infinite; top:20px;}
-@keyframes arrowTop {from {opacity:0.5;} to {opacity:1;}}
-@keyframes arrowBt {from {opacity:1;} to {opacity:0.5;}}
 
-@-webkit-keyframes arrowTop {0% {opacity:0.5;} 100% {opacity:1;}}
-@-webkit-keyframes arrowBt {0% {opacity:1;} 100% {opacity:0.5;}}
