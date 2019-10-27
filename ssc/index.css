@@ -2,6 +2,7 @@
 
 /* layout */
 #wrap {overflow:hidden; transition-duration:0.8s; -webkit-transition-duration:0.8s;}
+#wrap.scroll {margin-top:-80px;}
 
 /* skip-go */
 #skip-go {display:block;}
@@ -25,7 +26,7 @@
 
 /* container */
 #container {padding:0; margin:0;}
-#wrap.scroll {margin-top:-80px;}
+
 
 .index {margin:0; padding:0;}
 .index .idx_content {position:relative;}
@@ -44,7 +45,7 @@
 
 
 /* content */
-.section_wrap {position:relative; height:100%;}
+.section_wrap {position:relative; left:0; top:0; height:100%;}
 .content {overflow:hidden; width:94%; height:80%; z-index: 1; position:absolute; right:0; left:0; top:13%; margin:0 auto; text-align: center;}
 .content h2 {font-size:320%; font-weight: bold; line-height:40px; letter-spacing: 0;}
 .content p.h2_text {font-size:150%; font-weight:300; color: #bcbcbc; letter-spacing:0; margin:12px 0 80px;}
@@ -58,17 +59,17 @@
 
 
 /* portfolio_list */
-ul.portfolio_list {width:100%; margin:0; padding:0;}
-ul.portfolio_list li {display:inline-block; width: 32%; height:auto; margin:0; padding:0;}
-ul.portfolio_list li:hover {opacity: 0.5;}
-ul.portfolio_list li:nth-child(2) {margin: 0 2%;}
-ul.portfolio_list li a {display:inline-block; width:100%;}
-ul.portfolio_list li a img {width:100%; height:auto;}
-ul.portfolio_list li span {display: block; margin-top:20px;}
+.portfolio_list {float:left; display:block; width:100%; margin:0; padding:0;}
+.portfolio_list li {display:inline; float:left; width: 32%; height:auto; margin:0; padding:0; left:0; top:0 !important;}
+.portfolio_list li:hover {opacity: 0.5;}
+.portfolio_list li:nth-child(2) {margin: 0 2%;}
+.portfolio_list li a {display:inline-block; width:100%;}
+.portfolio_list li a img {width:100%; height:auto;}
+.portfolio_list li span {display: block; margin-top:20px;}
 
 
 /* profile */
-.profile {width:1400px; height:auto; margin:0 auto;}
+.profile {display:block; width:1400px; height:auto; margin:0 auto;}
 .profile ul {float:left; width:45%; border-top:2px solid #222; text-align: left;}
 .profile ul:nth-child(2) {float:right;}
 .profile ul li {float:left; width:45.6%; height:210px;}
@@ -83,7 +84,7 @@ ul.portfolio_list li span {display: block; margin-top:20px;}
 .profile ul li:nth-child(4) {border-top:1px solid #b2b2b2; margin-top:25px;}
 
 /* work_list */
-.work_list {width:1400px; height:auto; margin:0 auto; text-align: left;}
+.work_list {display:block; width:1400px; height:auto; margin:0 auto; text-align: left;}
 .work_list dl {float:left; width:31%; height:450px; background: #fff;}
 .work_list dl:nth-child(2) {margin:0 3.5%; }
 .work_list dt {width:82%; font-size:115%; font-weight:600; margin: 40px auto 0; padding-bottom:25px; border-bottom:2px solid #222; }

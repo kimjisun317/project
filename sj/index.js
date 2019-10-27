@@ -123,19 +123,19 @@ function main63(){
 			idx = $(this).index();
 
 			var $this = $(this),
-				 section = $(".idx_content li");
+				 section = $(".idx_content > li");
 
 			$this.addClass("active").siblings().removeClass("active");
 
 			if(preIdx > idx){//Up
-				$(".idx_content li:gt("+idx+")").stop(true,false).animate({'top':'60%'},spd,eft);
+				$(".idx_content > li:gt("+idx+")").stop(true,false).animate({'top':'60%'},spd,eft);
 				section.eq(idx).addClass('active').stop(true,false).animate({'top':'0%'},spd,eft).siblings().removeClass("active");
 				section.eq(idx).find('.section_wrap').stop(true,false).animate({'top':'0%'},spd,eft);
 				$("#wrap").removeClass("scroll");
 				console.log('up');
 			}else{//Down
-				$(".idx_content li:lt("+idx+")").stop(true,false).animate({'top':'-100%'},spd,eft);
-				$(".idx_content li:lt("+idx+")").find('.cont').stop(true,false).animate({'top':'60%'},spd,eft);
+				$(".idx_content > li:lt("+idx+")").stop(true,false).animate({'top':'-100%'},spd,eft);
+				$(".idx_content > li:lt("+idx+")").find('.cont').stop(true,false).animate({'top':'60%'},spd,eft);
 				section.eq(idx).addClass('active').stop(true,false).animate({'top':'0%'},spd,eft).siblings().removeClass("active");
 				section.eq(idx).find('.section_wrap').stop(true,false).animate({'top':'0%'},spd,eft);
 				console.log('down');
