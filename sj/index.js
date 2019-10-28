@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	var $body = $("body");
 	if($body.outerWidth() > 1024){
-		main63();
+		mainWheel();
 		setHeight();
 	}
 	
@@ -29,7 +29,7 @@ function setHeight(){
 
 
 //63빌딩 index 장면전환
-function main63(){
+function mainWheel(){
 	var brand = $('.index');
 	var wrap = $(brand).find('ul.idx_content');
 	var depth1 = $(brand).find('ul.idx_content > li');
@@ -38,6 +38,8 @@ function main63(){
 	var spd = 950;
 	var eft = 'easeInOutQuint';
 	var idxWrap = $('#wrap');
+	var headerSet = $('#header');
+	
 
 	// setting
 	idx = 0;
@@ -87,6 +89,7 @@ function main63(){
 			depth1.eq(idx).addClass('active').siblings('li').removeClass('active');
 			$('.ind span').eq(idx).siblings('span').removeClass('active') //롤링아이콘
 			$('.ind span').eq(idx).addClass('active')
+
 		})
 	}
 
@@ -101,6 +104,7 @@ function main63(){
 		$(depth1).eq(preIdx).stop(true,false).animate({'top':'60%'},spd,eft);
 		$(depth1).eq(idx).stop(true,false).animate({'top':'0%'},spd,eft);
 		$(depth1).eq(idx).find('.section_wrap').stop(true,false).animate({'top':'0%'},spd,eft);
+		headerSet.css("display", "block");
 	}
 
 	function sectionDown(){//mousewheel DOWN
@@ -114,6 +118,7 @@ function main63(){
 		$(depth1).eq(preIdx).stop(true,false).animate({'top':'-100%'},spd,eft);
 		$(depth1).eq(preIdx).find('.section_wrap').stop(true,false).animate({'top':'60%'},spd,eft);
 		$(depth1).eq(idx).stop(true,false).animate({'top':'0%'},spd,eft);
+		headerSet.css("display", "none");
 	}
 
 	clickNav();
