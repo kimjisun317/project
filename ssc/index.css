@@ -141,13 +141,13 @@
 .content p.h2_text {font-size:100%; margin: 10px 0 30px 0;}
 .content p.h2_text span.bullet {margin: 15px auto 0;}
 
-
+.profile ul {width:100%;}
 
 }
 
 @media all and (max-width:767px){
 
-.profile ul {width:100%;}
+
 
 }
 @media all and (max-width:480px){
