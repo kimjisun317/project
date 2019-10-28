@@ -147,13 +147,15 @@
 
 @media all and (max-width:767px){
 
+.profile ul {width:100%;}
+
 }
 @media all and (max-width:480px){
 .portfolio_list li {width:100%; margin-bottom:20px;}
 .portfolio_list li:nth-child(2) {margin: 0 0 20px 0;}
 .portfolio_list li span {margin-top:10px;}
 
-.profile ul {width:100%;}
+
 .profile ul:nth-child(2) {border-top:1px solid #b2b2b2;}
 .profile ul li {width:100%; height:auto; border-top:1px solid #b2b2b2;}
 .profile ul li:nth-child(1) {border-top:none;}
