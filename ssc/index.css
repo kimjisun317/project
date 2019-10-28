@@ -118,8 +118,6 @@
 .work_list dl:nth-child(2) {margin:0 1.5%; }
 .work_list dd a,
 .work_list dd span {font-size:105%; letter-spacing: -2px;}
-/* .work_list dd a {padding: 10px 50px 10px 0px; line-height: 20px !important;}
-.work_list dd span {padding: 10px 0 10px 0px; line-height: 20px !important;} */
 }
 
 @media all and (max-width:1024px){
