@@ -123,9 +123,9 @@
 @media all and (max-width:1024px){
 .ind,
 .content .icon_wheel {display:none;}
-/* .section,
+.section,
 .section_container,
-.content {overflow: visible; position: inherit;} */
+.content {overflow: visible; position: inherit;}
 }
 
 @media all and (max-width:767px){
