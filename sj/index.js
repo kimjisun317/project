@@ -4,17 +4,7 @@ $(document).ready(function() {
 	if($body.outerWidth() > 1024){
 		mainWheel();
 		setHeight();
-	}
-
-	
-	
-
-	/* $(window).resize(function() {		
-		setHeight();		
-	}); */ //이부분 없애야 하는지 헷갈림, 도메인올리고 노트북, 모바일로 봤을 때 확인해보고 문제없으면 삭제
-
-	
-	
+	}	
 });
 
 
@@ -26,10 +16,7 @@ function setHeight(){
 }
 
 
-
-
-
-//63빌딩 index 장면전환
+//index 장면전환(원본 63빌딩)
 function mainWheel(){
 	var brand = $('.index');
 	var wrap = $(brand).find('ul.idx_content');
