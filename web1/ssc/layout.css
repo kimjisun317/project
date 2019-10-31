@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* skip-go */
+#skip-go {display:block;}
+#skip-go dt {position:absolute; top:0; left:-1000px;}
+#skip-go dd a {display:block; font-weight:bold; position:absolute; top:0; left:-1000px; font-size:120%; text-align:center; background-color:#000; z-index:1000;} 
+#skip-go dd a:hover, 
+#skip-go dd a:active, 
+#skip-go dd a:focus{left:0; height:40px; width:100%; line-height:40px; color:#fff !important;}
+
+
+#wrap {width:100%; overflow:hidden;}
+h2 {font-size:190%; color: #101010; text-align: center; letter-spacing: -1.5px;}
+
+/* header */
+#header {position: relative; width:1200px; height:90px; margin:0 auto;}
+#header h1 {float:left; margin-top: 20px;}
+
+#header .gnb {position: absolute; right:0; top:0px;}
+#header .gnb li {display:inline; margin-left:15px;}
+#header .gnb li a {font-size:80%; color: #979797;}
+
+#header .menu {float:right; width:auto; margin:40px 0 0 0;}
+#header .menu li {display: inline; margin: 0 40px;}
+#header .menu li:last-child {margin: 0 0 0 40px;}
+#header .menu li a {font-size:130%;}
+
+/* container */
+#container {width:100%; overflow: hidden;}
+
+/* main_visual */
+.main_visual {overflow:hidden; width:100%; height:440px; background: url(/web1/gmi/main/visual01.jpg) no-repeat center top;}
+.main_visual p {width: auto; margin:140px auto 0; font-size: 220%; font-weight:400; color: #fff; text-align: center; letter-spacing: -1px;}
+.main_visual p span {display: block; font-size: 130%; color: #fff;}
+.main_visual p span strong {font-size: 100%; color: #fff;}
+
+.thema {overflow:hidden; width:100%; height:auto;}

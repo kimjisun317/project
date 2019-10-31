@@ -1,0 +1,422 @@
+@charset "utf-8";
+
+
+
+
+/* 메인비주얼 */
+.group1_outer {float:left; width:100%; height:500px; padding-top:55px; overflow:hidden; background:url('/gmi/niam/main_bg.jpg') no-repeat top center;}
+.group2_outer {float:left; width:100%; height:200px; padding-top:30px; overflow:hidden;}
+.group3_outer {float:left; width:100%; height:340px; padding-top:30px; overflow:hidden; background: #f0f0f0;}
+
+
+.group1,
+.group2,
+.group3 {position:relative; width:1250px; margin:0 auto; text-align:left;}
+.group4 {float:left; width:100%; padding:30px 0;}
+
+/* 메인검색 */
+.main_search_outer {position:absolute; width:100%; text-align:center;}
+.main_search {display:block; height:45px; width:780px; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); margin:0 auto;}
+.main_search h3 {display:none;}
+.main_search select {width:180px; height:45px; padding-left:10px; background: #fff url('/gmi/cni/select_arr.gif') no-repeat 93% 15px; border-top: 2px solid #f47321; border-bottom: 2px solid #f47321; border-left: 2px solid #f47321; border-right:0; border-radius:0px; -webkit-appearance: none; -moz-appearance: none; selec::-ms-expand: none; appearance: none; float:left;}
+.main_search select::-ms-expand{display: none;}
+.main_search .search_c {float:left;}
+.main_search input {width:320px; height:45px; padding-left:10px; border-radius:0px; background: #fff url('/gmi/cni/search_c.gif') no-repeat 95% 9px; border: 2px solid #f47321; float:left;}
+.main_search button {width:100px; height:45px; padding-bottom:3px !important; color: #fff; font-weight:600; font-size:105%; text-align:center; background: url('/gmi/cni/search_c_btn.gif') no-repeat left top; }
+
+
+/* 메인팝업존 */
+.popup { float:left; width:775px; height:295px; margin:90px 0 0 0; padding:0px; position:relative; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);} 
+.popup .pop_list li{display:none;}
+.popup .pop_list li:first-child{display:block;}
+
+.popup .pop_list {width:100%; margin:0px;}
+.popup .pop_list li a img{ width:100%; height:295px; }
+
+
+.popup .pop_ctrl{position:absolute; left:107px; bottom:15px; width:50px; height:26px; padding:0px; text-align:center;}
+.popup .pop_ctrl button,
+.popup .pop_ctrl_roll button{display:block; float:left; margin:0; padding:0; font-size:0; line-height:0; border:0;}
+
+.popup .pop_ctrl_roll .pop_prev, 
+.popup .pop_ctrl_roll .pop_next { position:absolute; width:26px; height:26px;  bottom:15px;}
+.popup .pop_ctrl_roll .pop_prev { left:15px; background:url('/gmi/niam/mvisual_prev.png') no-repeat left top;}
+.popup .pop_ctrl_roll .pop_next { left:73px; background:url('/gmi/niam/mvisual_next.png') no-repeat right top;  }
+
+.popup .pop_ctrl_roll .pop_stop,
+.popup .pop_ctrl_roll .pop_play {position:absolute;  width:26px; height:26px; left: 44px; bottom:15px;}
+.popup .pop_ctrl_roll .pop_stop {background:url('/gmi/niam/mvisual_stop.png') no-repeat;}
+.popup .pop_ctrl_roll .pop_play {background:url('/gmi/niam/mvisual_play.png') no-repeat;}
+.popup #popcount { position:absolute; color:#fff; font-size:110%; vertical-align:middle;  letter-spacing:-2px; font-weight:600; }
+
+
+/* 메인로그인*/
+.loginbox_outer {float:right; width:455px; height:295px; margin:90px 0 0 0; padding:0; background: #f2f2fa; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+.loginbox {width:100%; padding:30px 30px 25px 30px; margin:0; overflow:hidden;}
+.loginbox h3 {width:25%; float:left; text-align:left; font-size:145%; color:#000000; font-weight:600; }
+.loginbox p {width:75%;float:left; font-size:95%; color: #272727; letter-spacing:-2px; font-weight:600; margin-bottom:15px;}
+.loginbox p span {color: #bc3419;}
+
+.loginbox fieldset {float:left; width:100%;}
+.loginbox .login {float:left; width: 73.41%;}
+.loginbox dl {float:left; margin:0px; padding:0px; width:100%; overflow:hidden;}
+.loginbox dt {float:left; width:19%; height:42px; line-height:38px; padding-left:5%; margin-bottom:3px; color: #454545; font-weight:600; border-top:1px solid #cecece; border-left:1px solid #cecece; border-bottom:1px solid #cecece; background: #f9fafb;}
+.loginbox dd {float:right; width:81%; height:42px; line-height:38px; text-align:left; margin-bottom:3px; border-top:1px solid #cecece; border-right:1px solid #cecece; border-bottom:1px solid #cecece; background: #f9fafb;}
+.loginbox dd.b_none {border:none; background:none;}
+.loginbox dd input {width:90%; height:42px; font-size:100%; color: #585858; border:none; border-radius:0px; margin-right:10%; background:none; }
+.loginbox dd input.login_day01 {width:42.97%; float:left; margin: 0; border-top:1px solid #cecece; border-right:1px solid #cecece; border-bottom:1px solid #cecece; background: #f9fafb url('/gmi/niam/login_day01.gif') no-repeat 88% 13px;}
+.loginbox dd input.login_day02 {width:27.65%; float:left; margin: 0 0 0 2px; border:1px solid #cecece; background: #f9fafb url('/gmi/niam/login_day02.gif') no-repeat 80% 13px;}
+.loginbox dd input.login_day03 {width:27.65%; float:left; margin: 0 0 0 2px; border:1px solid #cecece; background: #f9fafb url('/gmi/niam/login_day03.gif') no-repeat 80% 13px;}
+.loginbox dd input[type=radio] {width:13px; height:13px; margin: 0 3px 0 10px !Important;}
+.loginbox .loginbtn {float:left; width:26.59%; height:132px;}
+.loginbox .loginbtn a {float:right; width:95.23%; line-height:132px; background:#000000; color:#fff;display:block; text-align:center; font-size:110%; font-weight:500; }
+
+.loginbox_outer .memberbox {width:100%; height:65px; overflow:hidden; margin:0 auto; padding:18px 30px 0 30px; border-top:1px solid #dfdfdf; background: #fff;}
+.loginbox_outer .memberbox p {float:left; width: 73.41%; margin:0; text-align:left; color:#282828; font-weight:600; letter-spacing:-1.5px;}
+.loginbox_outer .memberbox a {float:left; width:26.59%; height:28px; line-height:25px; margin:0; display:inline-block; font-size:90%; color: #000; border:1px solid #000; text-align:center;}
+
+
+
+/* 메인로그아웃 */
+.logout_outer {float:right; width:455px; height:295px; margin:90px 0 0 0; padding:0; background: #f2f2fa; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+.logoutbox {width:100%; height:229px; padding:0 30px 0 30px; margin:0; overflow:hidden;}
+.logoutbox p {width:100%;float:left; font-size:110%; color: #272727; letter-spacing:-1px; font-weight:600; margin:20px 0 13px 0;}
+.logoutbox p span {color: #bc3419;}
+
+.logoutbox table {width:100%; border-top:2px solid #395980; border-right:1px solid #bcbcbc; border-collapse:collapse; background:#fff; font-size:95%;}
+.logoutbox table th,
+.logoutbox table td{padding:5px 0px;border-left:1px solid #bcbcbc; border-bottom:1px solid #bcbcbc; /*word-break:keep-all;*/  }
+.logoutbox table th {text-align:center; background-color:#f9f9f9;}
+.logoutbox table tbody th{background:#fff; text-align:left; padding:0 10px;}
+.logoutbox table tbody th a {width:90%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:100%;}
+.logoutbox table td{text-align:center;}
+
+
+.logout_outer .memberbox {width:100%; height:65px; overflow:hidden; margin:0 auto; padding:18px 0 0 0; border-top:1px solid #dfdfdf; background: #fff; text-align:center;}
+.logout_outer .memberbox a {width:100px; height:28px; line-height:25px; margin:0 3px; display:inline-block; font-size:90%; color: #000; border:1px solid #000; text-align:center;}
+.logout_outer .memberbox a:first-child {background: #000; color: #fff;}
+
+
+/* 공지사항 */
+.notice {float:left; position:relative; width:48.8%; margin:0; padding:0px;}
+.notice h3 {width:100%; margin-bottom:8px; color: #000; font-size:120%; font-weight:600; }
+.notice ul {width:100%; margin: 0; padding:0; list-style: none; }
+.notice ul li {float:left; width:100%; padding: 0; text-align:left; letter-spacing:-1px;}
+.notice ul li a {float:left; width:80%; overflow:hidden; padding: 0 0 0 10px;  background:url(/gmi/niam/notice_dot.jpg) no-repeat left 48%; color:#000; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.notice ul li a img {vertical-align:middle; margin-left: 3px;}
+.notice ul li a:hover {text-decoration: underline;  }
+.notice ul li span {float:right; width:20%; text-align: right; color: #767676;  margin:0; padding: 0; }
+.notice .tabmore {position: absolute; right: 0; top:0;  }
+
+
+
+/* 퀵아이콘 */
+.qicon {float:right; width:48.8%; margin:10px 0 0 0; padding:0px;}
+.qicon ul {width:100%; margin:0; padding:0;}
+.qicon ul li {width:25%; display:inline; float:left; margin:0; padding:0; text-align:center;}
+.qicon ul li a {width:100%; height:120px; display:block; font-size:115%; font-weight:600; letter-spacing:-1px; color:#fff; padding-top:75px;}
+.qicon ul li a br {display:none;}
+.qicon ul li:nth-child(1) {background: #54297e url('/gmi/niam/qicon01.png') no-repeat center 18px;}
+.qicon ul li:nth-child(2) {background: #fbd118 url('/gmi/niam/qicon02.png') no-repeat center 18px; }
+.qicon ul li:nth-child(2) a {color: #2d2d2d !important; }
+.qicon ul li:nth-child(3) {background: #29307e url('/gmi/niam/qicon03.png') no-repeat center 18px;}
+.qicon ul li:nth-child(4) {background: #fb4c18 url('/gmi/niam/qicon04.png') no-repeat center 18px;}
+
+
+/* 교육신청 */
+.main_pro {width:100%; margin:0; padding:0;}
+.main_pro h3 {width:100%; margin-bottom:8px; color: #000; font-size:120%; font-weight:600; }
+.main_pro .tabmore {position: absolute; right: 0; top:2px;}
+.main_pro ul {float:left; width:100%; margin-top:7px; padding:0; list-style:none;}
+.main_pro ul li {float:left; width:23.8%; height:105px; display:inline-block; margin-left:1.6%; margin-bottom:20px; padding:0; background: #fff; border:1px solid #dfdfdf; }
+.main_pro ul li:nth-child(1),
+.main_pro ul li:nth-child(5) {margin-left:0;}
+.main_pro ul li a {float:left; width:72%; height:66px; margin: 0; padding: 0px 4%; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.main_pro ul li a span {display:block; width:100%; font-size: 90%; color: #777; line-height:20px; padding-top:12px; margin:0; }
+.main_pro ul li p.state {float:left; width:23%; height:66px; line-height:60px; left:0; top:0; text-align:center; font-size:90%; font-weight:600; color: #fff;}
+.main_pro ul li p.state br {display:none;}
+.main_pro ul li p.time {float:left; width:100%; height:37px; line-height:37px; padding-left:28px; background: #f7f7f7 url('/gmi/niam/pro_time.png') no-repeat 8px 10px;; color: #666; font-size: 90%; font-weight:600;}
+.main_pro ul li p.time span {display:block; width:92%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+
+.add {background: #fb4c18;  border:0px;}
+.stand {background: #3599d8;  border:0px;}
+.cancel {background: #fff; border-right:1px solid #dfdfdf; border-left:0; border-top:0; border-bottom:0; color: #333 !important;}
+.finish {background: #979696; border:0px;}
+
+
+
+
+/* 배너존 */
+.banner{margin:0px auto; width:1250px; height:59px; padding:0px; overflow:hidden; position:relative;}
+
+.banner .banner_control { list-style:none; width:26px; float:right;}
+.banner .banner_control li { margin:0px; padding:0px;  width:26px;  height:19px;}
+.banner .banner_control li img {vertical-align:top; font-size:0; line-height:0;  }
+
+.banner .banner_control li:first-child { } /* 이전배너 */
+.banner .banner_control li:nth-child(2n) { margin-top:1px;} /* 재생,정지 */
+.banner .banner_control li:last-child { margin-top:1px;} /* 다음배너 */
+
+.banner .banner_img {float:left; padding:0px; margin:0px; width:96.08%; height:59px; overflow:hidden; list-style:none;}
+.banner .banner_img li{float:left; display:inline; font-size:0; line-height:0; margin:0px 0px 0px 17px; width:157px; height:59px; padding:8px 0px 0px 0px; border:1px solid #e8e8e8; text-align:center;}
+.banner .banner_img li:first-child {margin-left:0px;}
+
+
+/* 위로이동 */
+.top {display:none;}
+
+
+
+
+
+
+
+ 
+
+/*****************1320이하******************************************/
+@media all and (max-width:1320px){
+
+
+
+.group1_outer {height:430px;}
+.group1,
+.group2,
+.group3 {width:1000px;}
+
+/* 메인팝업존 */
+.popup {width:620px; height:236px;}
+.popup .pop_list li a img {height:auto;}
+
+/* 메인로그인*/
+.loginbox_outer {float:right; width:364px; height:236px;}
+.loginbox {padding:20px; margin:0;}
+.loginbox h3 {float:left; font-size:140%; width:100%;}
+.loginbox p {float:left; width:100%; margin-bottom:8px; text-align:left;}
+
+.loginbox fieldset {width:100%;}
+.loginbox dd input.login_day03 {width: 27.25%;}
+.loginbox .memberbox {display:none;}
+
+/* 메인로그아웃*/
+.logout_outer {float:right; width:364px; height:236px;}
+.logoutbox {padding:0 15px 0 15px; height: 181px;}
+.logoutbox p { letter-spacing:-1.5px;}
+.logoutbox table tr:nth-child(3) {display:none;}
+.logout_outer .memberbox {height:55px; padding:12px 0 0 0;}
+
+/* 공지사항 */
+.notice ul li a {width:95%;}
+.notice ul li span {display:none;}
+
+/* 퀵아이콘 */
+.qicon ul li a {font-size:105%; padding-top:78px;}
+
+/* 교육신청 */
+.main_pro ul li a {width:65%;}
+.main_pro ul li p.time {padding-left:25px; letter-spacing:-1.5px;}
+.main_pro ul li p.state {padding-top:15px; line-height:18px;}
+.main_pro ul li p.state br {display:block;}
+
+
+/* 배너존 */
+.banner{  width:1000px;}
+.banner .banner_img li{ margin:0px 0px 0px 40px; }
+
+
+}
+
+
+
+/*****************1040이하******************************************/
+@media all and (max-width:1040px){
+/* header */
+#header.scrolled {border-bottom:1px solid #e8e8e8;}
+
+.group1_outer {height:auto; background:url('/gmi/niam/main_tbg.jpg') no-repeat top center; background-size: auto 100%; padding:0;}
+.group2_outer {height:210px; margin:0; padding:0;}
+.group3_outer {height:auto; margin:0; padding:0;}
+
+.group1, 
+.group2,
+.group3,
+.group4 {float:left; width:100%; height:auto; padding: 20px; margin: 0;}
+
+/* 메인팝업존 */
+.popup {width:100%; height:auto; margin:0;}
+
+/* 메인로그인*/
+.loginbox_outer {float:left; width:48%; height:205px; margin:20px 0 0 0;}
+.loginbox {padding:5%;}
+.loginbox h3 {width:auto; margin-bottom:9px; letter-spacing:-2px;}
+.loginbox p {width:auto; font-size:90%; float:right; margin:0; letter-spacing:-2px;}
+
+/* 메인로그아웃*/
+.logout_outer {float:left; width:48%; height:205px; margin:20px 0 0 0;}
+.logoutbox p {margin:12px 0 8px 0;}
+.logoutbox {height: 165px;}
+.logout_outer .memberbox {height:40px; padding:6px 0 0 0;}
+.logout_outer .memberbox a {height:25px; line-height:22px; font-size:90%;}
+
+
+/* 메인검색 */
+.main_search_outer {width:48%; right:20px; bottom:20px; text-align:left; border:none;}
+.main_search {position:relative; width:100%; padding:5%; height:205px; background: #ff8900; border:none;}
+.main_search h3 {display:block;  float:left; font-size:140%; font-weight:600; letter-spacing:-1.5px; width:100%; color:#fff; margin-bottom:10px;}
+.main_search select {width:70%; border:none; height:42px; line-height:38px; margin-bottom:3px;}
+.main_search .search_c {width:70%;}
+.main_search input {width:100%; border:none; height:42px; line-height:38px;}
+.main_search button {position:absolute; right:5%; top:55px; width:25%; height:132px; background: #da440f; font-weight:500; font-size:110%; letter-spacing:-2px;}
+
+
+/* 공지사항 */
+.notice {width:66%; margin-top:10px;}
+.notice h3 {font-size:130%; margin-bottom:10px;}
+.notice ul li {margin: 2px 0;}
+.notice ul li a {width:95%;}
+.notice ul li span {display:none;}
+.notice .tabmore {top: 0px;  }
+
+/* 퀵아이콘 */
+.qicon {width:31%; margin:0;}
+.qicon ul li {width:50%;}
+.qicon ul li a {height:85px; font-size:100%; padding-top:52px;}
+
+.qicon ul li:nth-child(1) {background: #54297e url('/gmi/niam/qicon01.png') no-repeat center 12px;}
+.qicon ul li:nth-child(2) {background: #fbd118 url('/gmi/niam/qicon02.png') no-repeat center 12px; }
+.qicon ul li:nth-child(3) {background: #29307e url('/gmi/niam/qicon03.png') no-repeat center 12px;}
+.qicon ul li:nth-child(4) {background: #fb4c18 url('/gmi/niam/qicon04.png') no-repeat center 12px;}
+
+.qicon ul li:nth-child(1),
+.qicon ul li:nth-child(2),
+.qicon ul li:nth-child(3),
+.qicon ul li:nth-child(4) {background-size: 38px 38px;}
+
+/* 교육신청 */
+.main_pro .tabmore {right: 20px; top:25px;}
+.main_pro ul li {width:32.26%;}
+.main_pro ul li:nth-child(4) {margin-left:0;}
+.main_pro ul li:nth-child(5) {margin-left:1.6%;}
+
+.main_pro ul li:nth-child(4),
+.main_pro ul li:nth-child(5),
+.main_pro ul li:nth-child(6) {margin-bottom:0px;}
+
+.main_pro ul li:nth-child(7),
+.main_pro ul li:nth-child(8) {display:none;}
+
+
+
+/* 배너존 */
+.banner{  width:100%;}
+.banner .banner_img li {margin: 0 0 0 25px;}
+
+
+}
+
+/*****************810이하******************************************/
+@media all and (max-width:815px){ 
+.loginbox p {font-size:80%;}
+}
+ 
+
+/***************** 767이하******************************************/
+@media all and (max-width:767px){
+
+
+.group1_outer,
+.group2_outer {height:auto;}
+
+/* 메인로그인*/
+.loginbox_outer {float:left; width:100%; height:auto;}
+.loginbox h3 {width:100%; margin-bottom:0px;}
+.loginbox p {width:100%; float:left; margin:0 0 3px 0; letter-spacing:-1.5px; font-size:90%;}
+.loginbox .login {width:100%;}
+.loginbox dt {text-align:left;}
+.loginbox dd input.login_day01 {width:43%;}
+.loginbox dd input.login_day02,
+.loginbox dd input.login_day03 {width:27.5%; margin-left:1%;}
+.loginbox .loginbtn {width:100%; height:42px;}
+.loginbox .loginbtn a {float:left; width:100%; line-height:42px;}
+
+/* 메인로그아웃*/
+.logout_outer {float:left; width:100%; height:auto;}
+.logoutbox p {font-size:100%;}
+.logoutbox table {font-size:90%; letter-spacing:-1.5px;}
+
+/* 메인검색 */
+.main_search_outer {display:none; clear:both; position:relative; width:100%; float:left; left:0; top:20px;}
+
+/* 메인팝업존 */
+.popup .pop_ctrl_roll .pop_prev, 
+.popup .pop_ctrl_roll .pop_next {width:16px; height:16px; bottom:7px; background-size:100% 100%;}
+.popup .pop_ctrl_roll .pop_stop,
+.popup .pop_ctrl_roll .pop_play {width:16px; height:16px; bottom:7px; background-size:100% 100%;}
+
+.popup .pop_ctrl_roll .pop_prev {left:7px;}
+.popup .pop_ctrl_roll .pop_stop,
+.popup .pop_ctrl_roll .pop_play {left: 28px;}
+.popup .pop_ctrl_roll .pop_next {left: 49px;}
+.popup .pop_ctrl {left:72px; bottom:0px;}
+.popup #popcount {font-size:90%;}
+
+/* 메인팝업존-팝업존 아래로올때
+.popup .pop_ctrl_roll .pop_prev, 
+.popup .pop_ctrl_roll .pop_next {width:16px; height:16px; bottom:-27px; background-size:100% 100%;}
+.popup .pop_ctrl_roll .pop_stop,
+.popup .pop_ctrl_roll .pop_play {width:16px; height:16px; bottom:-27px; background-size:100% 100%;}
+
+.popup .pop_ctrl_roll .pop_prev {left:0px;}
+.popup .pop_ctrl_roll .pop_stop,
+.popup .pop_ctrl_roll .pop_play {left: 21px;}
+.popup .pop_ctrl_roll .pop_next {left: 42px;}
+
+.popup .pop_ctrl {left:65px; bottom:-35px;}
+.popup #popcount {font-size:90%;} */
+
+/* 공지사항 */
+.notice {width:100%; margin:0;}
+
+/* 퀵아이콘 */
+.qicon {width:100%; margin-top:20px;}
+.qicon ul li {width:25%;}
+.qicon ul li a {height:100px; line-height:18px;}
+.qicon ul li a br {display:block;}
+.qicon ul li:nth-child(1) a,
+.qicon ul li:nth-child(4) a {padding-top:60px;}
+
+.qicon ul li:nth-child(2) a,
+.qicon ul li:nth-child(3) a {padding-top:55px;}
+
+/* 교육신청 */
+.main_pro h3 {margin-bottom:0px;}
+.main_pro ul li {width:100%; margin: 0 0 8px 0;}
+.main_pro ul li:nth-child(4),
+.main_pro ul li:nth-child(5) {margin-bottom:8px;}
+.main_pro ul li:nth-child(5) {margin-left:0;}
+
+/* 배너존 */
+.banner{  width:100%;}
+.banner .banner_img {width: 94%;}
+
+
+}
+
+
+
+/*****************320이하******************************************/
+@media all and (max-width:480px){
+
+
+
+
+/* 배너존 */
+.banner{  width:100%;}
+.banner .banner_img li {margin:0px 0px 0px 10px; width:127px; padding:12px 0 0 0;}
+.banner .banner_img {width:90%;}
+.banner .banner_img img {height: 70%;}
+
+
+}
+
+
+
