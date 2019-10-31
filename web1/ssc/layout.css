@@ -29,7 +29,7 @@ h2 {font-size:190%; color: #101010; text-align: center; letter-spacing: -1.5px;}
 #container {width:100%; overflow: hidden;}
 
 /* main_visual */
-.main_visual {overflow:hidden; width:100%; height:440px; background: url(/web1/gmi/main/visual01.jpg) no-repeat center top;}
+.main_visual {overflow:hidden; width:100%; height:440px; background: url(../gmi/main/visual01.jpg) no-repeat center top;}
 .main_visual p {width: auto; margin:140px auto 0; font-size: 220%; font-weight:400; color: #fff; text-align: center; letter-spacing: -1px;}
 .main_visual p span {display: block; font-size: 130%; color: #fff;}
 .main_visual p span strong {font-size: 100%; color: #fff;}
