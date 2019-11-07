@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#header").load("cni/header.html");
-	$("#footer").load("cni/footer.html");
+	$("#header").load("/web1/cni/header.html");
+	$("#footer").load("/web1/cni/footer.html");
 	
  });
