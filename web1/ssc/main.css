@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+h2 {font-size:190%; color: #101010; text-align: center; letter-spacing: -1.5px; background: url(../gmi/main/main_h2.gif) no-repeat center top; padding-top:16px; margin:0 auto 30px;}
+h2 span{display:block; font-size:50%; color: #666; margin-top:3px;}
+.orange {color: ##fb5c05;}
+.more a {font-size:80%; color: #989898; padding-right:10px; background: url(../gmi/main/more.gif) no-repeat right 7px;}
+.more a:hover {color: #fb5c05;}
+
+/* main_visual */
+.main_visual {overflow:hidden; width:100%; height:440px; background: url(../gmi/main/visual01.jpg) no-repeat center top;}
+.main_visual p {width: auto; margin:140px auto 0; font-size: 220%; font-weight:400; color: #fff; text-align: center; letter-spacing: -1px;}
+.main_visual p span {display: block; font-size: 130%; color: #fff;}
+.main_visual p span strong {font-size: 100%; color: #fff;}
+
+/* thema */
+.thema {overflow:hidden; width:100%; height:auto; background: #f7f7f7; padding: 80px 0;}
+.thema_list {width:1200px; height:auto; margin:0 auto;}
+.thema_list ul {width:100%;}
+.thema_list li {float:left; width:23.41%; height:370px; overflow: hidden; margin-left:2.12%;}
+.thema_list li:first-child {margin-left:0;}
+.thema_list dl {position: relative; width:100%; height:100%; border:1px solid #e7e7e7; background-color: #fff;}
+.thema_list dt.title {width:100%; padding: 0 7.5%; margin-top:72%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.thema_list dt.title a {font-weight:600; font-size:120%;}
+.thema_list dt.title a:hover {opacity: 0.5;}
+.thema_list dt.title a span {font-size:75%; color:#4a4a4a; font-weight:400;}
+.thema_list dt.title span {display:block;  line-height:16px;}
+.thema_list dd {width:85%; padding: 0 7.5%;}
+.thema_list dd.photo {width:100%; position: absolute; left:0; top:0; padding: 0%;}
+.thema_list dd.photo:hover {opacity: 0.5;}
+.thema_list dd.text {padding:13px 0; margin:10px auto 0; font-size:90%; color: #636363; border-top:1px solid #dbdbdb;}
+.thema_list dd.thema_icon {padding:5px 0 0 0; margin:0 auto 0; border-top:1px solid #dbdbdb; text-align: right;}
+.thema_list dd.thema_icon span:nth-of-type(1) {font-size:90%; float:left; text-align: left; margin:0; padding:0;}
+.thema_list dd.thema_icon span {padding: 0 0 0 16px; margin-left:15px; }
+.thema_list dd.thema_icon span a {font-size:90%; color: #ababab;}
+.thema_list dd.thema_icon span a:hover {color: #fb5c05;}
+.thema_list dd.thema_icon span:nth-of-type(2) {background: url(../gmi/main/thema_icon01.gif) no-repeat left 6px;}
+.thema_list dd.thema_icon span:nth-of-type(3) {background: url(../gmi/main/thema_icon02.gif) no-repeat left 6px;}
+.thema_list dd.thema_icon span:nth-of-type(2):hover {background: url(../gmi/main/thema_icon01.gif) no-repeat left -17px;}
+.thema_list dd.thema_icon span:nth-of-type(3):hover {background: url(../gmi/main/thema_icon02.gif) no-repeat left -17px;}
+
+/* product */
+.product {overflow:hidden; width:100%; height:auto; padding: 80px 0;}
+.product_list {width:1200px; height:875px; overflow:hidden; margin:0 auto; position: relative;}
+.product_list a{margin:0 0 25px 0; padding:0; background-size: cover; letter-spacing: -1px;}
+.product_list a:hover {text-decoration: none;}
+.product_list a p {color: #fff; margin: 40px 0 0 40px;}
+.product_list a p span {display:block; color: #fff; font-size:210%; margin-bottom:5px;}
+.product_list a span.inquiry {float:left; padding: 5px 30px 7px 30px; margin: 20px 0 0 40px; color: #fff; border:1px solid #fff; font-size:95%; border-radius: 3px;}
+.product_list a span.inquiry:hover {background: #fff; color: #8f94a7;}
+.product_list a:nth-of-type(1) {float:left; width:66%; height:275px; background: url(../gmi/main/product_img01.jpg) no-repeat left top;}
+.product_list a:nth-of-type(2) {float:right; width:32%; height:275px; background: url(../gmi/main/product_img02.jpg) no-repeat left top;}
+.product_list a:nth-of-type(3) {float:left; width:32%; height:275px; margin-right:2%; background: url(../gmi/main/product_img03.jpg) no-repeat left top;}
+.product_list a:nth-of-type(4) {float:left; width:32%; height:275px; margin-right:2%; background: url(../gmi/main/product_img04.jpg) no-repeat left top;}
+.product_list a:nth-of-type(5) {position: absolute; right:0; bottom:0; width:32%; height:575px; margin:0; background: url(../gmi/main/product_img05.jpg) no-repeat left top;}
+.product_list a:nth-of-type(6) {float:left; width:32%; height:275px; margin-right:2%; background: url(../gmi/main/product_img06.jpg) no-repeat left top;}
+.product_list a:nth-of-type(7) {float:left; width:32%; height:275px; margin-right:2%; background: url(../gmi/main/product_img07.jpg) no-repeat left top;}
+
+/* festival */
+.festival {overflow:hidden; width:100%; height:auto; padding: 80px 0; background: #ececec;}
+.calendar {width:1200px; height:260px; overflow:hidden; margin:0 auto;}
+.calendar_day {float:left; width:16%; height:100%; background: #ffffff; border:6px solid #f25600;}
+.calendar_day dt {width:100%; height:38%; padding:25px 0 0 17px; font-size:140%; letter-spacing: -1px; background: #f7f7f7; border-bottom: 1px dotted #a2a2a2;}
+.calendar_day dt span {display:block; color: #585858; font-size:65%; line-height:14px;}
+.calendar_day dd {width:100%; height:62%; text-align: center; margin-top:20px;}
+.calendar_day dd span:nth-of-type(1) {font-size: 140%; font-weight:600;}
+.calendar_day dd span:nth-of-type(2) {display:block; font-size: 440%; line-height:90%; font-weight:600; color: #002252; margin-top:5px;}
+.calendar_day dd a:nth-of-type(1) {display:inline-block; width:19px; height:19px;background: url(../gmi/main/calendar_icon.gif) no-repeat left top; margin:3px 7px 0 0;}
+.calendar_day dd a:nth-of-type(2) {display:inline-block; width:19px; height:19px;background: url(../gmi/main/calendar_icon.gif) no-repeat -19px top; margin:3px 0 0 7px;}
+.calendar_day dd a:nth-of-type(1):hover {background: url(../gmi/main/calendar_icon.gif) no-repeat left -19px;}
+.calendar_day dd a:nth-of-type(2):hover {background: url(../gmi/main/calendar_icon.gif) no-repeat -19px -19px;}
+
+.calender_data {float:left; width:84%; height:100%; border-right: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9;  background: #fff;}
+.calender_data .day {width:100%; height:31px; line-height:28px; background: #5e5e5e; padding-left: 37px;}
+.calender_data .day li {float:left; height:100%; padding: 0 8px;}
+.calender_data .day li a {color: #fff; font-size:90%;}
+.calender_data .day li:hover,
+.calender_data .day li.on {color: #fff; background:#f25600;}
+
+.calender_data .content {float:left; width:59%; padding-left:45px; letter-spacing: -1px;}
+.calender_data .content dl {width:100%; position: relative; margin-top:25px;}
+.calender_data .content dt {margin: 0 0 5px 24%;}
+.calender_data .content dt a {display:block; width:85%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.calender_data .content dd.photo {position: absolute; left:0; top:0; margin:0; padding:0;}
+.calender_data .content dd {margin: 0 0 1px 24%; padding-left:9px; font-size:90%; color: #898989; background: url(../gmi/main/calender_dot.gif) no-repeat left 50%;}
+.calender_data .content dd span {font-size:100%;}
+
+.calender_data .list {float:left; width:41%; border-left:1px solid #f0f0f0; margin: 25px 0;}
+.calender_data .list ul {width:100%; margin:0 0 0 30px;}
+.calender_data .list ul li {width:80%; margin: 10px 0; padding: 0 0 0 10px; background: url(../gmi/main/calender_dot2.gif) no-repeat left 50%;}
+.calender_data .list ul li a {display:block; width:95%; font-size:95%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.calender_data .list ul li a span {color: #a8a8a8; font-size:95%; padding-right:2px;}
+
+/* plan */
+.plan {width:1200px; height:auto; overflow:hidden; margin:80px auto;}
+.plan h2 {text-align: left; font-size:170%; background-position: left top;}
+.plan h2 span {display: inline; font-size:55%; margin-left:10px;}
+.plan span.more {position: absolute; right:0; top:30px; }
+
+
+.guide {float:left; width:66%; margin:0; padding:0; position: relative;}
+ul.guide_list {height:395px;}
+ul.guide_list li{float:left; width:48.61%; height:100%; overflow: hidden; }
+ul.guide_list li:first-child {margin-right:2.78%;}
+
+ul.guide_list dl {position: relative; width:100%; height:100%; border:1px solid #ecedef;}
+ul.guide_list dt.title {width:90%; padding-left:20px; margin-top:71%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+ul.guide_list dt.title a {font-weight:600; font-size:105%;}
+ul.guide_list dt.title a:hover {opacity: 0.5;}
+ul.guide_list dd {width:100%; padding: 0 20px;}
+ul.guide_list dd.photo {width:100%; position: absolute; left:0; top:0; padding: 0%;}
+ul.guide_list dd.photo:hover {opacity: 0.5;}
+ul.guide_list dd.text {margin:5px auto 0; font-size:90%; color: #636363;}
+ul.guide_list dd.thema_icon {margin:15px auto 0; text-align: right;}
+ul.guide_list dd.thema_icon span:nth-of-type(1) {font-size:90%; float:left; text-align: left; padding-left:16px; margin:0; background: url(../gmi/main/guide_icon.gif) no-repeat left 3px;}
+ul.guide_list dd.thema_icon span {padding: 0 0 0 18px; margin-left:13px; }
+ul.guide_list dd.thema_icon span a {font-size:90%; color: #ababab;}
+ul.guide_list dd.thema_icon span a:hover {color: #fb5c05;}
+ul.guide_list dd.thema_icon span:nth-of-type(2) {background: url(../gmi/main/thema_icon01.gif) no-repeat left 6px;}
+ul.guide_list dd.thema_icon span:nth-of-type(3) {background: url(../gmi/main/thema_icon02.gif) no-repeat left 6px;}
+ul.guide_list dd.thema_icon span:nth-of-type(4) {background: url(../gmi/main/thema_icon03.gif) no-repeat left 6px;}
+ul.guide_list dd.thema_icon span:nth-of-type(2):hover {background: url(../gmi/main/thema_icon01.gif) no-repeat left -17px;}
+ul.guide_list dd.thema_icon span:nth-of-type(3):hover {background: url(../gmi/main/thema_icon02.gif) no-repeat left -17px;}
+ul.guide_list dd.thema_icon span:nth-of-type(4):hover {background: url(../gmi/main/thema_icon03.gif) no-repeat left -17px;}
+
+.review {float:right; width:30%; height: 395px; margin:0; padding:0; position: relative; }
+.review_list {width:100%; height:100%; border:1px solid #dfdfdf; overflow-y: scroll;}
+.review_list li {width:100%; padding: 18px 15px; border-bottom:1px solid #ecedef;}
+.review_list li:last-child {border:none;}
+.review_list dl {position: relative; width:100%; height:69px; }
+.review_list dt.title {width:60%; margin:3px 0 0 40%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.review_list dt.title a {font-size:90%; letter-spacing: -1px;}
+.review_list dt.title a:hover {opacity: 0.5;}
+.review_list dt.title a span {display:block; font-size:90%; color:#fb5c05; font-weight:400; line-height:13px;}
+
+.review_list dd.photo {width:35%; position: absolute; left:0; top:0; padding: 0%;}
+.review_list dd.photo:hover {opacity: 0.5;}
+
+.review_list dd.thema_icon {width:60%; margin:7px 0 0 40%; text-align: left;}
+.review_list dd.thema_icon a {padding: 0 0 0 18px; margin-right:13px; font-size:80%; color: #ababab;}
+.review_list dd.thema_icon a:hover {color: #fb5c05;}
+.review_list dd.thema_icon a:nth-of-type(1) {background: url(../gmi/main/thema_icon01.gif) no-repeat left 3px;}
+.review_list dd.thema_icon a:nth-of-type(2) {background: url(../gmi/main/thema_icon02.gif) no-repeat left 3px;}
+.review_list dd.thema_icon a:nth-of-type(3) {background: url(../gmi/main/thema_icon03.gif) no-repeat left 3px;}
+.review_list dd.thema_icon a:nth-of-type(1):hover {background: url(../gmi/main/thema_icon01.gif) no-repeat left -20px;}
+.review_list dd.thema_icon a:nth-of-type(2):hover {background: url(../gmi/main/thema_icon02.gif) no-repeat left -20px;}
+.review_list dd.thema_icon a:nth-of-type(3):hover {background: url(../gmi/main/thema_icon03.gif) no-repeat left -20px;}
+
+.reserve {overflow:hidden; width:100%; height:300px; text-align: center; background: url(../gmi/main/reserve_bg.jpg) no-repeat center top; background-size: cover;}
+.reserve p {color: #fff; font-size:215%; letter-spacing: -1.5px; margin:100px 0 20px;}
+.reserve a {color: #fff; font-size:130%; padding: 10px 40px;  letter-spacing: -1.5px; background: #566777;}
+.reserve a:hover {background: #95a1ad; }
+
+/* service */
+.service {overflow:hidden; width:100%; height:auto; padding: 80px 0;}
+.sercive_list {width:1200px; height:auto; overflow:hidden; margin:0 auto; }
+.service h2 {font-size: 160%; background: none; padding:0 0 10px 0; margin:0 0 15px 0;  border-bottom:1px solid #a4a4a4; text-align: left;}
+
+/* notice */
+.notice {float:left; width:32%; margin:0; padding:0; position: relative;}
+.notice ul {width:100%;}
+.notice ul li {float:left; width:100%; margin: 5px 0;  }
+.notice ul li a {float:left; width:85%; font-size:95%; text-align: left; padding: 0 0 0 10px; background: url(../gmi/main/calender_dot2.gif) no-repeat left 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.notice ul li span {float:right; width:15%; font-size:90%; text-align: right; color: #989898;}
+.notice span.more {position: absolute; right:0; top:14px;}
+
+/* faq */
+.faq {float:left; width:32%; margin:0 5.5%; padding:0; position: relative;}
+.faq ul {width:100%; padding: 0 5%; }
+.faq ul li {width:33.33%; height:70px; display:block; float:left; overflow:hidden; text-align: center;  margin-bottom:20px; }
+.faq ul li a {float:left; width:100%; height:100%; font-size:95%; letter-spacing: -1; padding:45px 0 0 0;}
+.faq ul li:nth-of-type(1) a {background: url(../gmi/main/faq_icon01.gif) no-repeat center top;}
+.faq ul li:nth-of-type(2) a {background: url(../gmi/main/faq_icon02.gif) no-repeat center top;}
+.faq ul li:nth-of-type(3) a {background: url(../gmi/main/faq_icon03.gif) no-repeat center top;}
+.faq ul li:nth-of-type(4) a {background: url(../gmi/main/faq_icon04.gif) no-repeat center top;}
+.faq ul li:nth-of-type(5) a {background: url(../gmi/main/faq_icon05.gif) no-repeat center top;}
+.faq ul li:nth-of-type(6) a {background: url(../gmi/main/faq_icon06.gif) no-repeat center top;}
+.faq span.more {position: absolute; right:0; top:14px;}
+
+/* faq */
+.customer {float:left; width:25%; position: relative;}
+.customer ul {width:100%;}
+.customer ul li {width:100%;}
+.customer ul li:nth-of-type(1) {font-size:150%; font-weight:600; letter-spacing: 0; color: #000; margin-bottom:15px;}
+.customer ul li:nth-of-type(2),
+.customer ul li:nth-of-type(3),
+.customer ul li:nth-of-type(4) {font-size:95%; margin-bottom: 3px; color: #515151;}
+.customer ul li:nth-of-type(2),
+.customer ul li:nth-of-type(3) {width:auto; display:inline-block;}
+.customer ul li:nth-of-type(2) {margin-right:8px;}
+.customer ul li a {width:49.5%; float:left; font-size:80%; padding: 5px 0 5px 15px; color: #545454; background: #e5e5e5 url(../gmi/main/customer_arr.gif) no-repeat 90% 50%; border:1px solid #d6d6d6; margin-top:20px;}
+.customer ul li a:nth-of-type(1) {margin-right: 1%;}
+
+
+/********************** 1240px **********************/
+@media all and (max-width:1240px){
+.thema_list,
+.product_list,
+.calendar,
+.plan,
+.sercive_list {width:100%;}
+}
+
+
+/********************** 1040px **********************/
+@media all and (max-width:1040px){
+}

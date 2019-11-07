@@ -10,7 +10,6 @@
 
 
 #wrap {width:100%; overflow:hidden;}
-h2 {font-size:190%; color: #101010; text-align: center; letter-spacing: -1.5px;}
 
 /* header */
 #header {position: relative; width:1200px; height:90px; margin:0 auto;}
@@ -28,10 +27,22 @@ h2 {font-size:190%; color: #101010; text-align: center; letter-spacing: -1.5px;}
 /* container */
 #container {width:100%; overflow: hidden;}
 
-/* main_visual */
-.main_visual {overflow:hidden; width:100%; height:440px; background: url(../gmi/main/visual01.jpg) no-repeat center top;}
-.main_visual p {width: auto; margin:140px auto 0; font-size: 220%; font-weight:400; color: #fff; text-align: center; letter-spacing: -1px;}
-.main_visual p span {display: block; font-size: 130%; color: #fff;}
-.main_visual p span strong {font-size: 100%; color: #fff;}
+/* footer */
+#footer {width:100%; overflow: hidden; border-top:1px solid #dddddd; background: #ececec;}
+#footer .link {width:100%; background: #fff;}
+#footer .link ul {width:1200px; margin:0 auto; border-bottom:1px solid #dddddd;}
+#footer .link ul li {display:inline-block; padding: 6px 0 9px 0; margin-right:25px;}
+#footer .link ul li a {font-size:95%; letter-spacing: -1px;}
+#footer .copyright {width:1200px; margin:0 auto; padding:20px 0 30px;}
+#footer .copyright address,
+#footer .copyright span {font-size:90%; color: #7f7f7f;}
+#footer .copyright address {font-style:normal; display:inline-block; margin-right:10px;}
+#footer .copyright span:nth-of-type(2) {display:block;}
 
-.thema {overflow:hidden; width:100%; height:auto;}
+/********************** 1240px **********************/
+@media all and (max-width:1240px){
+#header,
+#footer .link ul,
+#footer .copyright {width:100%;}
+}
+
