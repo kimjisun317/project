@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* h2 {font-size:190%; color: #101010; text-align: center; letter-spacing: -1.5px; background: url(../gmi/main/main_h2.gif) no-repeat center top; padding-top:16px; margin:0 auto 30px;}
+ */
+
+/* main_visual */
+.main_visual {position: relative; overflow:hidden; width:100%; height:auto; margin:0;}
+
+.main_visual .main_control {position: absolute; width:max-content; text-align: center; left:0; right:0; margin: 0 auto; bottom:40px;}
+.main_visual .main_control a {display:inline-block; width:10px; height:11px; background: #bfbfbf; border-radius: 50%; margin: 0 5px; text-indent:-9999px; vertical-align: middle;}
+.main_visual .main_control a.on {background: #454545;}
+.main_visual .main_control a:nth-of-type(1) {width:24px; height:24px; background: url(../gmi/main/visual_stop.png) no-repeat left top;}
+
+
+.main_visual .main_move a {display:block; width:76px; height:76px; text-indent:-9999px; position: absolute;}
+.main_visual .main_move a:hover {opacity: 0.5;}
+.main_visual .main_move a:nth-of-type(1) {background: url(../gmi/main/main_prev.png) no-repeat left top; left:0; top:45%;}
+.main_visual .main_move a:nth-of-type(2) {background: url(../gmi/main/main_next.png) no-repeat left top; right:0; top:45%;}
+
+
+/* notice */
+.notice {width:100%; height:60px; background: #f8f8f8;}
+.notice h2 {float:left; display:block; color: #acacac; font-size:120%; font-weight:normal; letter-spacing: 0px; margin-top:22px;}
+.notice_list {width:1350px; height:100%; margin:0 auto;;}
+.notice_list ul {float:left; width:auto; margin: 19px 0 0 40px;}
+.notice_list ul li span:nth-of-type(1) {color: #808080; margin-right:5px;}
+.notice_list ul li span.day {float:left; color: #a4a4a4; font-size:90%; margin: 5px 15px 0 0;}
+.notice a.campaign {display:block; float:right; width:330px; height:60px; background: url(../gmi/main/campaign_bg.png) no-repeat left top; text-align: center; font-size:120%; color: #29304a; line-height:60px;}
+.notice a.campaign i {display:inline-block; margin: 0 0 0 10px; vertical-align: middle; width:20px; height:28px; background: url(../gmi/main/campaign_icon.gif) no-repeat left top;}
+
+/* schedule */
+.schedule {width:1350px; margin:50px auto; overflow: hidden;}
+.schedule_month {float:left; width:72px; color: #515151; font-weight:bold;}
+.schedule_month p {font-weight:bold; margin-left:5px;}
+.schedule_month span {font-size: 130%; font-weight:bold; margin-left:4px;}
+.schedule_month a {display:block; width:100%; height:23px; padding-left:7px; margin-top: 3px; line-height:23px; border:1px solid #c2c2c2;border-radius: 15px; font-size:80%; color: #8a8a8a;background: url(../gmi/main/schedule_month_arr.gif) no-repeat 87% 50%;}
+.schedule_month a:hover {color: #fff; border:none; background: #00346a url(../gmi/main/schedule_month_arr_on.png) no-repeat 87% 50%; text-decoration: none;}
+
+.schedule_day {float:right; width:92%; background: url(../gmi/main/schedule_day_line.gif) repeat-x left top;}
+.schedule_day ul {width:auto; height:auto; overflow: hidden;}
+.schedule_day ul li {float:left; display: block; width:40px; height:55px; background: url(../gmi/main/schedule_day_none.gif) no-repeat center 10px; font-size:95%; font-weight:bold; color: #979797; padding-top:33px; margin-left: 5.3%;}
+.schedule_day ul li.today {background: url(../gmi/main/schedule_day_today.gif) no-repeat center top; padding-top:0px; }
+.schedule_day ul li.today a {color: #ee2d2e;}
+.schedule_day ul li.after {background: url(../gmi/main/schedule_day_after.gif) no-repeat center top; padding-top:0px; }
+.schedule_day ul li a {float:left; width:100%; height:100%; font-size:95%; font-weight:bold; color: #979797; padding-top:33px; }
+.schedule_day ul li a:hover/* ,
+.schedule_day ul li a:active,
+.schedule_day ul li a:focus */ {background: url(../gmi/main/schedule_day_today.gif) no-repeat center top; color: #ee2d2e;}
+
+.schedule_day > a {float:left; display: block; width:19px; height:27px;  text-indent:-9999px;}
+.schedule_day > a:hover {opacity: 0.5;}
+.schedule_day > a:nth-of-type(1) {background: url(../gmi/main/schedule_day_prev.gif) no-repeat left top;}
+.schedule_day > a:nth-of-type(2) {float:right; background: url(../gmi/main/schedule_day_next.gif) no-repeat left top;}
+
+
+.schedule_poster {float:left; width:100%; height:auto; margin-top:35px;}
+.schedule_poster ul {width:100%; height:auto;}
+.schedule_poster ul li {position: relative; float:left; width:20%; height:426px; z-index: 1;}
+.schedule_poster ul li.later-day {background: #fff; opacity: 0.3;}
+.schedule_poster ul li.later-day:hover {opacity: 1;}
+
+
+.schedule_poster ul span.d-day {position: absolute; left:0; top:0; width:53px; height:60px; background: url(../gmi/main/dday_bg.png) no-repeat left top; text-align: center; font-size:90%; padding-top:15px; color:#fff; z-index: 3;}
+.schedule_poster ul span.l-day {position: absolute; left:0; top:0; width:53px; height:60px; background: url(../gmi/main/dday_bg_black.png) no-repeat left top; text-align: center; font-size:90%; padding-top:15px; color:#fff; z-index: 3;}
+
+
+
+
+.schedule_poster ul li img {height:386px;}
+.schedule_poster ul li p.black {position: absolute; left:0; top:0; display: block; width:100%; height:386px; background: linear-gradient(to top, #000, transparent 70%); z-index: 2;}
+.schedule_poster ul li p.black span {position: absolute; left:0; bottom:5px; width:100%; height:30px; display:block; text-align: center; color: #fff;}
+
+.schedule_poster div.on {display:none;}
+.schedule_poster ul li a:hover .on {display:block; position: absolute; left:0; bottom: 0px; width:100%; height:140px; border-bottom:1px solid #000; z-index: 4; background: url(../gmi/main/schedule_poster_bg.png) no-repeat left top; background-size: cover;}
+.schedule_poster .on {color: #3d3d3d; font-size:90%; padding:43px 0 0 20px;}
+.schedule_poster .on p {display:block; width:100%; font-size:170%; font-weight:500; margin-bottom: 10px;}
+.schedule_poster .on span {display:inline-block; width:26px; height:26px; color: #fff; background: #b9b9b9; border-radius: 50%; text-align: center; line-height:28px; font-weight:500; font-size:60%; margin-left:7px; vertical-align: top;} 
+
+
+/********************** 1240px **********************/
+@media all and (max-width:1240px){
+.thema_list,
+.product_list,
+.calendar,
+.plan,
+.sercive_list {width:100%;}
+}
+
+
+/********************** 1040px **********************/
+@media all and (max-width:1040px){
+}

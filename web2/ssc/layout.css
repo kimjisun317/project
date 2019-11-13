@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* skip-go */
+#skip-go {display:block;}
+#skip-go dt {position:absolute; top:0; left:-1000px;}
+#skip-go dd a {display:block; font-weight:bold; position:absolute; top:0; left:-1000px; font-size:120%; text-align:center; background-color:#000; z-index:1000;} 
+#skip-go dd a:hover, 
+#skip-go dd a:active, 
+#skip-go dd a:focus{left:0; height:40px; width:100%; line-height:40px; color:#fff !important;}
+
+.red {color: #ee2d2e;}
+
+#wrap {width:100%; overflow:hidden;}
+
+/* header */
+#header {position: relative; width:1350px; height:100px; margin:0 auto;}
+#header h1 {margin: 0 auto; padding-top:33px; text-align: center;}
+#header a:hover {opacity: 0.5;}
+
+#header .topmenu {position: absolute; left:0; top:23px; }
+#header .topmenu a {float:left; width:36px; height:55px;  background: url(../gmi/cni/menu.gif) no-repeat left top; }
+#header .topmenu a span {float:left; width:100%; text-align:center; font-size:75%; font-weight:bold; padding-top:42px; letter-spacing: 0px; color: #595959;}
+
+#header .gnb {position: absolute; left:40px; top:35px;}
+#header .gnb li {display:inline; margin-left:25px; }
+#header .gnb li a {font-size:90%;}
+
+#header .calendar {position: absolute; right:0; top:25px;}
+#header .calendar .text {float:left; margin-right:13px;}
+#header .calendar .text a {display:block; text-align: right; font-size: 90%; color: #999; line-height:16px;}
+#header .calendar .text a span {display:block; font-size: 90%; }
+#header .calendar .text .control {float:right; margin-top:7px;}
+#header .calendar .text .control a {text-align: right; display:inline-block;}
+#header .calendar .text .control a:nth-of-type(2) {margin: 0 10px;}
+
+#header .calendar p.day {float:right; width:45px; height:45px; background: #00346a url(../gmi/cni/calendar_icon.png) no-repeat center 8px; border-radius: 50%; text-align: center;}
+#header .calendar p.day span {display: block; color: #fff; font-weight:600; font-size: 80%; margin-top: 19px;}
+
+
+/* container */
+#container {width:100%; overflow: hidden;}
+
+/* footer */
+#footer {width:100%; overflow: hidden; border-top:1px solid #dddddd; background: #ececec;}
+#footer .link {width:100%; background: #fff;}
+#footer .link ul {width:1200px; margin:0 auto; border-bottom:1px solid #dddddd;}
+#footer .link ul li {display:inline-block; padding: 6px 0 9px 0; margin-right:25px;}
+#footer .link ul li a {font-size:95%; letter-spacing: -1px;}
+#footer .copyright {width:1200px; margin:0 auto; padding:20px 0 30px;}
+#footer .copyright address,
+#footer .copyright span {font-size:90%; color: #7f7f7f;}
+#footer .copyright address {font-style:normal; display:inline-block; margin-right:10px;}
+#footer .copyright span:nth-of-type(2) {display:block;}
+
+/********************** 1240px **********************/
+@media all and (max-width:1240px){
+#header,
+#footer .link ul,
+#footer .copyright {width:100%;}
+}
+
