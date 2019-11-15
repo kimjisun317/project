@@ -43,7 +43,7 @@
 /* footer */
 #footer {width:100%; overflow: hidden; background: #e6e6e6;}
 .footer_con {width:1350px; margin:0 auto; padding: 25px 0;}
-#footer a.logo {float:left; display:block; margin-top:5px;}
+#footer a.logo {float:left; display:block; margin-top:8px;}
 #footer a.logo img {margin-right:10px;}
 #footer .viewer {float:right;}
 #footer .viewer span {float:left; display:block; font-size:90%; color: #717171; margin:10px 15px 0 0;}
