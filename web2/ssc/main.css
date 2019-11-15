@@ -1,7 +1,6 @@
 @charset "utf-8";
 
-/* h2 {font-size:190%; color: #101010; text-align: center; letter-spacing: -1.5px; background: url(../gmi/main/main_h2.gif) no-repeat center top; padding-top:16px; margin:0 auto 30px;}
- */
+h2 {font-size:290%; font-weight:300; color: #000;}
 
 /* main_visual */
 .main_visual {position: relative; overflow:hidden; width:100%; height:auto; margin:0;}
@@ -59,12 +58,8 @@
 .schedule_poster ul li.later-day {background: #fff; opacity: 0.3;}
 .schedule_poster ul li.later-day:hover {opacity: 1;}
 
-
 .schedule_poster ul span.d-day {position: absolute; left:0; top:0; width:53px; height:60px; background: url(../gmi/main/dday_bg.png) no-repeat left top; text-align: center; font-size:90%; padding-top:15px; color:#fff; z-index: 3;}
 .schedule_poster ul span.l-day {position: absolute; left:0; top:0; width:53px; height:60px; background: url(../gmi/main/dday_bg_black.png) no-repeat left top; text-align: center; font-size:90%; padding-top:15px; color:#fff; z-index: 3;}
-
-
-
 
 .schedule_poster ul li img {height:386px;}
 .schedule_poster ul li p.black {position: absolute; left:0; top:0; display: block; width:100%; height:386px; background: linear-gradient(to top, #000, transparent 70%); z-index: 2;}
@@ -76,14 +71,85 @@
 .schedule_poster .on p {display:block; width:100%; font-size:170%; font-weight:500; margin-bottom: 10px;}
 .schedule_poster .on span {display:inline-block; width:26px; height:26px; color: #fff; background: #b9b9b9; border-radius: 50%; text-align: center; line-height:28px; font-weight:500; font-size:60%; margin-left:7px; vertical-align: top;} 
 
+/* media */
+.media {width:100%; height:auto; padding: 80px 0; overflow: hidden; background: #f9f9f9; text-align: center; }
+.media h2 {font-size: 220%; color: #333; font-weight:500; margin-bottom:45px;}
+.media_list {width:1350px; margin:0 auto; position: relative;}
+.media_list ul {width:100%;}
+.media_list li {float:left; width:23.87%; height:325px; margin-left:1.5%; position: relative; z-index: 1;}
+.media_list li:hover {opacity: 0.5;}
+.media_list li:nth-of-type(1) {margin-left:0;}
 
-/********************** 1240px **********************/
-@media all and (max-width:1240px){
-.thema_list,
-.product_list,
-.calendar,
-.plan,
-.sercive_list {width:100%;}
+.media_list li.rec_media {border:5px solid #e3bdbd; background: #fff;}
+.media_list li.rec_media .text dt {color: #ee2d2e;}
+.media_list li.rec_media .text dt span.underline {border:3px solid #e3bdbd;}
+.media_list li.rec_media .text dd {color: #333;}
+.media_list li.stand_media {border:5px solid #cdd8e3; background: #fff;}
+.media_list li.stand_media .text dt {color: #29304a;}
+.media_list li.stand_media .text dt span.underline {border:3px solid #cdd8e3;}
+.media_list li.stand_media .text dd {color: #333;}
+
+.media_list li .text {position: absolute; width:100%; height:100%; left:0; top:0;   z-index: 2;}
+.media_list li .text p.black {width:100%; height:100%; background: #000; opacity: 0.6;}
+.media_list li .text dl {position: absolute; left:0; right:0; top:28%; margin:0 auto; z-index: 3;}
+.media_list li .text dt {width:100%; padding: 0 12%; color: #fff; font-size:160%; line-height:34px; word-break: keep-all;}
+.media_list li .text dt span.underline {width: 175px; display:block; border-radius: 5px; border:3px solid #fff; margin:15px auto 0;}
+.media_list li .text dd {color: #fff; margin-top:20px; font-size:110%; line-height: 26px;}
+.media_list li .text p.state {position: absolute; top:15px; right:15px;  z-index: 4;}
+.media_list li .text p span {float:left; margin-left:5px; display:block; width:40px; height:40px; border-radius: 50%; color: #fff; font-size:90%; line-height: 40px;}
+span.rec {background:  #ee2d2e;}
+span.stand {background:  #00346a;}
+span.end {background:  #808080;}
+span.edu {background:  #000;}
+
+.media_list p.counter {float:left; width:100%; margin-top:30px; color: #959595; font-size:90%;}
+.media_list p.counter span {font-size:120%;}
+
+.media_list a.media_prev {position: absolute; left:-60px; top:138px; display:block; width:29px; height:50px; background: url(../gmi/main/media_prev.png) no-repeat left top; text-indent:-9999px;}
+.media_list a.media_next {position: absolute; right:-60px; top:138px; display: block; width:29px; height:50px; background: url(../gmi/main/media_next.png) no-repeat left top; text-indent:-9999px;}
+
+/* village_media */
+.village_media {width:100%; height:400px; margin:0 auto; text-align: center; background: url(../gmi/main/village_media_bg.jpg) no-repeat center top; }
+.village_media h2 {color: #fff; padding-top:80px;}
+.village_media span {display:block; margin-top:25px; color: #fff; font-size:100%; line-height: 26px;}
+.village_media p {margin-top:50px;}
+.village_media p a {display:inline-block; border:1px solid #fff; font-size:90%; width:auto; height:33px; line-height:33px; color: #fff; padding:0 30px; border-radius: 25px; margin:0 2px;}
+.village_media p a:hover {background: #40bac1; border:1px solid #40bac1; text-decoration: none;}
+
+/* rental */
+.rental {width:100%; height:610px; margin: 0 auto; background: url(../gmi/main/rental_bg.jpg) no-repeat center top;}
+.banner_list {position: relative; width:1350px; margin:0 auto; }
+.banner_list h2 {font-weight: 500; margin-bottom:20px;}
+.rental_equip {position: absolute; left: 165px; top: 100px;}
+.rental_place {position: absolute; right: 70px; top: 295px; text-align: right;}
+.rental_place h2,
+.rental_place p.text,
+.banner_list .rental_place a.btn {color: #fff;}
+.banner_list .rental_place a.btn {background: url(../gmi/main/mbtn_arr_on.png) no-repeat 85% 50%;}
+.banner_list .rental_place a.btn:hover {background: #fff url(../gmi/main/mbtn_arr_off.png) no-repeat 85% 50%; color: #000; border:2px solid #fff;}
+
+.banner_list p.text {display:block; line-height: 27px; margin-bottom:20px;}
+.banner_list a.btn {display:inline-block; height:38px; line-height: 38px; color: #454545; border:2px solid #b7b7b7; border-radius:25px; padding: 0 84px 0 30px; background: url(../gmi/main/mbtn_arr_off.png) no-repeat 85% 50%;}
+.banner_list a.btn:hover {border:2px solid #000; color: #fff; background: #000 url(../gmi/main/mbtn_arr_on.png) no-repeat 85% 50%; text-decoration: none;}
+.banner_list p.photo {margin-top:65px;}
+.banner_list p.photo a {float:left; display:block; border-top:6px solid #fff; border-left:6px solid #fff; border-right:6px solid #fff;  box-shadow: 9px 12px 20px rgba(0, 0, 0, 0.2) ; -webkit-box-shadow: 9px 12px 20px rgba(0, 0, 0, 0.2)  ; 
+-moz-box-shadow: 9px 12px 20px rgba(0, 0, 0, 0.2); background: #fff;}
+.banner_list p.photo a:nth-of-type(1) {margin-right:20px;}
+.banner_list p.photo a img:hover {opacity: 0.5;}
+.banner_list p.photo a span{display:block; height:50px; line-height: 50px; background: #fff; text-align: center;}
+
+/* experience */
+.experience {width:100%; height:550px; margin: 0 auto; background: url(../gmi/main/experience_bg.jpg) no-repeat center top;}
+.experience .banner_list {padding: 150px 0 0 25px;}
+.experience .banner_list a.btn {border:2px solid #000; color: #fff; background: #000 url(../gmi/main/mbtn_arr_on.png) no-repeat 85% 50%;}
+.experience .banner_list a.btn:hover {color: #454545; border:2px solid #b7b7b7; background: url(../gmi/main/mbtn_arr_off.png) no-repeat 85% 50%;}
+
+/********************** 1345px **********************/
+@media all and (max-width:1345px){
+.notice_list,
+.schedule,
+.media_list,
+.banner_list {width:100%;}
 }
 
 
