@@ -65,9 +65,9 @@
 .portfolio_list li {display:inline; float:left; width: 32%; height:auto; margin:0; padding:0; left:0; top:0 !important;}
 .portfolio_list li:hover {opacity: 0.5;}
 .portfolio_list li:nth-child(2) {margin: 0 2%;}
-.portfolio_list li a {display:inline-block; width:100%;}
+.portfolio_list li a {display:inline-block; width:100%; text-align: left; color: #888; font-size:95%; letter-spacing: -1px;}
 .portfolio_list li a img {width:100%; height:auto;}
-.portfolio_list li span {display: block; margin-top:20px;}
+.portfolio_list li span {display: block; margin:20px 0px 2px 0px; font-weight:600; color: #000; font-size:115%;}
 
 
 /* profile */
