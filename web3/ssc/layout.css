@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* skip-go */
+#skip-go {display:block;}
+#skip-go dt {position:absolute; top:0; left:-1000px;}
+#skip-go dd a {display:block; font-weight:bold; position:absolute; top:0; left:-1000px; font-size:120%; text-align:center; background-color:#000; z-index:1000;} 
+#skip-go dd a:hover, 
+#skip-go dd a:active, 
+#skip-go dd a:focus{left:0; height:40px; width:100%; line-height:40px; color:#fff !important;}
+
+#wrap {width:100%; overflow:hidden;}
+
+/* header */
+#header {position: fixed; width:100%; height:90px; top:0; background: #fff; z-index: 1000;}
+.header_area {position:relative; top:0px; width:1250px; margin:0px auto;}
+#header h1 {display:inline-block; margin-top: 28px;}
+#header h1 a {width:169px; height:30px;}
+#header a:hover {opacity: 0.5;}
+
+.gnb {float:right; margin-top:28px; }
+.gnb li {float:left; display: inline; padding:0px 25px;}	  
+.gnb li:last-child{padding:0px 0 0 25px;}
+.gnb li a {display:block; font-size:125%; color:#444444;}
+	
+
+/* container */
+#container {width:100%; margin-top:90px; overflow: hidden;}
+
+/* footer */
+#footer {width:100%; overflow: hidden; background: #343434; text-align: center; padding:30px 0;}
+#footer address,
+#footer span {font-size:90%; margin: 4px 0; color: #a3a3a3;}
+#footer address {font-style:normal; display:inline-block; margin-right:10px;}
+#footer span:nth-of-type(2) {display:block;}
+
+/********************** 1250px **********************/
+@media all and (max-width:1250px){
+#header {width:100%;}
+}
+
