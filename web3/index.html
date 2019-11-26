@@ -158,17 +158,16 @@
 					<div class="agree">
 						<input type="checkbox" name="agree" id="agree" />
 						<label for="agree">개인정보 수집에 동의합니다.</label>
-						<a href="#ash" onclick="allsh_View('show')"class="allsh_open">[보기]</a>			
+						<a href="#ash" onclick="layer_View('show')" class="layer_View_open">[보기]</a>			
 
 						<!-- 레이어버튼_start -->
-						<div class="allsh_layer" id="allsh_box" style="display:none;">				
-							<div class="allsh_cont">
-							<h5>개인정보 수집 및 이용에 대한 안내</h5>
-								<div class="ash_con">
-									<p>넷플러스는 귀하의 개인정보보호를 매우중요시하며,「정보통신망이용촉진등에관한법률」을준수하고있습니다. <br>넷플러스의개인정보보호방침을 통하여귀하께서 제공하시는개인정보가 어떠한 용도와 방식으로이용되고 있으며개인정보보호를 위해 어떠한 조치가취해지고 있는지알려드립니다.</p>
-									<dl>
+						<div class="layer_View_cont" id="layer_View_box" style="display:none;">				
+							<div class="layer_View_inner">
+							<h4>개인정보 수집 및 이용에 대한 안내</h4>
+								<p>넷플러스는 귀하의 개인정보보호를 매우중요시하며,「정보통신망이용촉진등에관한법률」을준수하고있습니다. <br>넷플러스의개인정보보호방침을 통하여귀하께서제공하시는개인정보가 어떠한 용도와 방식으로이용되고 있으며개인정보보호를 위해 어떠한 조치가취해지고 있는지알려드립니다.</p>
+								<dl>
 									<dt>개인정보의 수집 및 이용목적</dt>
-									<dd class="mar_b20">넷플러스는 프로젝트의뢰하고자하는 이용자의 확인 및 마케팅 자료로써귀하에게 최적의서비스를 제공하기 위한 목적으로귀하의 개인정보를수집ㆍ이용하고 있습니다.</dd>
+									<dd class="mar_b20">넷플러스는 프로젝트의뢰하고자하는 이용자의 확인 및 마케팅 자료로써귀하에게 최적의서비스를 제공하기 위한 목적으로 귀하의 개인정보를수집ㆍ이용하고 있습니다.</dd>
 			
 									<dt>수집하는 개인 정보의 항목</dt>
 									<dd>회사명, 담당자 성명 : 상담 신청 등의서비스이용에 따른 본인 확인 절차에 이용</dd>
@@ -177,14 +176,13 @@
 			
 									<dt>개인정보의 보유 및 이용기간</dt>
 									<dd class="mar_b20">이용자의 개인정보는원친적으로개인정보의 수집 및 이용목적이 달성되면지체 없이 파기합니다.</dd>
-									</dl>
-								</div>
+								</dl>
 							</div>
-							<span class="close"><a href="#ash"onclick="allsh_Vie('hide');">창 닫기</a></span>
+							<a href="#ash" onclick="layer_View('hide');" class="layer_View_close">창 닫기</a>
 						</div> 
 						<!-- 레이어버튼_end -->
 
-						<a href="javascript:confirmationwrite();" class="agree_btn">문의하기</a>		
+						<a href="#" class="agree_btn">문의하기</a>		
 					</div>
 				</div>
 				<!-- inq_end -->
