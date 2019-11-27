@@ -24,8 +24,7 @@
 
 /* mobile_menu */
 .btn_menu,
-.mobile_menu,
-.mobile_menu .btn_menu.close {display:block;}
+.mobile_menu {display:none;}
     
 /* container */
 #container {width:100%; margin-top:90px; overflow: hidden;}
@@ -57,6 +56,7 @@
 .gnb {display: none;}
 
 /* mobile_menu */
+.btn_menu {display:block;}
 #header .mobile_menu a.btn_menu.close:hover {opacity: 1;}
 .btn_menu.open {position:absolute; top:18px; left:20px; width:45px;}
 .btn_menu.close {position:absolute; top:0px; right:-75px; width:75px;}
