@@ -44,7 +44,7 @@ function more() {
 		// Load portfolio
 		if (obj.hasClass('btn-load-portfolio')) {
 		   if (!$('.load-portfolio-box').hasClass('open')) {
-			  $('.load-portfolio-box').slideToggle(1000);
+			  $('.load-portfolio-box').slideToggle(100);
 			  setTimeout (function () {
 				 $('.load-portfolio-box').addClass('open');
 			  }, 700);

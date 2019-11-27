@@ -54,6 +54,7 @@
 
 /* container */
 #container {margin-top:80px;}
+#footer address, #footer span {display:block;}
 
 
 }
