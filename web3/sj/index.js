@@ -41,32 +41,17 @@ function more() {
 		   obj.removeClass('active');
 		}, 1500);
   
-		// Load Boats
-		if (obj.hasClass('btn-load-boats')) {
-		   if (!$('.load-boats-box').hasClass('open')) {
-			  $('.load-boats-box').slideToggle(1000);
+		// Load portfolio
+		if (obj.hasClass('btn-load-portfolio')) {
+		   if (!$('.load-portfolio-box').hasClass('open')) {
+			  $('.load-portfolio-box').slideToggle(1000);
 			  setTimeout (function () {
-				 $('.load-boats-box').addClass('open');
-			  }, 700);
-		   }
-		}
-  
-		// Load Boats
-		if (obj.hasClass('btn-load-destination')) {
-		   if (!$('.load-destinations-box').hasClass('open')) {
-			  $('.load-destinations-box').slideToggle(1000);
-			  setTimeout (function () {
-				 $('.load-destinations-box').addClass('open');
+				 $('.load-portfolio-box').addClass('open');
 			  }, 700);
 		   }
 		}
 	 });
 
-	 $(document).ready(function () {
-		setTimeout(function () {
-		   $('body').addClass('dom-ready');
-		}, 300);
-	 });
 }
 
 

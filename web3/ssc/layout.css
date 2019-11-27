@@ -33,8 +33,28 @@
 #footer address {font-style:normal; display:inline-block; margin-right:10px;}
 #footer span:nth-of-type(2) {display:block;}
 
-/********************** 1250px **********************/
-@media all and (max-width:1250px){
-#header {width:100%;}
+/********************** 1450px **********************/
+@media all and (max-width:1450px){
+.header_area {width:100%; padding:0 20px;}
 }
 
+/********************** 1023px **********************/
+@media all and (max-width:1023px){
+
+}
+
+
+/********************** 768px **********************/
+@media all and (max-width:768px){
+/* header */
+#header {height:80px;}
+#header h1 {margin-top: 24px;}
+.header_area {text-align: center;}
+.gnb {display: none;}
+
+/* container */
+#container {margin-top:80px;}
+
+
+}
+    
