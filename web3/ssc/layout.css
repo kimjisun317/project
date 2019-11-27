@@ -21,8 +21,12 @@
 .gnb li {float:left; display: inline; padding:0px 25px;}	  
 .gnb li:last-child{padding:0px 0 0 25px;}
 .gnb li a {display:block; font-size:125%; color:#444444;}
-	
 
+/* mobile_menu */
+.btn_menu,
+.mobile_menu,
+.mobile_menu .btn_menu.close {display:block;}
+    
 /* container */
 #container {width:100%; margin-top:90px; overflow: hidden;}
 
@@ -40,7 +44,7 @@
 
 /********************** 1023px **********************/
 @media all and (max-width:1023px){
-
+.gnb li {padding: 0 20px;}
 }
 
 
@@ -52,9 +56,33 @@
 .header_area {text-align: center;}
 .gnb {display: none;}
 
+/* mobile_menu */
+#header .mobile_menu a.btn_menu.close:hover {opacity: 1;}
+.btn_menu.open {position:absolute; top:18px; left:20px; width:45px;}
+.btn_menu.close {position:absolute; top:0px; right:-75px; width:75px;}
+
+.mobile_menu {display:none; position:fixed; left:-270px; top:0px; width:100%; height:100%; background:url(../gmi/cni/bg_black.png) repeat left center;  z-index:1001; overflow-y:auto;}
+
+.mobile_menu div {position:absolute; top:0px; left:0px; width:220px; height:1300px; background:#2e2f31; z-index:1002;}
+.mobile_menu p.logo {margin-top:0px; width:100%; /*background:#000;*/ padding:20px 0px; text-align:center; border-bottom:1px solid #414244;}
+.mobile_menu p.logo img {width:65%;}
+.mobile_menu ul li a {display:block; color:#fff; padding:9px 5px 9px 15px; font-size:120%; text-decoration:none; border-bottom:1px solid #414244; background:#2e2f31; }
+
+/* 2dep_menu
+.mobile_menu .menu_sub li {background:#202020;}
+.mobile_menu .menu_sub > li > a {padding:9px 5px 9px 25px; font-weight:500; color:#cccbcb; border-bottom:1px solid #343434; background:url(../gmi/cni/all_menu_off2.png) no-repeat 185px center; background-size:9px;}
+.mobile_menu .menu_sub > li > a.on {color:#5da9ff; background:url(../gmi/cni/all_menu_on2.png) no-repeat 185px center; background-size:9px;}
+.mobile_menu .menu_sub > li > a:hover, 
+.mobile_menu .menu_sub > li > a:focus {color:#5da9ff; background:url(../gmi/cni/all_menu_on2.png) no-repeat 185px center; background-size:9px;}
+.mobile_menu .menu_sub > li.no-menu > a {background:none;}
+.mobile_menu .menu_sub > li.no-menu > a.on {background:none;}
+.mobile_menu .menu_sub li ul li {background:#383838;}
+.mobile_menu .menu_sub li ul li  a {padding:7px 5px 8px 40px;  color:#cccbcb; border-bottom:1px solid #343434;} */
+
 /* container */
 #container {margin-top:80px;}
 #footer address, #footer span {display:block;}
+
 
 
 }

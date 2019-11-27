@@ -4,7 +4,11 @@ $(document).ready(function(){
 	$("#portfolio").load("cni/portfolio.html", function() {
 		tab('#tab',0);
 		more();
+		menu();
 	}); 
+	
+	
+	
 	
  });   
 
@@ -61,3 +65,68 @@ function layer_View(status){
 	eval('$("#layer_View_box").' + status + '();');
 }
 
+
+function menu() {	
+	
+	/* var handler = function(e){
+		e.preventDefault();
+	} */
+	
+	function wrapWindowByMask(){
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+		
+		$('#mask').css({'width':maskWidth,'height':maskHeight});  
+		$('#mask').fadeTo("slow",0.6);
+
+	}
+
+	var allmenuWidth = $(window).width();
+	$('.mobile_menu').css({'left' : -allmenuWidth});
+	$(".btn_menu.open").click(function(e){
+		
+
+		$("body").css("overflow-y","hidden");
+		$(".mobile_menu").css("display","block");
+		
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active");
+			//$('#wrap').css('height','100%');
+			e.preventDefault();
+			$('#mask').hide();
+			$(".mobile_menu").animate({left:-allmenuWidth},200);
+
+		} else {
+			$(this).addClass("active");
+			e.preventDefault();
+			wrapWindowByMask();
+			$('#mask').css({'background' : 'none' , "margin-left" : "210px"});
+			$(".mobile_menu").animate({left:0},200);
+		}
+
+		return false;
+	});
+	$('.btn_menu.close').click(function(){
+		$("body").css("overflow-y","auto"); /*원래 overflow*/
+		$(".mobile_menu").animate({left:-allmenuWidth},200);
+		$(".mobile_menu").css("display","none");
+		$(".btn_menu.open").removeClass("active");
+		$('#mask').css({'background' : '#000' , "margin-left" : "0px"});
+		$('#mask').hide();
+		
+		return false;
+	});
+	
+	
+	$('#mask').click(function () {  
+		$(this).css({'background' : '#000' , "margin-left" : "0px"});
+		$(this).hide();
+		$("body").css("overflow","auto");
+		$(".mobile_menu").animate({left:-allmenuWidth},200);
+		$(".mobile_menu").css("display","none");
+		$(".btn_menu.open").removeClass("active");
+		$(".search_open").removeClass("active");
+		$(this).parent().parent().find(".search_area").hide();
+		$(window).unbind('touchmove', handler);
+	});
+};
