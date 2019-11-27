@@ -76,8 +76,9 @@ function menu() {
 		var maskHeight = $(document).height();
 		var maskWidth = $(window).width();
 		
+		/* 메뉴여백에 배경 있을 경우 
 		$('#mask').css({'width':maskWidth,'height':maskHeight});  
-		$('#mask').fadeTo("slow",0.6);
+		$('#mask').fadeTo("slow",0.6); */
 
 	}
 
@@ -106,6 +107,7 @@ function menu() {
 
 		return false;
 	});
+
 	$('.btn_menu.close').click(function(){
 		$("body").css("overflow-y","auto"); /*원래 overflow*/
 		$(".mobile_menu").animate({left:-allmenuWidth},200);
@@ -118,6 +120,7 @@ function menu() {
 	});
 	
 	
+	/* 메뉴 여백 클릭할 경우  
 	$('#mask').click(function () {  
 		$(this).css({'background' : '#000' , "margin-left" : "0px"});
 		$(this).hide();
@@ -128,5 +131,5 @@ function menu() {
 		$(".search_open").removeClass("active");
 		$(this).parent().parent().find(".search_area").hide();
 		$(window).unbind('touchmove', handler);
-	});
+	}); */
 };
