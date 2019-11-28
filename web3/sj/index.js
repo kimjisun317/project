@@ -1,10 +1,11 @@
 $(document).ready(function(){
-	$("#header").load("cni/header.html");
+	$("#header").load("cni/header.html", function () {
+		mobile_menu();
+	});
 	$("#footer").load("cni/footer.html");
 	$("#portfolio").load("cni/portfolio.html", function() {
 		tab('#tab',0);
 		more();
-		menu();
 	}); 
 	
 	
@@ -65,8 +66,8 @@ function layer_View(status){
 	eval('$("#layer_View_box").' + status + '();');
 }
 
-
-function menu() {	
+//모바일 메뉴
+function mobile_menu() {	
 	
 	/* var handler = function(e){
 		e.preventDefault();
