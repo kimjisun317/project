@@ -249,6 +249,17 @@ article {padding: 50px 20px;}
 .calendar_day dd span:nth-of-type(1) {font-size: 120%;}
 .calendar_day dd span:nth-of-type(2) {font-size: 360%;}
 
+/* guide */
+ul.guide_list dd.thema_icon {text-align: left;}
+ul.guide_list dd.thema_icon > span {width: 100%;}
+ul.guide_list dd.thema_icon a:nth-of-type(1) {margin-left:0;}
+
+.review_list li {padding: 10px 10px;}
+.review_list dd.photo {width:30%;}
+.review_list dt.title {width: 65%; margin-left: 35%;}
+.review_list dt.title a span {margin-top:5px;}
+.review_list dd.thema_icon {width: 100%; margin: 5px 0 0 0;} 
+
 
 /* main_visual 
 .main_visual {width: auto; height: 300px;}
@@ -276,6 +287,17 @@ h2 span {display:none;}
 .calender_data {width: 75%;}
 .calender_data .list {display:none;}
 .calender_data .content {width:100%;} 
+
+/* guide */
+.plan h2 span {display:none;}
+.plan span.more {top: 20px;}
+.guide {width: 50%;}
+ul.guide_list li {width:100%;}
+ul.guide_list li:first-child {margin:0;}
+ul.guide_list li:nth-of-type(2) {display:none;}
+.review {width: 46%;}
+.review_list dt.title a span {margin-top:0;}
+.review_list dd.thema_icon {width:60%; margin:0px 0 0 35%;}
 
 }
 
@@ -307,5 +329,15 @@ h2 span {display:none;}
 .calender_data {width:100%;}
 .calender_data .day {display:none;}
 .calender_data .content {padding-bottom: 15px;}
+
+/* guide */
+.guide {width: 100%; margin-bottom:30px;}
+ul.guide_list {height: auto;}
+ul.guide_list dd.photo img {width:100%;}
+ul.guide_list dd.thema_icon {margin-bottom:10px;}
+.review {width: 100%; height: auto;}
+.review_list dd.photo {width:110px;}
+.review_list dt.title,
+.review_list dd.thema_icon {margin-left: 130px;}
 
 }
