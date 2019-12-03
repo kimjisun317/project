@@ -6,14 +6,16 @@ h2 span{display:block; font-size:50%; color: #666; margin-top:3px;}
 .more a {font-size:80%; color: #989898; padding-right:10px; background: url(../gmi/main/more.gif) no-repeat right 7px;}
 .more a:hover {color: #fb5c05;}
 
+article {padding: 80px 0;}
+
 /* main_visual */
-.main_visual {overflow:hidden; position: relative; width:100%; height:440px; }
-.main_visual p {position: absolute; top:140px; left:0; right:0; width: auto; font-size: 220%; font-weight:400; color: #fff; text-align: center; letter-spacing: -1px; z-index: 100;}
+.main_visual {overflow:hidden; position: relative; width:100%; padding: 0px; /* height:440px; */ }
+.main_visual p {position: absolute; top:30%; left:0; right:0; width: auto; font-size: 220%; font-weight:400; color: #fff; text-align: center; letter-spacing: -1px; z-index: 100;}
 .main_visual p span {display: block; font-size: 130%; color: #fff;}
 .main_visual p span strong {font-size: 100%; color: #fff;}
 
 /* thema */
-.thema {overflow:hidden; width:100%; height:auto; background: #f7f7f7; padding: 80px 0;}
+.thema {overflow:hidden; width:100%; height:auto; background: #f7f7f7; }
 .thema_list {width:1200px; height:auto; margin:0 auto;}
 .thema_list ul {width:100%;}
 .thema_list li {float:left; width:23.41%; height:370px; overflow: hidden; margin-left:2.12%;}
@@ -38,7 +40,7 @@ h2 span{display:block; font-size:50%; color: #666; margin-top:3px;}
 .thema_list dd.thema_icon a:nth-of-type(2):hover {background: url(../gmi/main/thema_icon02.gif) no-repeat left -18px;}
 
 /* product */
-.product {overflow:hidden; width:100%; height:auto; padding: 80px 0;}
+.product {overflow:hidden; width:100%; height:auto; }
 .product_list {width:1200px; height:875px; overflow:hidden; margin:0 auto; position: relative;}
 .product_list a{margin:0 0 25px 0; padding:0; background-size: cover; letter-spacing: -1px; position: relative; overflow: hidden;}
 .product_list a:hover {text-decoration: none; }
@@ -53,20 +55,20 @@ h2 span{display:block; font-size:50%; color: #666; margin-top:3px;}
     -o-transform: scale(1.1,1.1);
     -ms-transform: scale(1.1,1.1);
     transform: scale(1.05,1.05);}
-.product_list a p {position: absolute; left : 40px; top: 40px; color: #fff; z-index: 10;}
-.product_list a p span {display:block; color: #fff; font-size:210%; margin-bottom:5px;}
-.product_list a span.inquiry {float:left; padding: 5px 30px 7px 30px; margin-top: 20px; color: #fff; border:1px solid #fff; font-size:95%; border-radius: 3px;}
+.product_list a p {position: absolute; left : 40px; top: 40px; color: #fff; z-index: 10; font-size:210%;}
+.product_list a p span {display:block; color: #fff;  margin-top:5px;}
+.product_list a span.inquiry {float:left; padding: 5px 30px 7px 30px; margin-top: 20px; color: #fff; border:1px solid #fff; font-size:45%; border-radius: 3px;}
 .product_list a span.inquiry:hover {background: #fff; color: #8f94a7;}
-.product_list a:nth-of-type(1) {float:left; width:66%; height:275px; /* background: url(../gmi/main/product_img01.jpg) no-repeat left top; */}
-.product_list a:nth-of-type(2) {float:right; width:32%; height:275px; /* background: url(../gmi/main/product_img02.jpg) no-repeat left top; */}
-.product_list a:nth-of-type(3) {float:left; width:32%; height:275px; margin-right:2%; /* background: url(../gmi/main/product_img03.jpg) no-repeat left top; */}
-.product_list a:nth-of-type(4) {float:left; width:32%; height:275px; margin-right:2%; /* background: url(../gmi/main/product_img04.jpg) no-repeat left top; */}
-.product_list a:nth-of-type(5) {position: absolute; right:0; bottom:0; width:32%; height:575px; margin:0; /* background: url(../gmi/main/product_img05.jpg) no-repeat left top; */}
-.product_list a:nth-of-type(6) {float:left; width:32%; height:275px; margin-right:2%; /* background: url(../gmi/main/product_img06.jpg) no-repeat left top; */}
-.product_list a:nth-of-type(7) {float:left; width:32%; height:275px; margin-right:2%; /* background: url(../gmi/main/product_img07.jpg) no-repeat left top; */}
+.product_list a:nth-of-type(1) {float:left; width:66%; height:275px;}
+.product_list a:nth-of-type(2) {float:right; width:32%; height:275px;}
+.product_list a:nth-of-type(3) {float:left; width:32%; height:275px; margin-right:2%;}
+.product_list a:nth-of-type(4) {float:left; width:32%; height:275px; margin-right:2%;}
+.product_list a:nth-of-type(5) {position: absolute; right:0; bottom:0; width:32%; height:575px; margin:0;}
+.product_list a:nth-of-type(6) {float:left; width:32%; height:275px; margin-right:2%;}
+.product_list a:nth-of-type(7) {float:left; width:32%; height:275px; margin-right:2%;}
 
 /* festival */
-.festival {overflow:hidden; width:100%; height:auto; padding: 80px 0; background: #ececec;}
+.festival {overflow:hidden; width:100%; height:auto;  background: #ececec;}
 .calendar {width:1200px; height:260px; overflow:hidden; margin:0 auto;}
 .calendar_day {float:left; width:16%; height:100%; background: #ffffff; border:6px solid #f25600;}
 .calendar_day dt {width:100%; height:38%; padding:25px 0 0 17px; font-size:140%; letter-spacing: -1px; background: #f7f7f7; border-bottom: 1px dotted #a2a2a2;}
@@ -78,20 +80,21 @@ h2 span{display:block; font-size:50%; color: #666; margin-top:3px;}
 .calendar_day dd a:nth-of-type(2) {display:inline-block; width:19px; height:19px;background: url(../gmi/main/calendar_icon.gif) no-repeat -19px top; margin:3px 0 0 7px;}
 .calendar_day dd a:nth-of-type(1):hover {background: url(../gmi/main/calendar_icon.gif) no-repeat left -19px;}
 .calendar_day dd a:nth-of-type(2):hover {background: url(../gmi/main/calendar_icon.gif) no-repeat -19px -19px;}
+.calendar_day dd p {display:none;}
 
 .calender_data {float:left; width:84%; height:100%; border-right: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9;  background: #fff;}
-.calender_data .day {width:100%; height:31px; line-height:28px; background: #5e5e5e; padding-left: 37px;}
-.calender_data .day li {float:left; height:100%; padding: 0 8px;}
+.calender_data .day {display:inline-block; width:100%; line-height:28px; background: #5e5e5e; padding-left: 37px;}
+.calender_data .day li {float:left; height:100%; padding: 0 8px; line-height:31px; background: #5e5e5e;}
 .calender_data .day li a {color: #fff; font-size:90%;}
 .calender_data .day li:hover,
 .calender_data .day li.on {color: #fff; background:#f25600;}
 
 .calender_data .content {float:left; width:59%; padding-left:45px; letter-spacing: -1px;}
 .calender_data .content dl {width:100%; position: relative; margin-top:25px;}
-.calender_data .content dt {margin: 0 0 5px 24%;}
+.calender_data .content dt {margin: 0 0 5px 135px;}
 .calender_data .content dt a {display:block; width:85%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .calender_data .content dd.photo {position: absolute; left:0; top:0; margin:0; padding:0;}
-.calender_data .content dd {margin: 0 0 1px 24%; padding-left:9px; font-size:90%; color: #898989; background: url(../gmi/main/calender_dot.gif) no-repeat left 50%;}
+.calender_data .content dd {margin: 0 0 1px 135px; padding-left:9px; font-size:90%; color: #898989; background: url(../gmi/main/calender_dot.gif) no-repeat left 50%;}
 .calender_data .content dd span {font-size:100%;}
 
 .calender_data .list {float:left; width:41%; border-left:1px solid #f0f0f0; margin: 25px 0;}
@@ -101,7 +104,7 @@ h2 span{display:block; font-size:50%; color: #666; margin-top:3px;}
 .calender_data .list ul li a span {color: #a8a8a8; font-size:95%; padding-right:2px;}
 
 /* plan */
-.plan {width:1200px; height:auto; overflow:hidden; margin:80px auto;}
+.plan {width:1200px; height:auto; overflow:hidden; margin:0 auto;}
 .plan h2 {text-align: left; font-size:170%; background-position: left top;}
 .plan h2 span {display: inline; font-size:55%; margin-left:10px;}
 .plan span.more {position: absolute; right:0; top:30px; }
@@ -154,13 +157,13 @@ ul.guide_list dd.thema_icon a:nth-of-type(3):hover {background: url(../gmi/main/
 .review_list dd.thema_icon a:nth-of-type(2):hover {background: url(../gmi/main/thema_icon02.gif) no-repeat left -20px;}
 .review_list dd.thema_icon a:nth-of-type(3):hover {background: url(../gmi/main/thema_icon03.gif) no-repeat left -20px;}
 
-.reserve {overflow:hidden; width:100%; height:300px; text-align: center; background: url(../gmi/main/reserve_bg.jpg) no-repeat center top; background-size: cover;}
+.reserve {overflow:hidden; width:100%; height:300px; padding:0; text-align: center; background: url(../gmi/main/reserve_bg.jpg) no-repeat center top; background-size: cover;}
 .reserve p {color: #fff; font-size:215%; letter-spacing: -1.5px; margin:100px 0 20px;}
 .reserve a {color: #fff; font-size:130%; padding: 10px 40px;  letter-spacing: -1.5px; background: #566777;}
 .reserve a:hover {background: #95a1ad; }
 
 /* service */
-.service {overflow:hidden; width:100%; height:auto; padding: 80px 0;}
+.service {overflow:hidden; width:100%; height:auto; }
 .sercive_list {width:1200px; height:auto; overflow:hidden; margin:0 auto; }
 .service h2 {font-size: 160%; background: none; padding:0 0 10px 0; margin:0 0 15px 0;  border-bottom:1px solid #a4a4a4; text-align: left;}
 
@@ -199,6 +202,11 @@ ul.guide_list dd.thema_icon a:nth-of-type(3):hover {background: url(../gmi/main/
 .customer ul li a {width:49.5%; float:left; font-size:80%; padding: 5px 0 5px 15px; color: #545454; background: #e5e5e5 url(../gmi/main/customer_arr.gif) no-repeat 90% 50%; border:1px solid #d6d6d6; margin-top:20px;}
 .customer ul li a:nth-of-type(1) {margin-right: 1%;}
 
+/********************** 1400px **********************/
+@media all and (max-width:1400px){
+.main_visual p {font-size: 160%;}
+.bx-wrapper .bx-pager {bottom: 30px !important;}
+}
 
 /********************** 1240px **********************/
 @media all and (max-width:1240px){
@@ -207,9 +215,97 @@ ul.guide_list dd.thema_icon a:nth-of-type(3):hover {background: url(../gmi/main/
 .calendar,
 .plan,
 .sercive_list {width:100%;}
+
+article {padding: 50px 20px;}
+
+/* calender */
+.calender_data .day {padding:0px 10px;}
+.calendar_day {width: 20%;}
+
+.calender_data {width: 80%;}
+.calender_data .content {padding-left: 15px; width: 62%;}
+.calender_data .content dl {margin-top:10px;}
+.calender_data .content dl:first-child {margin-bottom:10px;}
+
+.calender_data .list {margin-top:5px; width: 38%;}
+.calender_data .list ul {margin-left: 15px;}
 }
 
 
 /********************** 1040px **********************/
 @media all and (max-width:1040px){
+
+/* product_list */
+.product_list {height: auto;}
+.product_list a {height:180px !important; margin-bottom: 15px;}
+.product_list a:nth-of-type(5) {height:375px !important; top: 195px;}
+.product_list a p {width:75%; left: 30px; top: 25px; font-size: 160%;}
+.product_list a p span {font-size:55%; line-height:18px;}
+.product_list a span.inquiry {padding: 5px 8px 7px; font-size: 50%;}
+
+
+/* calendar */
+.calendar_day dt {font-size: 130%; padding: 25px 0 0 10px;}
+.calendar_day dd span:nth-of-type(1) {font-size: 120%;}
+.calendar_day dd span:nth-of-type(2) {font-size: 360%;}
+
+
+/* main_visual 
+.main_visual {width: auto; height: 300px;}
+.bx-wrapper {height:100%;}
+.bx-wrapper img {width:auto !important; height:100% !important;}*/
+
+
+}
+
+/********************** 768px **********************/
+@media all and (max-width:768px){
+article {padding: 30px 20px;}
+h2 {font-size:150%; padding-top: 5px; margin: 0 auto 15px;}
+h2 span {display:none;}
+
+/* thema */
+.thema_list li {width:48.94%; height: auto; }
+.thema_list li:nth-of-type(3),
+.thema_list li:nth-of-type(4) {display: none;}
+.thema_list dl {padding-bottom:10px;}
+.thema_list dd.photo a img {width:100%;}
+
+/* calender */
+.calendar_day {width: 25%;}
+.calender_data {width: 75%;}
+.calender_data .list {display:none;}
+.calender_data .content {width:100%;} 
+
+}
+
+/********************** 640px **********************/
+@media all and (max-width:640px){
+/* main_visual */
+.main_visual p {font-size: 120%;}
+
+/* thema */ 
+.thema_list li {width:100%;}
+.thema_list li:nth-of-type(2) {display: none;}
+
+/* product_list */
+.product_list a {width:100% !important; height:30px !important; float:left !important; position: relative !important; margin:0;}
+.product_list a:nth-of-type(5) {height:30px !important; top:0;}
+.product_list a img {display:none;}
+.product_list a p {position: initial !important; color: #000; }
+.product_list a p span {display:none;}
+
+/* calendar */
+.calendar {height: auto;}
+.calendar_day {width:100%;}
+.calendar_day dt {padding: 5px 0; text-align: center;}
+.calendar_day dt span {display:inline; font-size:100%;}
+.calendar_day dd {margin:5px 0;}
+.calendar_day dd a {display:none !important;}
+.calendar_day dd span:nth-of-type(2) {display:inline; font-size:120%;}
+.calendar_day dd p {display:block; display: inline; font-weight:600; font-size:120%;}
+.calender_data {width:100%;}
+.calender_data .day {display:none;}
+.calender_data .content {padding-bottom: 15px;}
+
 }

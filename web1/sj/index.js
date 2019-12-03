@@ -18,10 +18,10 @@ $(document).ready(function(){
 	});
   });
 
-
+ /* menu */
   $(window).on('load resize', function(){	
 	// for Tab, Mobile
-	if($(window).width() <= 1023){
+	if($(window).width() <= 751){
 		$('.layerGnb').hide();
 		var cntW = $('.layerGnb .wrapCnt').width();
 
