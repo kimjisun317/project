@@ -158,7 +158,7 @@ ul.guide_list dd.thema_icon a:nth-of-type(3):hover {background: url(../gmi/main/
 .review_list dd.thema_icon a:nth-of-type(3):hover {background: url(../gmi/main/thema_icon03.gif) no-repeat left -20px;}
 
 .reserve {overflow:hidden; width:100%; height:300px; padding:0; text-align: center; background: url(../gmi/main/reserve_bg.jpg) no-repeat center top; background-size: cover;}
-.reserve p {color: #fff; font-size:215%; letter-spacing: -1.5px; margin:100px 0 20px;}
+.reserve p {color: #fff; font-size:215%; letter-spacing: -1.5px; margin:100px 0 20px 0;}
 .reserve a {color: #fff; font-size:130%; padding: 10px 40px;  letter-spacing: -1.5px; background: #566777;}
 .reserve a:hover {background: #95a1ad; }
 
@@ -247,7 +247,7 @@ article {padding: 50px 20px;}
 /* calendar */
 .calendar_day dt {font-size: 130%; padding: 25px 0 0 10px;}
 .calendar_day dd span:nth-of-type(1) {font-size: 120%;}
-.calendar_day dd span:nth-of-type(2) {font-size: 360%;}
+.calendar_day dd span:nth-of-type(2) {font-size: 360%; margin-top:10px;}
 
 /* guide */
 ul.guide_list dd.thema_icon {text-align: left;}
@@ -259,6 +259,23 @@ ul.guide_list dd.thema_icon a:nth-of-type(1) {margin-left:0;}
 .review_list dt.title {width: 65%; margin-left: 35%;}
 .review_list dt.title a span {margin-top:5px;}
 .review_list dd.thema_icon {width: 100%; margin: 5px 0 0 0;} 
+
+/* service */
+.service h2 {font-size: 140%;}
+.notice {width: 27%;}
+.notice ul li a {width: 97%;}
+.notice ul li span {display:none;}
+
+.faq {width: 35%; margin:0 3.5%;}
+.faq ul {padding: 0 1%;}
+.faq ul li a {font-size: 90%; letter-spacing:-2px;}
+
+.customer {width: 31%;}
+.customer ul li:nth-of-type(1) {margin-bottom:5px;}
+.customer ul li:nth-of-type(2),
+.customer ul li:nth-of-type(3),
+.customer ul li:nth-of-type(4) {font-size:90%; margin-bottom: 0px;}
+.customer ul li a {margin-top: 15px; text-align: center; padding: 3px 0; background: #e5e5e5; letter-spacing: -1px;}
 
 
 /* main_visual 
@@ -298,6 +315,12 @@ ul.guide_list li:nth-of-type(2) {display:none;}
 .review {width: 46%;}
 .review_list dt.title a span {margin-top:0;}
 .review_list dd.thema_icon {width:60%; margin:0px 0 0 35%;}
+
+/* reserve */
+.reserve p {font-size: 180%;}
+.reserve a {padding: 8px 35px;}
+
+
 
 }
 
@@ -339,5 +362,16 @@ ul.guide_list dd.thema_icon {margin-bottom:10px;}
 .review_list dd.photo {width:110px;}
 .review_list dt.title,
 .review_list dd.thema_icon {margin-left: 130px;}
+
+/* reserve */
+.reserve p {font-size: 160%; padding: 0 50px; margin: 15% 0 20px 0;}
+.reserve a {font-size: 110%; padding: 8px 35px;}
+
+/* service */
+.notice {width: 100%; margin-bottom:20px;}
+.faq {width:100%; margin: 0;}
+.customer {width:100%;}
+
+
 
 }
