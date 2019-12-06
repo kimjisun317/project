@@ -332,7 +332,7 @@ ul.guide_list li:nth-of-type(2) {display:none;}
 /********************** 640px **********************/
 @media all and (max-width:640px){
 /* main_visual */
-.main_visual p {font-size: 120%;}
+.main_visual p {font-size: 120%; padding: 0 50px;}
 
 /* thema */ 
 .thema_list li {width:100%;}
@@ -357,9 +357,9 @@ ul.guide_list li:nth-of-type(2) {display:none;}
 .calender_data {width:100%;}
 .calender_data .day {display:none;}
 .calender_data .content {padding-bottom: 15px;}
-.calender_data .content dt {margin: 0 0 0 65px; width: 80%;}
+.calender_data .content dt {margin: 0 0 0 70px; width: 80%;}
 .calender_data .content dt a {font-size:90%;}
-.calender_data .content dd {margin: 0 0 0 65px; width: 80%; font-size:85%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.calender_data .content dd {margin: 0 0 0 70px; width: 80%; font-size:85%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .calender_data .content dd.photo {width: 60px;}
 
 
