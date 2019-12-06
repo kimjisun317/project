@@ -9,7 +9,7 @@ h2 span{display:block; font-size:50%; color: #666; margin-top:3px;}
 article {padding: 80px 0;}
 
 /* main_visual */
-.main_visual {overflow:hidden; position: relative; width:100%; padding: 0px; /* height:440px; */ }
+.main_visual {overflow:hidden; position: relative; width:100%; padding: 0px; }
 .main_visual p {position: absolute; top:30%; left:0; right:0; width: auto; font-size: 220%; font-weight:400; color: #fff; text-align: center; letter-spacing: -1px; z-index: 100;}
 .main_visual p span {display: block; font-size: 130%; color: #fff;}
 .main_visual p span strong {font-size: 100%; color: #fff;}
@@ -235,6 +235,9 @@ article {padding: 50px 20px;}
 /********************** 1040px **********************/
 @media all and (max-width:1040px){
 
+/* main_visual */
+.main_visual p {top: 25%; font-size: 140%;}
+
 /* product_list */
 .product_list {height: auto;}
 .product_list a {height:180px !important; margin-bottom: 15px;}
@@ -278,10 +281,7 @@ ul.guide_list dd.thema_icon a:nth-of-type(1) {margin-left:0;}
 .customer ul li a {margin-top: 15px; text-align: center; padding: 3px 0; background: #e5e5e5; letter-spacing: -1px;}
 
 
-/* main_visual 
-.main_visual {width: auto; height: 300px;}
-.bx-wrapper {height:100%;}
-.bx-wrapper img {width:auto !important; height:100% !important;}*/
+
 
 
 }
@@ -291,6 +291,11 @@ ul.guide_list dd.thema_icon a:nth-of-type(1) {margin-left:0;}
 article {padding: 30px 20px;}
 h2 {font-size:150%; padding-top: 5px; margin: 0 auto 15px;}
 h2 span {display:none;}
+
+/* main_visual */ 
+.main_visual {width: auto; height: 250px;}
+.main_visual p {top: 30%;}
+
 
 /* thema */
 .thema_list li {width:48.94%; height: auto; }
@@ -352,6 +357,11 @@ ul.guide_list li:nth-of-type(2) {display:none;}
 .calender_data {width:100%;}
 .calender_data .day {display:none;}
 .calender_data .content {padding-bottom: 15px;}
+.calender_data .content dt {margin: 0 0 0 65px; width: 80%;}
+.calender_data .content dt a {font-size:90%;}
+.calender_data .content dd {margin: 0 0 0 65px; width: 80%; font-size:85%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.calender_data .content dd.photo {width: 60px;}
+
 
 /* guide */
 .guide {width: 100%; margin-bottom:30px;}
@@ -364,7 +374,8 @@ ul.guide_list dd.thema_icon {margin-bottom:10px;}
 .review_list dd.thema_icon {margin-left: 130px;}
 
 /* reserve */
-.reserve p {font-size: 160%; padding: 0 50px; margin: 15% 0 20px 0;}
+.reserve {height: 250px;}
+.reserve p {font-size: 160%; padding: 0 30px; margin: 15% 0 20px 0;}
 .reserve a {font-size: 110%; padding: 8px 35px;}
 
 /* service */

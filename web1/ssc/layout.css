@@ -92,7 +92,7 @@
 #header h1 {float:inherit; margin-top:13px; text-align: center;}
 #header h1 img {height: 35px;}
 
-#header .global {left:0; background: #f49821;}
+#header .global {left:0; background: #f49821; width:100%;}
 #header .global li {float:left; width:50%; margin:0;}
 #header .global li:first-child {border-right:1px solid #f7b764;}
 #header .global li:last-child {display:none;}
