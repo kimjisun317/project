@@ -21,7 +21,7 @@ $(document).ready(function(){
  /* menu */
   $(window).on('load resize', function(){	
 	// for Tab, Mobile
-	if($(window).width() <= 751){
+	if($(window).width() <= 768){
 		$('.layerGnb').hide();
 		var cntW = $('.layerGnb .wrapCnt').width();
 

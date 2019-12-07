@@ -85,7 +85,7 @@
 
 }
 /********************** 768px **********************/
-@media all and (max-width:768px){
+@media all and (max-width:785px){
 
 
 #header {width:100%; height:60px; overflow: hidden;}
