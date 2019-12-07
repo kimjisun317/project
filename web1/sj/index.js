@@ -1,8 +1,6 @@
 $(document).ready(function(){
-	$("#header").load("cni/header.html", function() {
-		/* js_gnb(); */
-	});
-	$("#footer").load("cni/footer.html");
+	$("#header").load("/cni/header.html");
+	$("#footer").load("/cni/footer.html");
 	
  });
 
@@ -18,8 +16,8 @@ $(document).ready(function(){
 	});
   });
 
- /* menu */
-  $(window).on('load resize', function(){	
+/* menu */
+$(window).on('load resize', function(){	
 	// for Tab, Mobile
 	if($(window).width() <= 768){
 		$('.layerGnb').hide();
