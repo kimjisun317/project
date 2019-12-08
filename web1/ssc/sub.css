@@ -6,6 +6,9 @@
 .sub_title p span {display: block; font-size: 130%; color: #fff; line-height:50px;}
 .sub_title p span strong {font-size: 100%; color: #fff;}
 .sub_visual_01 {background: url(../gmi/sub/sub_visual_01.jpg) no-repeat center top;}
+.sub_visual_02 {background: url(../gmi/sub/sub_visual_02.jpg) no-repeat center top;}
+.sub_visual_03 {background: url(../gmi/sub/sub_visual_03.jpg) no-repeat center top;}
+.sub_visual_04 {background: url(../gmi/sub/sub_visual_04.jpg) no-repeat center top;}
 
 .sub_head {width:1200px; margin:30px auto 30px;}
 .sub_head h3 {width:auto; font-size:180%; letter-spacing: -1px; display: inline;} 
