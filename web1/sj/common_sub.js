@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$("#header").load("/cni/header_sub.html");
-	$("#footer").load("/cni/footer.html");
+	$("#header").load("../cni/header_sub.html");
+	$("#footer").load("../cni/footer.html");
  });
 
 /* menu */
