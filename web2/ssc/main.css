@@ -146,26 +146,74 @@ span.edu {background:  #000;}
 
 /********************** 1350px **********************/
 @media all and (max-width:1350px){
-.notice_list,
 .schedule,
 .media_list,
-.banner_list {width:100%; padding: 0 0 0 20px;}
+.banner_list,
+.village_media {width:100%; padding: 0 20px;}
+.notice_list {width:100%; padding: 0 0 0 20px;}
 
 /* schedule */
 .schedule_poster ul li,
 .schedule_poster ul li img {height: auto;}
 .schedule_poster ul li p.black {height: 100%;}
 
+/* media */
+.media_list li {height: auto;}
+.media_list li .text dt {font-size: 135%; line-height:28px;}
+.media_list li .text dd {font-size: 95%; margin-top: 15px; line-height: 21px;}
+
+/* rental */
+.rental {background-position: -500px top;}
+.rental_equip {left: 40px;}
+.rental_place {right: 40px;}
 
 }
 
+/********************** 1200px **********************/
+@media all and (max-width:1200px){
+/* schedule */
+.schedule_poster .on {padding: 28px 0 0 15px;}
+.schedule_poster .on p {font-size: 140%; margin-bottom: 5px;}
+.schedule_poster ul li a:hover .on {height:100px;}
+
+
+
+
+
+}
 
 /********************** 1040px **********************/
 @media all and (max-width:1040px){
+
+h2 {font-size: 190%;}
+
+
 /* notice */
 .notice_list p a {float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .notice_list p span.day {display:none;}
 .notice a.campaign {font-size:110%;}
+
+/* schedule */
+.schedule_poster ul li p.black span {font-size: 90%;}
+
+/* media */
+.media {padding: 50px 0;}
+.media h2 {font-size:190%; margin-bottom:30px;}
+
+/* village_media */
+.village_media {height: auto; padding: 50px 20px; background-size : cover;}
+.village_media h2 {padding-top: 0px; font-weight: 500;}
+.village_media p {margin-top:30px;}
+
+/* rental */
+.rental {height:520px; background-position: -700px top;}
+.rental_equip {top: 70px;}
+.rental_equip p.text {width: 420px;}
+.rental_place {top: 200px;}
+.rental_place p.text {width: 310px;}
+.rental_place p.text br {display:none;}
+.banner_list p.photo {margin-top:40px;}
+.banner_list p.photo a img {width: 200px;}
 
 }
 
@@ -177,6 +225,32 @@ span.edu {background:  #000;}
 .notice_list p span.day,
 .notice h2 {display:none;}
 
+/* schedule */
+.schedule_poster .on {font-size: 80%;}
+.schedule_poster .on p {font-size: 130%;}
+.schedule_poster .on span {width: 20px; height: 20px; line-height: 20px;}
+.schedule_poster ul li p.black span {padding: 0 20px;}
+
+/* media */
+
+/* rental */
+.rental {height:360px; background-size:cover; background-position: -330px top;}
+.rental_equip {top: 70px;}
+.rental_equip p.text {width: 320px; line-height: 24px;}
+.banner_list h2 {margin-bottom: 10px;}
+.banner_list p.photo {display:none;}
+
+.rental_place {top:120px;}
+.rental_place p.text {width: 270px;}
+
+
+/* village_media */
+.village_media span {padding: 0 20px;}
+.village_media span br {display:none;}
+
+
+
+
 }
 
 /********************** 640px **********************/
@@ -186,6 +260,29 @@ span.edu {background:  #000;}
 .notice_list p span:nth-of-type(1) {display:none;}
 .notice_list p a {font-size: 95%;}
 .notice a.campaign {font-size: 90%; width: 30%;}
-
 .notice a.campaign i {width: 15px; height: 23px; margin-left:5px; background-size: 100% 100%;}
+
+/* schedule */
+.schedule_poster .on {padding: 35px 0 0 20px;}
+.schedule_poster ul li, 
+.schedule_poster ul li img {width:100%;}
+
+/* media */
+.media_list li {width:100%; margin: 0;}
+.media_list li a img {width: 100%; height: auto;}
+
+/* village_media */
+.village_media span {padding: 0 0px; font-size: 90%; line-height:22px;}
+.village_media p {margin-top: 15px;}
+.village_media p a {font-size:80%; padding: 0 15px;}
+
+/* rental */
+.rental {height: auto;}
+.banner_list {padding: 0;}
+.banner_list p.text {width:100%;}
+.rental_equip, 
+.rental_place {width:100%; position: initial; text-align: left; border:1px solid red;}
+
+
+
 }
