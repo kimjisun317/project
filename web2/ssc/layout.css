@@ -46,8 +46,8 @@
 #footer a.logo {float:left; display:block; margin-top:8px;}
 #footer a.logo img {margin-right:10px;}
 #footer .viewer {float:right;}
-#footer .viewer span {float:left; display:block; font-size:90%; color: #717171; margin:10px 15px 0 0;}
-#footer .viewer a {float:left; display:block; width:36px; height:36px; text-indent:-9999px; border-radius: 30px; background: #858585; border-radius: 25px; margin-left:5px;}
+#footer .viewer span {float:left; display:inline-block; font-size:90%; color: #717171; margin:10px 15px 0 0;}
+#footer .viewer a {display:inline-block; width:36px; height:36px; text-indent:-9999px; border-radius: 30px; background: #858585; border-radius: 25px; margin-left:5px;}
 #footer .viewer a:hover {background: #000;}
 #footer .viewer a > i {float:left; width:100%; height:100%;}
 
@@ -60,10 +60,13 @@ i.viewer_pdf {background: url(../gmi/cni/viewer_icon.png) no-repeat -144px top;}
 
 .footer_bottom {position: relative; float:left; width:100%; margin-top:30px; padding: 10px 0 50px; border-top:1px solid #cdcdcd; overflow: hidden;}
 
-.footer_bottom  ul.link {width:auto;}
+/* .footer_bottom  ul.link {width:auto;}
 .footer_bottom  ul.link li {display:inline-block; padding: 6px 0 9px 0; margin-right:25px;}
 .footer_bottom  ul.link li a {font-size:95%; letter-spacing: -1px;}
-.footer_bottom  ul.link li:nth-of-type(1) a {font-weight:600;}
+.footer_bottom  ul.link li:nth-of-type(1) a {font-weight:600;} */
+.footer_bottom  .link {width:auto;}
+.footer_bottom  .link a {display:inline-block; padding: 6px 0 9px 0; margin-right:25px; font-size:95%; letter-spacing: -1px;}
+.footer_bottom  .link a:nth-of-type(1){font-weight:600;}
 
 .footer_bottom .copyright {width:100%; margin-top:5px;}
 .footer_bottom .copyright address,
@@ -75,9 +78,45 @@ i.viewer_pdf {background: url(../gmi/cni/viewer_icon.png) no-repeat -144px top;}
 .footer_bottom .family a {display: block; width:200px; height:37px; line-height:37px; border-radius: 25px; font-size:90%; color: #fff; padding-left:20px; margin-bottom:5px; background: #858585 url(../gmi/cni/family_arr.png) no-repeat 90% 50%;}
 .footer_bottom .family a:hover {background-color: #000; text-decoration: none;}
 
-/********************** 1345px **********************/
-@media all and (max-width:1345px){
+/********************** 1400px **********************/
+@media all and (max-width:1400px){
 #header,
 .footer_con {width:100%;}
+
+/* header */
+#header .topmenu {left: 20px;}
+#header .gnb {left: 60px;}
+#header .calendar {right:20px;}
+
+/* footer */
+.footer_con {padding: 25px 20px;}
 }
 
+/********************** 768px **********************/
+@media all and (max-width:768px){
+/* header */
+#header .gnb {display:none;}
+
+
+/* footer */
+.footer_bottom .copyright address {display: block;}
+
+}
+
+/********************** 640px **********************/
+@media all and (max-width:640px){
+/* header */
+#header .calendar {display:none;}
+
+/* footer */
+.footer_con {position: relative;}
+#footer a.logo {width:100%; text-align: center; margin-bottom:15px;}
+#footer a.logo img {width: auto; height: 20px; margin-right:5px;}
+.footer_bottom .copyright {text-align: center;}
+.footer_bottom .link {width: 100%; text-align: center;}
+.footer_bottom .link a {margin: 0 2px; font-size: 90%; }
+
+#footer .viewer {float:inherit; width:270px; text-align: center; margin:0 auto 0;}
+.footer_bottom .family {position: inherit;}
+.footer_bottom .family a {display: inline-block; width: 49%; padding-left:15px; font-size:80%;}
+}
