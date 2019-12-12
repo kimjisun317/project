@@ -207,7 +207,7 @@ h2 {font-size: 190%;}
 .media h2 {font-size:190%; margin-bottom:30px;}
 
 /* village_media */
-.village_media {height: auto; padding: 50px 20px 0 20px; background-size : cover;}
+.village_media {height: auto; padding: 50px 20px; background-size : cover;}
 .village_media h2 {padding-top: 0px; font-weight: 500;}
 .village_media p {margin-top:30px;}
 
@@ -286,7 +286,7 @@ h2 {font-size: 190%;}
 
 
 /* village_media */
-.village_media {height:200px; background: url(../gmi/main/village_media_bg_m.jpg) no-repeat center top;}
+.village_media {height:200px; background: url(../gmi/main/village_media_bg_m.jpg) no-repeat center top; padding: 50px 20px 0 20px;}
 .village_media span {display:none; padding: 0 0px; font-size: 90%; line-height:22px;}
 .village_media p {margin-top: 15px;}
 .village_media p a {font-size:80%; padding: 0 15px;}
