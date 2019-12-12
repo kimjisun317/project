@@ -167,6 +167,9 @@ span.edu {background:  #000;}
 .rental_equip {left: 40px;}
 .rental_place {right: 40px;}
 
+/* experience */
+.experience .banner_list {padding: 150px 0 0 40px;}
+
 }
 
 /********************** 1200px **********************/
@@ -176,7 +179,11 @@ span.edu {background:  #000;}
 .schedule_poster .on p {font-size: 140%; margin-bottom: 5px;}
 .schedule_poster ul li a:hover .on {height:100px;}
 
-
+/* experience */
+.experience {height: 400px; background-size:cover; background-position: -100px top;}
+.experience .banner_list {padding: 110px 0 0 40px;}
+.experience p.text {width: 380px;}
+.experience p.text br {display:none;}
 
 
 
@@ -186,7 +193,6 @@ span.edu {background:  #000;}
 @media all and (max-width:1040px){
 
 h2 {font-size: 190%;}
-
 
 /* notice */
 .notice_list p a {float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
@@ -201,7 +207,7 @@ h2 {font-size: 190%;}
 .media h2 {font-size:190%; margin-bottom:30px;}
 
 /* village_media */
-.village_media {height: auto; padding: 50px 20px; background-size : cover;}
+.village_media {height: auto; padding: 50px 20px 0 20px; background-size : cover;}
 .village_media h2 {padding-top: 0px; font-weight: 500;}
 .village_media p {margin-top:30px;}
 
@@ -214,6 +220,9 @@ h2 {font-size: 190%;}
 .rental_place p.text br {display:none;}
 .banner_list p.photo {margin-top:40px;}
 .banner_list p.photo a img {width: 200px;}
+
+/* experience */
+.experience {background-position: -150px top;}
 
 }
 
@@ -248,6 +257,10 @@ h2 {font-size: 190%;}
 .village_media span {padding: 0 20px;}
 .village_media span br {display:none;}
 
+/* experience */
+.experience {height: 250px; background-position: 50px top;}
+.experience .banner_list {padding: 50px 0 0 40px;}
+.experience p.text {line-height: 24px;}
 
 
 
@@ -271,18 +284,25 @@ h2 {font-size: 190%;}
 .media_list li {width:100%; margin: 0;}
 .media_list li a img {width: 100%; height: auto;}
 
+
 /* village_media */
-.village_media span {padding: 0 0px; font-size: 90%; line-height:22px;}
+.village_media {height:200px; background: url(../gmi/main/village_media_bg_m.jpg) no-repeat center top;}
+.village_media span {display:none; padding: 0 0px; font-size: 90%; line-height:22px;}
 .village_media p {margin-top: 15px;}
 .village_media p a {font-size:80%; padding: 0 15px;}
 
 /* rental */
-.rental {height: auto;}
+.rental {height: auto; background:none;}
 .banner_list {padding: 0;}
-.banner_list p.text {width:100%;}
+.banner_list h2 {font-size: 150%;}
+.banner_list p.text {width:100%; font-size: 85%; line-height:20px; margin-bottom:10px;}
+.banner_list a.btn {font-size: 80%; height: 30px; line-height: 30px; padding: 0 54px 0 20px;}
 .rental_equip, 
-.rental_place {width:100%; position: initial; text-align: left; border:1px solid red;}
+.rental_place {width:100%; height:200px; position: initial; text-align: left; background-size:auto 100%; padding:30px 30px 0 30px;}
+.rental_equip {background: url(../gmi/main/rental_bg_m01.jpg) no-repeat right top;}
+.rental_place {background: url(../gmi/main/rental_bg_m02.jpg) no-repeat left top;}
 
-
-
+/* experience */
+.experience {height:200px; background: url(../gmi/main/experience_bg_m.jpg) no-repeat center top;}
+.experience .banner_list {height:100%; padding:30px 30px 0 30px; }
 }
