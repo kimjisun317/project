@@ -6,15 +6,15 @@ $(document).ready(function(){
 
 
 
- /* main_slider */
- $(function(){
+/* main_slider */
+$(function(){
 	$('.bxslider').bxSlider({
 	  mode: 'horizontal',
 	  speed : 1000,
 	  auto : true,
 	  controls : true
 	});
-  });
+});
 
 /* menu */
 $(window).on('load resize', function(){	
