@@ -28,7 +28,7 @@ strong {font-weight:bold;}
 html {box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;  }
 *, *:before, *:after {box-sizing: inherit;}
 img { box-sizing:content-box; -moz-box-sizing:content-box;-webkit-box-sizing:content-box;}
-img {border:0; max-width:100%;}
+img {border:0; /* max-width:100%; */}
 
 article, aside, canvas, video, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block;}
 

@@ -74,7 +74,7 @@ ul.bxslider {
 }
 /********************** 1250px **********************/
 @media all and (max-width:1250px){
-.bx-wrapper img {height: 400px; object-fit: cover;}
+.bx-wrapper img {height: 400px; /* object-fit: cover; */}
 .bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {top:125px;}
 }
 
@@ -84,6 +84,18 @@ ul.bxslider {
 
 /********************** 768px **********************/
 @media all and (max-width:768px){
-.bx-wrapper img {height: 350px; object-fit: cover;}
+.main_visual {height: 350px; width: auto !important; position: relative;}
+.main_visual .bx-wrapper, 
+.main_visual .bx-viewport, 
+.main_visual .bxslider div a {
+  height: 100%  !important;
+  box-sizing: border-box  !important;
+}
+.main_visual .bxslider {height: 100%  !important;}
+.main_visual .bxslider div {height: 100%  !important; overflow: hidden;}
+.main_visual .bxslider div a {overflow: hidden  !important; display: block;}
+.main_visual img {/* height: 350px; */ /* object-fit: cover; */ margin-left: -77%; position: absolute !important;
+  left: 50% !important;
+  width: auto !important; max-width: auto !important; max-height: 100% !important; height: 100% !important;}
 .bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {top:105px;}
 }
