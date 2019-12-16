@@ -80,8 +80,8 @@ ul.bxslider {
 .main_visual img {position: absolute; left: 50%; margin-left: -50%; width: auto; height: 100%; max-height: 100%;}
 .bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {top:125px;}
 }
-/********************** 1250px **********************/
-@media all and (max-width:1250px){
+/********************** 1280px **********************/
+@media all and (max-width:1280px){
 .main_visual img {margin-left: -57%;}
 }
 /********************** 1100px **********************/
@@ -104,14 +104,30 @@ ul.bxslider {
 @media all and (max-width:640px){
 .main_visual {height: 300px;}
 .main_visual img {margin-left: -88%;}
+.bx-wrapper .bx-controls-direction {margin-top: -62px;}
+.bx-wrapper .bx-controls-direction a {width:40px; height:40px; background-size: cover;}
+.bx-wrapper a.bx-next {background-position: -40px top;}
 .bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {top:85px;}
 }
 /********************** 500px **********************/
 @media all and (max-width:500px){
 .main_visual img {margin-left: -103%;}
 }
+/********************** 420px **********************/
+@media all and (max-width:420px){
+.main_visual img {margin-left: -123%;}
+}
+/********************** 375px **********************/
+@media all and (max-width:375px){
+.main_visual img {margin-left: -133%;}
+}
 /********************** 360px **********************/
 @media all and (max-width:360px){
-.main_visual img {margin-left: -146%;}
+.main_visual img {margin-left: -140%;}
 }
-
+/********************** 320px **********************/
+@media all and (max-width:320px){
+.main_visual {height: 250px;}
+.main_visual img {margin-left: -132%;}
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {top:70px;}
+}
