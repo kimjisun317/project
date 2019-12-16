@@ -14,3 +14,8 @@ $(function(){
 	  controls : true
 	});
 });
+
+//펼침 레이어
+function layer_View(status){
+	eval('$("#layer_View_box").' + status + '();');
+}

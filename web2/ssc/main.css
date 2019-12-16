@@ -18,15 +18,42 @@ h2 {font-size:290%; font-weight:300; color: #000;}
 
 
 /* notice */
-.notice {width:100%; height:60px; background: #f8f8f8;}
+.notice {width:100%; height:60px; background: #f8f8f8; position: relative;}
 .notice h2 {float:left; display:block; color: #acacac; font-size:120%; font-weight:normal; letter-spacing: 0px; margin-top:22px;}
-.notice_list {width:1350px; height:100%; margin:0 auto;;}
+.notice_list {width:1350px; height:100%; margin:0 auto;}
+.notice_list img {width:100%;}
 .notice_list p {float:left; width:auto; margin: 19px 0 0 40px;}
 .notice_list p span:nth-of-type(1) {color: #808080; margin-right:5px;}
 .notice_list p span.day {float:left; color: #a4a4a4; font-size:90%; margin: 5px 15px 0 0;}
 .notice a.campaign {display:block; float:right; width:24.5%; height:60px; background: url(../gmi/main/campaign_bg.png) no-repeat left top; text-align: center; font-size:120%; color: #29304a; line-height:60px; background-size: 100% 100%;}
 .notice a.campaign span {font-size: 100%;}
-.notice a.campaign i {display:inline-block; margin: 0 0 0 10px; vertical-align: middle; width:20px; height:28px; background: url(../gmi/main/campaign_icon.gif) no-repeat left top; }
+.notice a.campaign i {display:inline-block; margin: 0 0 0 10px; vertical-align: middle; width:20px; height:28px; background: #29304a url(../gmi/main/campaign_icon_arr.png) no-repeat left top; border-radius: 10px; /* background: url(../gmi/main/campaign_icon.gif) no-repeat left top; */ }
+.notice a.campaign:hover, 
+.notice a.campaign:hover span {color: #ee2d2e;}
+.notice a.campaign:hover i {background: #ee2d2e url(../gmi/main/campaign_icon_arr.png) no-repeat left top;}
+
+/*  펼침레이어-캠페인 */
+a.layer_View_open{margin:0;} 
+a.layer_View_close {position:absolute; right:0px; top:-60px;}
+/* .layer_View_cont a.campaign {background: url(../gmi/main/campaign_bg_close.png) no-repeat left top;} */
+.layer_View_cont a.campaign, 
+.layer_View_cont a.campaign span {color: #ee2d2e;}
+.layer_View_cont a.campaign i {background: #ee2d2e url(../gmi/main/campaign_icon_arr.png) no-repeat -20px top;}
+.layer_View_cont a.campaign:hover, 
+.layer_View_cont a.campaign:hover span {color: #29304a;}
+.layer_View_cont a.campaign:hover i {background: #29304a url(../gmi/main/campaign_icon_arr.png) no-repeat -20px top;}
+
+.layer_View_cont {position:absolute; top:60px; left:0px; right:0; margin:0 auto; width: 1350px; height:616px; background: #fff; z-index:1000;}
+.layer_View_inner {padding: 60px 0;  height:100%;}
+.layer_View_inner > h2 {clear:both; text-align: center; width:100%; font-size: 220%; color: #333; font-weight: 500; margin: 0 0 35px 0;}
+.layer_View_inner li {float:left; width: 32.59%; margin-left: 1.11%; text-align: center;}
+.layer_View_inner li:first-child {margin-left:0;}
+.layer_View_inner li p {width:100%; margin: 13px 0 0 0; padding: 0 60px; line-height: 20px; word-break: keep-all;}
+.layer_View_inner li p span {display:block; font-size: 95%; color: #a93031 !important; margin-top:6px;}
+.layer_View_inner li span.more {display:inline-block; font-size: 90%; color: #777; border:1px solid #ababab; padding: 5px 35px; border-radius: 6px; margin-top:10px;}
+.layer_View_inner li img:hover {opacity: 0.5;}
+.layer_View_inner li p:hover {text-decoration: underline;}
+.layer_View_inner li span.more:hover {background: #000; color: #fff; border:1px solid #000;}
 
 /* schedule */
 .schedule {width:1350px; margin:50px auto; overflow: hidden;}
@@ -153,6 +180,10 @@ span.edu {background:  #000;}
 .village_media {width:100%; padding: 0 20px;}
 .notice_list {width:100%; padding: 0 0 0 20px;}
 
+/* notice */
+.layer_View_cont {width:100%; height: auto;}
+.layer_View_inner {overflow: hidden;}
+
 /* schedule */
 .schedule_poster ul li,
 .schedule_poster ul li img {height: auto;}
@@ -175,6 +206,9 @@ span.edu {background:  #000;}
 
 /********************** 1200px **********************/
 @media all and (max-width:1200px){
+/* notice */
+.layer_View_inner li p {padding: 0 20px;}
+
 /* schedule */
 .schedule_poster .on {padding: 28px 0 0 15px;}
 .schedule_poster .on p {font-size: 140%; margin-bottom: 5px;}
@@ -199,6 +233,8 @@ h2 {font-size: 190%;}
 .notice_list p a {float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .notice_list p span.day {display:none;}
 .notice a.campaign {font-size:110%;}
+.layer_View_inner {padding: 50px 0;}
+.layer_View_inner > h2 {font-size:190%; margin-bottom:30px;}
 
 /* schedule */
 .schedule_poster ul li p.black span {font-size: 90%;}
@@ -276,8 +312,10 @@ h2 {font-size: 190%;}
 .notice_list p a {font-size: 95%; width:95%;}
 .notice a.campaign {font-size: 90%; width: 30%;}
 .notice a.campaign span {display:none;}
-.notice a.campaign i {width: 15px; height: 23px; margin-left:5px; background-size: 100% 100%;}
-
+.notice a.campaign i {width: 15px; height: 23px; margin-left:5px; background-position: -2px -3px;}
+.notice a.campaign:hover i {background-position: -2px -3px;}
+.layer_View_cont a.campaign i {background-position: -22px -3px;}
+.layer_View_cont a.campaign:hover i {background-position: -22px -3px;}
 /* schedule */
 .schedule_poster .on {padding: 35px 0 0 20px;}
 .schedule_poster ul li, 
