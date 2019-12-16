@@ -96,8 +96,22 @@ ul.bxslider {
 @media all and (max-width:850px){
 .main_visual img {margin-left: -83%;}
 }
-
 /********************** 768px **********************/
 @media all and (max-width:768px){
-.main_visual img {margin-left: -89%;}
+.main_visual img {margin-left: -88%;}
 }
+/********************** 640px **********************/
+@media all and (max-width:640px){
+.main_visual {height: 300px;}
+.main_visual img {margin-left: -88%;}
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {top:85px;}
+}
+/********************** 500px **********************/
+@media all and (max-width:500px){
+.main_visual img {margin-left: -103%;}
+}
+/********************** 360px **********************/
+@media all and (max-width:360px){
+.main_visual img {margin-left: -146%;}
+}
+
