@@ -25,6 +25,7 @@ h2 {font-size:290%; font-weight:300; color: #000;}
 .notice_list p span:nth-of-type(1) {color: #808080; margin-right:5px;}
 .notice_list p span.day {float:left; color: #a4a4a4; font-size:90%; margin: 5px 15px 0 0;}
 .notice a.campaign {display:block; float:right; width:24.5%; height:60px; background: url(../gmi/main/campaign_bg.png) no-repeat left top; text-align: center; font-size:120%; color: #29304a; line-height:60px; background-size: 100% 100%;}
+.notice a.campaign span {font-size: 100%;}
 .notice a.campaign i {display:inline-block; margin: 0 0 0 10px; vertical-align: middle; width:20px; height:28px; background: url(../gmi/main/campaign_icon.gif) no-repeat left top; }
 
 /* schedule */
@@ -269,10 +270,12 @@ h2 {font-size: 190%;}
 /********************** 640px **********************/
 @media all and (max-width:640px){
 /* notice */
+.notice_list {padding: 0 0 0 10px;}
 .notice_list p {width: 70%;}
 .notice_list p span:nth-of-type(1) {display:none;}
-.notice_list p a {font-size: 95%;}
+.notice_list p a {font-size: 95%; width:95%;}
 .notice a.campaign {font-size: 90%; width: 30%;}
+.notice a.campaign span {display:none;}
 .notice a.campaign i {width: 15px; height: 23px; margin-left:5px; background-size: 100% 100%;}
 
 /* schedule */

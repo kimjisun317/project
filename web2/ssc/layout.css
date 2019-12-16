@@ -106,6 +106,12 @@ i.viewer_pdf {background: url(../gmi/cni/viewer_icon.png) no-repeat -144px top;}
 /********************** 640px **********************/
 @media all and (max-width:640px){
 /* header */
+#header {height: 70px;}
+#header h1 {padding-top: 22px;}
+#header h1 img {height: 26px;}
+#header .topmenu {top: 11px;}
+#header .topmenu a {background-position: center top; background-size: 30px auto;}
+#header .topmenu a span {padding-top:36px;}
 #header .calendar {display:none;}
 
 /* footer */
