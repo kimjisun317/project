@@ -55,6 +55,7 @@ a.layer_View_close {position:absolute; right:0px; top:-60px;}
 .layer_View_inner li p:hover {text-decoration: underline;}
 .layer_View_inner li span.more:hover {background: #000; color: #fff; border:1px solid #000;}
 
+
 /* schedule */
 .schedule {width:1350px; margin:50px auto; overflow: hidden;}
 .schedule_month {float:left; width:72px; color: #515151; font-weight:bold;}

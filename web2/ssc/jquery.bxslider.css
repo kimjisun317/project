@@ -109,9 +109,6 @@ ul.bxslider {
 .main_visual {height: 300px;}
 .main_visual img {margin-left: -82%;}
 .bx-wrapper .bx-controls-direction a {display:none;}
-/* .bx-wrapper .bx-controls-direction {margin-top: -62px;}
-.bx-wrapper .bx-controls-direction a {width:40px; height:40px; background-size: cover;}
-.bx-wrapper a.bx-next {background-position: -40px top;} */
 .bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {top:85px;}
 .bx-wrapper .bx-pager a {width: 14px; height: 14px; margin: 6px 3px 0 3px;}
 }
@@ -122,6 +119,9 @@ ul.bxslider {
 /********************** 500px **********************/
 @media all and (max-width:500px){
 .main_visual img {margin-left: -103%;}
+
+.slick .bx-wrapper {
+  width: 348px;
 }
 /********************** 420px **********************/
 @media all and (max-width:420px){
