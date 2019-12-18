@@ -43,6 +43,8 @@ a.layer_View_close {position:absolute; right:0px; top:-60px;}
 .layer_View_cont a.campaign:hover span {color: #29304a;}
 .layer_View_cont a.campaign:hover i {background: #29304a url(../gmi/main/campaign_icon_arr.png) no-repeat -20px top;}
 
+
+
 .layer_View_cont {position:absolute; top:60px; left:0px; right:0; margin:0 auto; width: 1350px; height:616px; background: #fff; z-index:1000;}
 .layer_View_inner {padding: 60px 0;  height:100%;}
 .layer_View_inner > h2 {clear:both; text-align: center; width:100%; font-size: 220%; color: #333; font-weight: 500; margin: 0 0 35px 0;}
@@ -55,6 +57,22 @@ a.layer_View_close {position:absolute; right:0px; top:-60px;}
 .layer_View_inner li p:hover {text-decoration: underline;}
 .layer_View_inner li span.more:hover {background: #000; color: #fff; border:1px solid #000;}
 
+.campaign_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1;}
+.media_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1;}
+.swiper-slide {text-align: center; font-size: 18px; background: #fff;
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;}
 
 /* schedule */
 .schedule {width:1350px; margin:50px auto; overflow: hidden;}

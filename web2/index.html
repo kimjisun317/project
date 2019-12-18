@@ -17,68 +17,43 @@
 	<script type="text/javascript" src="sj/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="sj/index.js"></script>
 	<script type="text/javascript" src="sj/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="sj/swiper.min.js"></script>
-	<!-- <script type="text/javascript" src="sj/jquery.slick.js"></script> -->
+	<script type="text/javascript" src="sj/jquery.swiper.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="ssc/base.css">
 	<link rel="stylesheet" href="ssc/layout.css">
 	<link rel="stylesheet" href="ssc/main.css">
 	<link rel="stylesheet" href="ssc/jquery.bxslider.css">
-	<link rel="stylesheet" href="ssc/swiper.min.css">
-	<!-- <link rel="stylesheet" href="ssc/jquery.slick.css"> -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css">
-
-	
-
-	<style>
-		.swiper-container {
-		  width: 100%;
-		  height: 100%;
-		}
-		.swiper-slide {
-		  text-align: center;
-		  font-size: 18px;
-		  background: #fff;
-	
-		  /* Center slide text vertically */
-		  display: -webkit-box;
-		  display: -ms-flexbox;
-		  display: -webkit-flex;
-		  display: flex;
-		  -webkit-box-pack: center;
-		  -ms-flex-pack: center;
-		  -webkit-justify-content: center;
-		  justify-content: center;
-		  -webkit-box-align: center;
-		  -ms-flex-align: center;
-		  -webkit-align-items: center;
-		  align-items: center;
-		}
-	  </style>
-	
+	<link rel="stylesheet" href="ssc/jquery.swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css">	
 </head>
 
 <body>
 	<div id="wrap">
 
-		
+		<!-- Swiper -->
+		<div class="media_swiper">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">Slide 1</div>
+			  <div class="swiper-slide">Slide 2</div>
+			  <div class="swiper-slide">Slide 3</div>
+			  <div class="swiper-slide">Slide 4</div>
+			  <div class="swiper-slide">Slide 5</div>
+			  <div class="swiper-slide">Slide 6</div>
+			  <div class="swiper-slide">Slide 7</div>
+			  <div class="swiper-slide">Slide 8</div>
+			  <div class="swiper-slide">Slide 9</div>
+			  <div class="swiper-slide">Slide 10</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
 		
 		<!-- header_S -->
 		<header id="header"></header>
 		<!-- header_E -->
-
-		<!-- <div class="slick">
-			<div><img src="gmi/main/campaign_img01.jpg" alt="나만의 사사로운 영화리스트"></div>
-			<div><img src="gmi/main/campaign_img02.jpg" alt="나만의 사사로운 영화리스트"></div>
-			<div><img src="gmi/main/campaign_img03.jpg" alt="나만의 사사로운 영화리스트"></div>
-			<div><img src="gmi/main/campaign_img03.jpg" alt="나만의 사사로운 영화리스트"></div>
-			<div><img src="gmi/main/campaign_img02.jpg" alt="나만의 사사로운 영화리스트"></div>
-			<div><img src="gmi/main/campaign_img01.jpg" alt="나만의 사사로운 영화리스트"></div>
-		</div> -->
-
-		
-
-		
 		
 		<!-- container_S -->
 		<section id="container">
@@ -101,33 +76,25 @@
 							<div class="layer_View_inner">
 							<h2>캠페인</h2>
 							<!-- Swiper -->
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-			  <div class="swiper-slide">Slide 1</div>
-			  <div class="swiper-slide">Slide 2</div>
-			  <div class="swiper-slide">Slide 3</div>
-			  <div class="swiper-slide">Slide 4</div>
-			  <div class="swiper-slide">Slide 5</div>
-			  <div class="swiper-slide">Slide 6</div>
-			  <div class="swiper-slide">Slide 7</div>
-			  <div class="swiper-slide">Slide 8</div>
-			  <div class="swiper-slide">Slide 9</div>
-			  <div class="swiper-slide">Slide 10</div>
-			</div>
-			<!-- Add Pagination -->
-			<div class="swiper-pagination"></div>
-			<!-- Add Arrows -->
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-		  </div>
-							<!-- <div class="slick">
-								<div><img src="gmi/main/campaign_img01.jpg" alt="나만의 사사로운 영화리스트"></div>
-								<div><img src="gmi/main/campaign_img02.jpg" alt="나만의 사사로운 영화리스트"></div>
-								<div><img src="gmi/main/campaign_img03.jpg" alt="나만의 사사로운 영화리스트"></div>
-								<div><img src="gmi/main/campaign_img03.jpg" alt="나만의 사사로운 영화리스트"></div>
-								<div><img src="gmi/main/campaign_img02.jpg" alt="나만의 사사로운 영화리스트"></div>
-								<div><img src="gmi/main/campaign_img01.jpg" alt="나만의 사사로운 영화리스트"></div>
-							</div> -->
+							<div class="campaign_swiper">
+								<div class="swiper-wrapper">
+								  <div class="swiper-slide">Slide 1</div>
+								  <div class="swiper-slide">Slide 2</div>
+								  <div class="swiper-slide">Slide 3</div>
+								  <div class="swiper-slide">Slide 4</div>
+								  <div class="swiper-slide">Slide 5</div>
+								  <div class="swiper-slide">Slide 6</div>
+								  <div class="swiper-slide">Slide 7</div>
+								  <div class="swiper-slide">Slide 8</div>
+								  <div class="swiper-slide">Slide 9</div>
+								  <div class="swiper-slide">Slide 10</div>
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination"></div>
+								<!-- Add Arrows -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
 							<!-- <ul>
 								<li><a href="#"><img src="gmi/main/campaign_img01.jpg" alt="나만의 사사로운 영화리스트">
 								<p>나만의 사사로운 영화리스트를 보내주세요. 극장 상영의 기회를 드립니다. <span>기간 : 2020. 02. 01. ~ 02. 28.</span></p>
@@ -335,52 +302,5 @@
 
 
 	</div>
-
-	<!-- Initialize Swiper -->
-	<script>
-		//펼침 레이어
-function layer_View(status){
-	eval('$("#layer_View_box").' + status + '();');
-	/* var swiper = new Swiper('.swiper-container', {
-		  slidesPerView: 3,
-		  spaceBetween: 30,
-		  slidesPerGroup: 3,
-		  loop: true,
-		  loopFillGroupWithBlank: true,
-		  pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		  },
-		  navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		  },
-		}); */
-
-		var swiper = new Swiper('.swiper-container', { 
-		slidesPerView: 1,
-		spaceBetween: 3,
-		initialSlide: 0,
-		loop : true,
-		autoplay: {delay: 2500,
-		disableOnInteraction: false, },
-		pagination: {el: '.swiper-pagination', 
-		clickable: true,
-		},
-		navigation: {nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-		},
-		roundLengths: true,
-		breakpointsInverse: true, 
-		breakpoints: {
-		767: {slidesPerView: 3, spaceBetween: 0}
-		}
-		});
-		}
-
-
-		
-	  </script>
-
 </body>
 </html>
