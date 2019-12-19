@@ -39,16 +39,16 @@ function layer_View(status){
 $(function(){
 var swiper = new Swiper('.media_swiper', { 
 	slidesPerView: 1,
-	spaceBetween: 3,
-	initialSlide: 0,
+	spaceBetween: 0,
+	slidesPerGroup: 1,
 	direction: "horizontal",
 	loop : true,
 	autoplay: false, /* {delay: 2500, disableOnInteraction: false, } */
 	pagination: {el: '.swiper-pagination', clickable: true},
-	navigation: {nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev'},
+	navigation: {nextEl: '.media-button-next', prevEl: '.media-button-prev'},
 	roundLengths: true,
 	breakpointsInverse: true, 
-	breakpoints: {650: {slidesPerView: 4, spaceBetween: 0, slidesPerGroup: 4}}
+	breakpoints: {767: {slidesPerView: 4, spaceBetween: 30, slidesPerGroup: 4}, 650: {slidesPerView: 2, spaceBetween: 30, slidesPerGroup: 2}}
 });
 });
 

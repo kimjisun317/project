@@ -158,6 +158,27 @@ span.edu {background:  #000;}
 .media_list a.media_next {position: absolute; right:-60px; top:138px; display: block; width:29px; height:50px; background: url(../gmi/main/media_next.png) no-repeat left top; text-indent:-9999px;}
 
 .media_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1;}
+.media-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 44%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+.smedia-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 5px;
+    right: auto;}
+
+    .media-button-next, .swiper-container-rtl .swiper-button-prev {
+        right: 5px;
+        left: auto;
+    }
 
 /* village_media */
 .village_media {width:100%; height:400px; margin:0 auto; text-align: center; background: url(../gmi/main/village_media_bg.jpg) no-repeat center top; }
@@ -304,11 +325,13 @@ h2 {font-size: 190%;}
 .notice_list > p a {width: 90%;}
 .notice_list > p span.day,
 .notice h2 {display:none;}
-.layer_View_inner {padding: 40px 0;}
+.layer_View_inner {padding: 40px 0; width: 80%; margin: 0 auto;}
 .layer_View_inner > h2 {display:block; margin-bottom:20px;}
 .campaign_swiper p {padding: 0 5px; font-size: 90%;}
 .campaign_swiper span.more {display:none;}
 .layer_View_cont .swiper-pagination {bottom:10px;}
+
+
 
 
 /* schedule */
