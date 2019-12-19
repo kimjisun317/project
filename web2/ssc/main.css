@@ -22,9 +22,9 @@ h2 {font-size:290%; font-weight:300; color: #000;}
 .notice h2 {float:left; display:block; color: #acacac; font-size:120%; font-weight:normal; letter-spacing: 0px; margin-top:22px;}
 .notice_list {width:1350px; height:100%; margin:0 auto;}
 .notice_list img {width:100%;}
-.notice_list p {float:left; width:auto; margin: 19px 0 0 40px;}
-.notice_list p span:nth-of-type(1) {color: #808080; margin-right:5px;}
-.notice_list p span.day {float:left; color: #a4a4a4; font-size:90%; margin: 5px 15px 0 0;}
+.notice_list > p {float:left; width:auto; margin: 19px 0 0 40px;}
+.notice_list > p span:nth-of-type(1) {color: #808080; margin-right:5px;}
+.notice_list > p span.day {float:left; color: #a4a4a4; font-size:90%; margin: 5px 15px 0 0;}
 .notice a.campaign {display:block; float:right; width:24.5%; height:60px; background: url(../gmi/main/campaign_bg.png) no-repeat left top; text-align: center; font-size:120%; color: #29304a; line-height:60px; background-size: 100% 100%;}
 .notice a.campaign span {font-size: 100%;}
 .notice a.campaign i {display:inline-block; margin: 0 0 0 10px; vertical-align: middle; width:20px; height:28px; background: #29304a url(../gmi/main/campaign_icon_arr.png) no-repeat left top; border-radius: 10px; /* background: url(../gmi/main/campaign_icon.gif) no-repeat left top; */ }
@@ -35,31 +35,33 @@ h2 {font-size:290%; font-weight:300; color: #000;}
 /*  펼침레이어-캠페인 */
 a.layer_View_open{margin:0;} 
 a.layer_View_close {position:absolute; right:0px; top:-60px;}
-/* .layer_View_cont a.campaign {background: url(../gmi/main/campaign_bg_close.png) no-repeat left top;} */
 .layer_View_cont a.campaign, 
 .layer_View_cont a.campaign span {color: #ee2d2e;}
 .layer_View_cont a.campaign i {background: #ee2d2e url(../gmi/main/campaign_icon_arr.png) no-repeat -20px top;}
 .layer_View_cont a.campaign:hover, 
 .layer_View_cont a.campaign:hover span {color: #29304a;}
 .layer_View_cont a.campaign:hover i {background: #29304a url(../gmi/main/campaign_icon_arr.png) no-repeat -20px top;}
-
-
-
+ 
 .layer_View_cont {position:absolute; top:60px; left:0px; right:0; margin:0 auto; width: 1350px; height:616px; background: #fff; z-index:1000;}
-.layer_View_inner {padding: 60px 0;  height:100%;}
+.layer_View_inner {padding: 60px 0;  height:100%; overflow: hidden;}
 .layer_View_inner > h2 {clear:both; text-align: center; width:100%; font-size: 220%; color: #333; font-weight: 500; margin: 0 0 35px 0;}
 .layer_View_inner li {float:left; width: 32.59%; margin-left: 1.11%; text-align: center;}
 .layer_View_inner li:first-child {margin-left:0;}
-.layer_View_inner li p {width:100%; margin: 13px 0 0 0; padding: 0 60px; line-height: 20px; word-break: keep-all;}
-.layer_View_inner li p span {display:block; font-size: 95%; color: #a93031 !important; margin-top:6px;}
-.layer_View_inner li span.more {display:inline-block; font-size: 90%; color: #777; border:1px solid #ababab; padding: 5px 35px; border-radius: 6px; margin-top:10px;}
-.layer_View_inner li img:hover {opacity: 0.5;}
-.layer_View_inner li p:hover {text-decoration: underline;}
-.layer_View_inner li span.more:hover {background: #000; color: #fff; border:1px solid #000;}
-
 .campaign_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1;}
-.media_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1;}
-.swiper-slide {text-align: center; font-size: 18px; background: #fff;
+.campaign_swiper p {width:100%; margin: 13px 0 0 0; padding: 0 60px; line-height: 20px; word-break: keep-all; box-sizing: border-box;}
+.campaign_swiper p span {display:block; font-size: 95%; color: #a93031 !important; margin-top:6px;}
+.campaign_swiper span.more {display:inline-block; font-size: 90%; color: #777; border:1px solid #ababab; padding: 5px 35px; border-radius: 6px; margin-top:10px;}
+.campaign_swiper img:hover {opacity: 0.5;}
+.campaign_swiper p:hover {text-decoration: underline;}
+.campaign_swiper span.more:hover {background: #000; color: #fff; border:1px solid #000;}
+
+.layer_View_cont .swiper-pagination {width:100%; left:0; bottom: 20px;}
+.layer_View_cont .swiper-pagination span {margin: 0 3px;}
+.layer_View_cont .swiper-button-prev {left: -60px; width:29px !important; height:50px !important; background: url(../gmi/main/slick_arr.png) no-repeat left top;}
+.layer_View_cont .swiper-button-next {right: -60px; width:29px !important; height:50px !important; background: url(../gmi/main/slick_arr.png) no-repeat -29px top;}
+.swiper-button-next:after, .swiper-button-prev:after {font-size: 0px !important; letter-spacing: 0px !important;}
+
+.swiper-slide {display: inline-block !important; text-align: center; font-size: 18px; background: #fff; 
 /* Center slide text vertically */
 display: -webkit-box;
 display: -ms-flexbox;
@@ -155,6 +157,8 @@ span.edu {background:  #000;}
 .media_list a.media_prev {position: absolute; left:-60px; top:138px; display:block; width:29px; height:50px; background: url(../gmi/main/media_prev.png) no-repeat left top; text-indent:-9999px;}
 .media_list a.media_next {position: absolute; right:-60px; top:138px; display: block; width:29px; height:50px; background: url(../gmi/main/media_next.png) no-repeat left top; text-indent:-9999px;}
 
+.media_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1;}
+
 /* village_media */
 .village_media {width:100%; height:400px; margin:0 auto; text-align: center; background: url(../gmi/main/village_media_bg.jpg) no-repeat center top; }
 .village_media h2 {color: #fff; padding-top:80px;}
@@ -191,6 +195,11 @@ span.edu {background:  #000;}
 .experience .banner_list a.btn {border:2px solid #000; color: #fff; background: #000 url(../gmi/main/mbtn_arr_on.png) no-repeat 85% 50%;}
 .experience .banner_list a.btn:hover {color: #454545; border:2px solid #b7b7b7; background: url(../gmi/main/mbtn_arr_off.png) no-repeat 85% 50%;}
 
+/********************** 1500px **********************/
+@media all and (max-width:1500px){
+.layer_View_cont .swiper-button-prev {left: 10px;}
+.layer_View_cont .swiper-button-next {right: 10px;}
+}
 /********************** 1350px **********************/
 @media all and (max-width:1350px){
 .schedule,
@@ -201,7 +210,7 @@ span.edu {background:  #000;}
 
 /* notice */
 .layer_View_cont {width:100%; height: auto;}
-.layer_View_inner {overflow: hidden;}
+
 
 /* schedule */
 .schedule_poster ul li,
@@ -226,7 +235,10 @@ span.edu {background:  #000;}
 /********************** 1200px **********************/
 @media all and (max-width:1200px){
 /* notice */
+.layer_View_cont {height: auto;}
 .layer_View_inner li p {padding: 0 20px;}
+.campaign_swiper p {padding: 0 20px;}
+
 
 /* schedule */
 .schedule_poster .on {padding: 28px 0 0 15px;}
@@ -249,11 +261,14 @@ span.edu {background:  #000;}
 h2 {font-size: 190%;}
 
 /* notice */
-.notice_list p a {float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
-.notice_list p span.day {display:none;}
+.notice_list > p a {float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.notice_list > p span.day {display:none;}
 .notice a.campaign {font-size:110%;}
 .layer_View_inner {padding: 50px 0;}
 .layer_View_inner > h2 {font-size:190%; margin-bottom:30px;}
+.campaign_swiper p {padding: 0 10px;}
+.campaign_swiper span.more {font-size: 80%; padding: 4px 20px; margin-top: 10px;}
+.swiper-button-next, .swiper-button-prev {top: 44% !important;}
 
 /* schedule */
 .schedule_poster ul li p.black span {font-size: 90%;}
@@ -285,10 +300,16 @@ h2 {font-size: 190%;}
 /********************** 768px **********************/
 @media all and (max-width:768px){
 /* notice */
-.notice_list p {width:75%; margin: 19px 0 0 0;}
-.notice_list p a {width: 90%;}
-.notice_list p span.day,
+.notice_list > p {width:75%; margin: 19px 0 0 0;}
+.notice_list > p a {width: 90%;}
+.notice_list > p span.day,
 .notice h2 {display:none;}
+.layer_View_inner {padding: 40px 0;}
+.layer_View_inner > h2 {display:block; margin-bottom:20px;}
+.campaign_swiper p {padding: 0 5px; font-size: 90%;}
+.campaign_swiper span.more {display:none;}
+.layer_View_cont .swiper-pagination {bottom:10px;}
+
 
 /* schedule */
 .schedule_poster .on {font-size: 80%;}
@@ -326,15 +347,18 @@ h2 {font-size: 190%;}
 @media all and (max-width:640px){
 /* notice */
 .notice_list {padding: 0 0 0 10px;}
-.notice_list p {width: 70%;}
-.notice_list p span:nth-of-type(1) {display:none;}
-.notice_list p a {font-size: 95%; width:95%;}
+.notice_list > p {width: 70%;}
+.notice_list > p span:nth-of-type(1) {display:none;}
+.notice_list > p a {font-size: 95%; width:95%;}
 .notice a.campaign {font-size: 90%; width: 30%;}
 .notice a.campaign span {display:none;}
 .notice a.campaign i {width: 15px; height: 23px; margin-left:5px; background-position: -2px -3px;}
 .notice a.campaign:hover i {background-position: -2px -3px;}
 .layer_View_cont a.campaign i {background-position: -22px -3px;}
 .layer_View_cont a.campaign:hover i {background-position: -22px -3px;}
+.campaign_swiper span.more {display:inline-block;}
+.layer_View_cont .swiper-pagination {display:none;}
+
 /* schedule */
 .schedule_poster .on {padding: 35px 0 0 20px;}
 .schedule_poster ul li, 

@@ -21,16 +21,17 @@ function layer_View(status){
 	/* campaign_slider */
 	var swiper = new Swiper('.campaign_swiper', { 
 	slidesPerView: 1,
-	spaceBetween: 3,
-	initialSlide: 0,
+	spaceBetween: 0,
+	slidesPerGroup: 1,
 	direction: "horizontal",
 	loop : true,
-	autoplay: false, /* {delay: 2500, disableOnInteraction: false, } */
+	loopFillGroupWithBlank: true,
 	pagination: {el: '.swiper-pagination', clickable: true},
 	navigation: {nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev'},
 	roundLengths: true,
+	// 반응형 >= 650
 	breakpointsInverse: true, 
-	breakpoints: {650: {slidesPerView: 3, spaceBetween: 0, slidesPerGroup: 3}}
+	breakpoints: {767: {slidesPerView: 3, spaceBetween: 30, slidesPerGroup: 3}, 650: {slidesPerView: 2, spaceBetween: 30, slidesPerGroup: 2}}
 	});
 };
 
