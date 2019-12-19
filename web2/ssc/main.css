@@ -32,7 +32,7 @@ h2 {font-size:290%; font-weight:300; color: #000;}
 .notice a.campaign:hover span {color: #ee2d2e;}
 .notice a.campaign:hover i {background: #ee2d2e url(../gmi/main/campaign_icon_arr.png) no-repeat left top;}
 
-/*  펼침레이어-캠페인 */
+/* layer-campaign */
 a.layer_View_open{margin:0;} 
 a.layer_View_close {position:absolute; right:0px; top:-60px;}
 .layer_View_cont a.campaign, 
@@ -124,61 +124,38 @@ align-items: center;}
 .media {width:100%; height:auto; padding: 80px 0; overflow: hidden; background: #f9f9f9; text-align: center; }
 .media h2 {font-size: 220%; color: #333; font-weight:500; margin-bottom:45px;}
 .media_list {width:1350px; margin:0 auto; position: relative;}
-.media_list ul {width:100%;}
-.media_list li {float:left; width:23.87%; height:325px; margin-left:1.5%; position: relative; z-index: 1; overflow: hidden;}
-.media_list li:hover {opacity: 0.5;}
-.media_list li:nth-of-type(1) {margin-left:0;}
 
-.media_list li.rec_media {border:5px solid #e3bdbd; background: #fff;}
-.media_list li.rec_media .text dt {color: #ee2d2e;}
-.media_list li.rec_media .text dt span.underline {border:3px solid #e3bdbd;}
-.media_list li.rec_media .text dd {color: #333;}
-.media_list li.stand_media {border:5px solid #cdd8e3; background: #fff;}
-.media_list li.stand_media .text dt {color: #29304a;}
-.media_list li.stand_media .text dt span.underline {border:3px solid #cdd8e3;}
-.media_list li.stand_media .text dd {color: #333;}
-
-.media_list li .text {position: absolute; width:100%; height:100%; left:0; top:0;   z-index: 2;}
-.media_list li .text p.black {width:100%; height:100%; background: #000; opacity: 0.6;}
-.media_list li .text dl {position: absolute; left:0; right:0; top:28%; margin:0 auto; z-index: 3;}
-.media_list li .text dt {width:100%; padding: 0 12%; color: #fff; font-size:160%; line-height:34px; word-break: keep-all;}
-.media_list li .text dt span.underline {width: 175px; display:block; border-radius: 5px; border:3px solid #fff; margin:15px auto 0;}
-.media_list li .text dd {color: #fff; margin-top:20px; font-size:110%; line-height: 26px;}
-.media_list li .text p.state {position: absolute; top:15px; right:15px;  z-index: 4;}
-.media_list li .text p span {float:left; margin-left:5px; display:block; width:40px; height:40px; border-radius: 50%; color: #fff; font-size:90%; line-height: 40px;}
+/* media_swiper */
+.media_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1;}
+.media_swiper .swiper-slide {z-index: 1; overflow: hidden; box-sizing: border-box;}
+.media_swiper a {float:left; width:100%;}
+.media_swiper a:hover {opacity: 0.5;}
+.media_swiper a img {width: 100%;}
+.media_swiper .text {position: absolute; width:100%; height:100%; left:0; top:0;   z-index: 2;}
+.media_swiper .text p.black {width:100%; height:100%; background: #000; opacity: 0.6;}
+.media_swiper .text dl {position: absolute; left:0; right:0; top:28%; margin:0 auto; z-index: 3;}
+.media_swiper .text dt {width:100%; padding: 0 12%; color: #fff; font-size:160%; line-height:34px; word-break: keep-all;}
+.media_swiper .text dt span.underline {width: 175px; display:block; border-radius: 5px; border:3px solid #fff; margin:15px auto 0;}
+.media_swiper .text dd {color: #fff; margin-top:20px; font-size:110%; line-height: 26px;}
+.media_swiper .text p.state {position: absolute; top:15px; right:15px;  z-index: 4;}
+.media_swiper .text p span {float:left; margin-left:5px; display:block; width:40px; height:40px; border-radius: 50%; color: #fff; font-size:90%; line-height: 40px;}
+.media_swiper a.rec_media {border:5px solid #e3bdbd; background: #fff;}
+.media_swiper a.rec_media .text dt {color: #ee2d2e;}
+.media_swiper a.rec_media .text dt span.underline {border:3px solid #e3bdbd;}
+.media_swiper a.rec_media .text dd {color: #333;}
+.media_swiper a.stand_media {border:5px solid #cdd8e3; background: #fff;}
+.media_swiper a.stand_media .text dt {color: #29304a;}
+.media_swiper a.stand_media .text dt span.underline {border:3px solid #cdd8e3;}
+.media_swiper a.stand_media .text dd {color: #333;}
 span.rec {background:  #ee2d2e;}
 span.stand {background:  #00346a;}
 span.end {background:  #808080;}
 span.edu {background:  #000;}
 
-.media_list p.counter {float:left; width:100%; margin-top:30px; color: #959595; font-size:90%;}
-.media_list p.counter span {font-size:120%;}
-
-.media_list a.media_prev {position: absolute; left:-60px; top:138px; display:block; width:29px; height:50px; background: url(../gmi/main/media_prev.png) no-repeat left top; text-indent:-9999px;}
-.media_list a.media_next {position: absolute; right:-60px; top:138px; display: block; width:29px; height:50px; background: url(../gmi/main/media_next.png) no-repeat left top; text-indent:-9999px;}
-
-.media_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1;}
-.media-button-next, .swiper-button-prev {
-    position: absolute;
-    top: 44%;
-    width: calc(var(--swiper-navigation-size)/ 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--swiper-navigation-color,var(--swiper-theme-color));
-}
-.smedia-button-prev, .swiper-container-rtl .swiper-button-next {
-    left: 5px;
-    right: auto;}
-
-    .media-button-next, .swiper-container-rtl .swiper-button-prev {
-        right: 5px;
-        left: auto;
-    }
+.media-button-next,
+.media-button-prev {position: absolute; top: 46%; margin-top: calc(-1 * var(--swiper-navigation-size)/ 2); z-index: 10; cursor: pointer; display: flex; align-items: center; justify-content: center; width:29px !important; height:50px !important;}
+.media-button-prev {left: -60px;  background: url(../gmi/main/slick_arr.png) no-repeat left top;}
+.media-button-next {right: -60px; background: url(../gmi/main/slick_arr.png) no-repeat -29px top;}
 
 /* village_media */
 .village_media {width:100%; height:400px; margin:0 auto; text-align: center; background: url(../gmi/main/village_media_bg.jpg) no-repeat center top; }
@@ -218,9 +195,15 @@ span.edu {background:  #000;}
 
 /********************** 1500px **********************/
 @media all and (max-width:1500px){
+/* campaign_swiper */
 .layer_View_cont .swiper-button-prev {left: 10px;}
 .layer_View_cont .swiper-button-next {right: 10px;}
+
+/* media_swiper */
+.media-button-prev {left: 10px;}
+.media-button-next {right: 10px;}
 }
+
 /********************** 1350px **********************/
 @media all and (max-width:1350px){
 .schedule,
@@ -240,9 +223,9 @@ span.edu {background:  #000;}
 .schedule_poster ul li p.black {height: 100%;}
 
 /* media */
-.media_list li {height: auto;}
-.media_list li .text dt {font-size: 135%; line-height:28px;}
-.media_list li .text dd {font-size: 95%; margin-top: 15px; line-height: 21px;}
+.media_swiper {width: 95%; margin: 0 auto;}
+.media_swiper .text dt {font-size: 135%; line-height:28px;}
+.media_swiper .text dd {font-size: 95%; margin-top: 15px; line-height: 21px;}
 
 /* rental */
 .rental {background-position: -500px top;}
@@ -298,6 +281,7 @@ h2 {font-size: 190%;}
 /* media */
 .media {padding: 50px 0;}
 .media h2 {font-size:190%; margin-bottom:30px;}
+.media_swiper {width: 90%;}
 
 /* village_media */
 .village_media {height: auto; padding: 50px 20px; background-size : cover;}
@@ -332,16 +316,11 @@ h2 {font-size: 190%;}
 .campaign_swiper span.more {display:none;}
 .layer_View_cont .swiper-pagination {bottom:10px;}
 
-
-
-
 /* schedule */
 .schedule_poster .on {font-size: 80%;}
 .schedule_poster .on p {font-size: 130%;}
 .schedule_poster .on span {width: 20px; height: 20px; line-height: 20px;}
 .schedule_poster ul li p.black span {padding: 0 20px;}
-
-/* media */
 
 /* rental */
 .rental {height:360px; background-size:cover; background-position: -330px top;}
@@ -349,7 +328,6 @@ h2 {font-size: 190%;}
 .rental_equip p.text {width: 320px; line-height: 24px;}
 .banner_list h2 {margin-bottom: 10px;}
 .banner_list p.photo {display:none;}
-
 .rental_place {top:120px;}
 .rental_place p.text {width: 270px;}
 
@@ -389,8 +367,10 @@ h2 {font-size: 190%;}
 .schedule_poster ul li img {width:100%;}
 
 /* media */
-.media_list li {width:100%; margin: 0;}
-.media_list li a img {width: 100%; height: auto;}
+.media_swiper .text p span {width: 32px; height: 32px; font-size: 80%; line-height: 32px;}
+.media_swiper .text dl {top: 24%;}
+.media_swiper .text dt {font-size: 125%; line-height: 24px;}
+
 
 
 /* village_media */

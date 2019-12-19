@@ -29,7 +29,7 @@ function layer_View(status){
 	pagination: {el: '.swiper-pagination', clickable: true},
 	navigation: {nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev'},
 	roundLengths: true,
-	// 반응형 >= 650
+	// 반응형 >= 1024
 	breakpointsInverse: true, 
 	breakpoints: {1024: {slidesPerView: 3, spaceBetween: 30, slidesPerGroup: 3}, 640: {slidesPerView: 2, spaceBetween: 30, slidesPerGroup: 2}}
 	});
@@ -48,7 +48,7 @@ var swiper = new Swiper('.media_swiper', {
 	navigation: {nextEl: '.media-button-next', prevEl: '.media-button-prev'},
 	roundLengths: true,
 	breakpointsInverse: true, 
-	breakpoints: {767: {slidesPerView: 4, spaceBetween: 30, slidesPerGroup: 4}, 650: {slidesPerView: 2, spaceBetween: 30, slidesPerGroup: 2}}
+	breakpoints: {1250: {slidesPerView: 4, spaceBetween: 30, slidesPerGroup: 4}, 1024: {slidesPerView: 3, spaceBetween: 30, slidesPerGroup: 3}, 640: {slidesPerView: 2, spaceBetween: 30, slidesPerGroup: 2}}
 });
 });
 
