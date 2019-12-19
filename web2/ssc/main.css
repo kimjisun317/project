@@ -55,8 +55,8 @@ a.layer_View_close {position:absolute; right:0px; top:-60px;}
 .campaign_swiper p:hover {text-decoration: underline;}
 .campaign_swiper span.more:hover {background: #000; color: #fff; border:1px solid #000;}
 
-.layer_View_cont .swiper-pagination {width:100%; left:0; bottom: 20px;}
-.layer_View_cont .swiper-pagination span {margin: 0 3px;}
+.layer_View_cont .campaign-pagination {width:100%; left:0; bottom: 40px; position: absolute; text-align: center; transition: .3s opacity; transform: translate3d(0,0,0); z-index: 10;}
+.layer_View_cont .campaign-pagination span {margin: 0 3px;}
 .layer_View_cont .swiper-button-prev {left: -60px; width:29px !important; height:50px !important; background: url(../gmi/main/slick_arr.png) no-repeat left top;}
 .layer_View_cont .swiper-button-next {right: -60px; width:29px !important; height:50px !important; background: url(../gmi/main/slick_arr.png) no-repeat -29px top;}
 .swiper-button-next:after, .swiper-button-prev:after {font-size: 0px !important; letter-spacing: 0px !important;}
@@ -126,7 +126,7 @@ align-items: center;}
 .media_list {width:1350px; margin:0 auto; position: relative;}
 
 /* media_swiper */
-.media_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1;}
+.media_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1; padding-bottom: 50px;}
 .media_swiper .swiper-slide {z-index: 1; overflow: hidden; box-sizing: border-box;}
 .media_swiper a {float:left; width:100%;}
 .media_swiper a:hover {opacity: 0.5;}
@@ -153,9 +153,13 @@ span.end {background:  #808080;}
 span.edu {background:  #000;}
 
 .media-button-next,
-.media-button-prev {position: absolute; top: 46%; margin-top: calc(-1 * var(--swiper-navigation-size)/ 2); z-index: 10; cursor: pointer; display: flex; align-items: center; justify-content: center; width:29px !important; height:50px !important;}
+.media-button-prev {position: absolute; top: 43%; margin-top: calc(-1 * var(--swiper-navigation-size)/ 2); z-index: 10; cursor: pointer; display: flex; align-items: center; justify-content: center; width:29px !important; height:50px !important;}
 .media-button-prev {left: -60px;  background: url(../gmi/main/slick_arr.png) no-repeat left top;}
 .media-button-next {right: -60px; background: url(../gmi/main/slick_arr.png) no-repeat -29px top;}
+
+.swiper-pagination, 
+.swiper-pagination > span:nth-of-type(2) {font-size:85%; color: #999;}
+.swiper-pagination > span {font-weight:600; margin: 0 5px;}
 
 /* village_media */
 .village_media {width:100%; height:400px; margin:0 auto; text-align: center; background: url(../gmi/main/village_media_bg.jpg) no-repeat center top; }
@@ -215,7 +219,7 @@ span.edu {background:  #000;}
 /* notice */
 .layer_View_cont {width:100%; height: auto;}
 .layer_View_inner {width: 90%; margin: 0 auto;}
-
+.layer_View_cont .campaign-pagination {bottom:10px;}
 
 /* schedule */
 .schedule_poster ul li,
@@ -314,7 +318,7 @@ h2 {font-size: 190%;}
 .layer_View_inner > h2 {display:block; margin-bottom:20px;}
 .campaign_swiper p {padding: 0 5px; font-size: 90%;}
 .campaign_swiper span.more {display:none;}
-.layer_View_cont .swiper-pagination {bottom:10px;}
+
 
 /* schedule */
 .schedule_poster .on {font-size: 80%;}
@@ -359,7 +363,7 @@ h2 {font-size: 190%;}
 .layer_View_cont a.campaign i {background-position: -22px -3px;}
 .layer_View_cont a.campaign:hover i {background-position: -22px -3px;}
 .campaign_swiper span.more {display:inline-block;}
-.layer_View_cont .swiper-pagination {display:none;}
+.layer_View_cont .campaign-pagination {display:none;}
 
 /* schedule */
 .schedule_poster .on {padding: 35px 0 0 20px;}
@@ -367,6 +371,7 @@ h2 {font-size: 190%;}
 .schedule_poster ul li img {width:100%;}
 
 /* media */
+.media_swiper {padding-bottom: 35px;}
 .media_swiper .text p span {width: 32px; height: 32px; font-size: 80%; line-height: 32px;}
 .media_swiper .text dl {top: 24%;}
 .media_swiper .text dt {font-size: 125%; line-height: 24px;}

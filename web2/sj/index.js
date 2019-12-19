@@ -26,7 +26,7 @@ function layer_View(status){
 	direction: "horizontal",
 	loop : true,
 	loopFillGroupWithBlank: true,
-	pagination: {el: '.swiper-pagination', clickable: true},
+	pagination: {el: '.campaign-pagination', clickable: true},
 	navigation: {nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev'},
 	roundLengths: true,
 	// 반응형 >= 1024
@@ -44,7 +44,8 @@ var swiper = new Swiper('.media_swiper', {
 	direction: "horizontal",
 	loop : true,
 	autoplay: false, /* {delay: 2500, disableOnInteraction: false, } */
-	pagination: {el: '.swiper-pagination', clickable: true},
+	/* pagination: {el: '.media-pagination', clickable: true}, */
+	pagination: {el: '.swiper-pagination', type: 'fraction',},
 	navigation: {nextEl: '.media-button-next', prevEl: '.media-button-prev'},
 	roundLengths: true,
 	breakpointsInverse: true, 
