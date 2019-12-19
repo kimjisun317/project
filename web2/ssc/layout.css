@@ -25,17 +25,22 @@
 #header .gnb li {display:inline; margin-left:25px; }
 #header .gnb li a {font-size:90%;}
 
-#header .calendar {position: absolute; right:0; top:25px;}
-#header .calendar .text {float:left; margin-right:13px;}
-#header .calendar .text a {display:block; text-align: right; font-size: 90%; color: #999; line-height:16px;}
-#header .calendar .text a span {display:block; font-size: 90%; }
-#header .calendar .text .control {float:right; margin-top:7px;}
-#header .calendar .text .control a {text-align: right; display:inline-block;}
-#header .calendar .text .control a:nth-of-type(2) {margin: 0 10px;}
+#header .calendar {position: absolute; right:0; top:25px; width:200px; height:60px;}
+#header .calendar .text > a {display:block; float: left; width: 140px; text-align: right; font-size: 90%; color: #999; line-height:16px;}
+#header .calendar .text > a span {display:block; font-size: 90%; }
 
 #header .calendar p.day {float:right; width:45px; height:45px; background: #00346a url(../gmi/cni/calendar_icon.png) no-repeat center 8px; border-radius: 50%; text-align: center;}
 #header .calendar p.day span {display: block; color: #fff; font-weight:600; font-size: 80%; margin-top: 19px;}
+#header .bx-controls {position: absolute; top: 40px; right: 60px; left: inherit; width: 35px; height: 9px;}
+#header .bx-controls-direction {width: 35px; height: 9px; margin: 0;}
+#header .bx-controls-direction a {width:5px; height:9px; background: url(../gmi/cni/calendar_next.png) no-repeat left top;}
+#header a.bx-next {background-position: -5px top;}
 
+
+#header .bx-controls-auto {top: -11px; right: 10px;}
+#header .bx-controls-auto a {width:7px; height: 9px; }
+#header .bx-controls-auto a:before {background: url(../gmi/cni/calendar_control.png); margin: -2px 0 0 -2px; background-position: 7px top;}
+#header a.bx-start:before {background-position: 0px top;}
 
 /* container */
 #container {width:100%; overflow: hidden;}

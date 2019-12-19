@@ -1,5 +1,14 @@
 $(document).ready(function(){
-	$("#header").load("cni/header.html");
+	$("#header").load("cni/header.html", function () {
+		$('.calendar_bxslider').bxSlider({
+			mode: 'horizontal',
+			speed : 1000,
+			auto : true,
+			autoControls: true,
+			controls : true,
+			pager : false,
+		  });
+	});
 	$("#footer").load("cni/footer.html");
 	
  });
@@ -14,6 +23,8 @@ $(function(){
 	  controls : true
 	});
 });
+
+
 
 /* layer_campaign */
 function layer_View(status){
