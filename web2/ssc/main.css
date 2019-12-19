@@ -231,6 +231,7 @@ span.edu {background:  #000;}
 
 /* notice */
 .layer_View_cont {width:100%; height: auto;}
+.layer_View_inner {width: 90%; margin: 0 auto;}
 
 
 /* schedule */
@@ -285,7 +286,7 @@ h2 {font-size: 190%;}
 .notice_list > p a {float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .notice_list > p span.day {display:none;}
 .notice a.campaign {font-size:110%;}
-.layer_View_inner {padding: 50px 0;}
+.layer_View_inner {padding: 50px 0; width: 80%;}
 .layer_View_inner > h2 {font-size:190%; margin-bottom:30px;}
 .campaign_swiper p {padding: 0 10px;}
 .campaign_swiper span.more {font-size: 80%; padding: 4px 20px; margin-top: 10px;}
@@ -325,7 +326,7 @@ h2 {font-size: 190%;}
 .notice_list > p a {width: 90%;}
 .notice_list > p span.day,
 .notice h2 {display:none;}
-.layer_View_inner {padding: 40px 0; width: 80%; margin: 0 auto;}
+.layer_View_inner {padding: 40px 0;}
 .layer_View_inner > h2 {display:block; margin-bottom:20px;}
 .campaign_swiper p {padding: 0 5px; font-size: 90%;}
 .campaign_swiper span.more {display:none;}

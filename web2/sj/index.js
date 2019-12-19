@@ -31,7 +31,7 @@ function layer_View(status){
 	roundLengths: true,
 	// 반응형 >= 650
 	breakpointsInverse: true, 
-	breakpoints: {767: {slidesPerView: 3, spaceBetween: 30, slidesPerGroup: 3}, 650: {slidesPerView: 2, spaceBetween: 30, slidesPerGroup: 2}}
+	breakpoints: {1024: {slidesPerView: 3, spaceBetween: 30, slidesPerGroup: 3}, 640: {slidesPerView: 2, spaceBetween: 30, slidesPerGroup: 2}}
 	});
 };
 
