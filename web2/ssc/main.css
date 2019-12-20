@@ -377,7 +377,7 @@ h2 {font-size: 190%;}
 .schedule_month p {display:inline-block;}
 .schedule_month a {display:inline-block; width:auto; padding: 0 24px 0 7px;}
 .schedule_poster {margin-top: 15px;}
-.schedule_day {float:left; width:100%;}
+.schedule_day {float:left; width:100%; margin: 0px;}
 .schedule-button-prev {left: 0px;}
 .schedule-button-next {right: 0px;}
 
