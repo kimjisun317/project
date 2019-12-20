@@ -61,7 +61,7 @@ a.layer_View_close {position:absolute; right:0px; top:-60px;}
 .layer_View_cont .swiper-button-next {right: -60px; width:29px !important; height:50px !important; background: url(../gmi/main/slick_arr.png) no-repeat -29px top;}
 .swiper-button-next:after, .swiper-button-prev:after {font-size: 0px !important; letter-spacing: 0px !important;}
 
-.swiper-slide {display: inline-block !important; text-align: center; font-size: 18px; background: #fff; 
+.swiper-slide {display: inline-block !important; text-align: center; font-size: 18px; /* background: #fff;  */
 /* Center slide text vertically */
 display: -webkit-box;
 display: -ms-flexbox;
@@ -82,23 +82,23 @@ align-items: center;}
 .schedule_month p {font-weight:bold; margin-left:5px;}
 .schedule_month span {font-size: 130%; font-weight:bold; margin-left:4px;}
 .schedule_month a {display:block; width:100%; height:23px; padding-left:7px; margin-top: 3px; line-height:23px; border:1px solid #c2c2c2;border-radius: 15px; font-size:80%; color: #8a8a8a;background: url(../gmi/main/schedule_month_arr.gif) no-repeat 87% 50%;}
-.schedule_month a:hover {color: #fff; border:none; background: #00346a url(../gmi/main/schedule_month_arr_on.png) no-repeat 87% 50%; text-decoration: none;}
+.schedule_month a:hover {color: #fff; border:1px solid #00346a; background: #00346a url(../gmi/main/schedule_month_arr_on.png) no-repeat 87% 50%; text-decoration: none;}
 
-.schedule_day {float:right; width:92%; background: url(../gmi/main/schedule_day_line.gif) repeat-x left top;}
-.schedule_day ul {width:auto; height:auto; overflow: hidden;}
-.schedule_day ul li {float:left; display: block; width:40px; height:55px; background: url(../gmi/main/schedule_day_none.gif) no-repeat center 10px; font-size:95%; font-weight:bold; color: #979797; padding-top:33px; margin-left: 5.3%;}
-.schedule_day ul li.today {background: url(../gmi/main/schedule_day_today.gif) no-repeat center top; padding-top:0px; }
-.schedule_day ul li.today a {color: #ee2d2e;}
-.schedule_day ul li.after {background: url(../gmi/main/schedule_day_after.gif) no-repeat center top; padding-top:0px; }
-.schedule_day ul li a {float:left; width:100%; height:100%; font-size:95%; font-weight:bold; color: #979797; padding-top:33px; }
-.schedule_day ul li a:hover/* ,
-.schedule_day ul li a:active,
-.schedule_day ul li a:focus */ {background: url(../gmi/main/schedule_day_today.gif) no-repeat center top; color: #ee2d2e;}
+/* schedule_swiper */
+.schedule_day {float:right; position: relative; width:90%; margin-right:19px; background: url(../gmi/main/schedule_day_line.gif) repeat-x left top;}
+.schedule_swiper {width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; list-style: none; padding: 0; z-index: 1; background: url(../gmi/main/schedule_day_line.gif) repeat-x left top;}
+/* .schedule_swiper > .swiper-wrapper {overflow: hidden;} */
+.schedule_swiper > .swiper-wrapper > .swiper-slide > a {display: block; background: url(../gmi/main/schedule_day_none.gif) no-repeat center top; font-size:85%; font-weight:bold; color: #979797; padding-top:33px;}
+.schedule_swiper > .swiper-wrapper > .swiper-slide > a.after {background: url(../gmi/main/schedule_day_after.gif) no-repeat center top; color: #979797;}
+.schedule_swiper > .swiper-wrapper > .swiper-slide > a.after:hover,
+.schedule_swiper > .swiper-wrapper > .swiper-slide > a.today {background: url(../gmi/main/schedule_day_today.gif) no-repeat center top; color: #ee2d2e;}
 
-.schedule_day > a {float:left; display: block; width:19px; height:27px;  text-indent:-9999px;}
-.schedule_day > a:hover {opacity: 0.5;}
-.schedule_day > a:nth-of-type(1) {background: url(../gmi/main/schedule_day_prev.gif) no-repeat left top;}
-.schedule_day > a:nth-of-type(2) {float:right; background: url(../gmi/main/schedule_day_next.gif) no-repeat left top;}
+.schedule-button-prev,
+.schedule-button-next {position: absolute; top: 0px; /* top: 43%;  margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);*/ z-index: 10; cursor: pointer; display: flex; align-items: center; justify-content: center; width:19px !important; height:27px !important; background: url(../gmi/main/schedule_day_nextprev.gif);}
+.schedule-button-prev:hover,
+.schedule-button-next:hover {opacity: 0.5;}
+.schedule-button-prev {left:-19px; background-position: left top;}
+.schedule-button-next {right:-19px; background-position: -19px top;}
 
 
 .schedule_poster {float:left; width:100%; height:auto; margin-top:35px;}
@@ -250,9 +250,11 @@ span.edu {background:  #000;}
 
 
 /* schedule */
+.schedule_day {width: 87%;}
 .schedule_poster .on {padding: 28px 0 0 15px;}
 .schedule_poster .on p {font-size: 140%; margin-bottom: 5px;}
 .schedule_poster ul li a:hover .on {height:100px;}
+
 
 /* experience */
 .experience {height: 400px; background-size:cover; background-position: -100px top;}
@@ -280,6 +282,7 @@ h2 {font-size: 190%;}
 .swiper-button-next, .swiper-button-prev {top: 44% !important;}
 
 /* schedule */
+.schedule_day {width: 82%;}
 .schedule_poster ul li p.black span {font-size: 90%;}
 
 /* media */
@@ -321,6 +324,7 @@ h2 {font-size: 190%;}
 
 
 /* schedule */
+.schedule_day {width: 80%;}
 .schedule_poster .on {font-size: 80%;}
 .schedule_poster .on p {font-size: 130%;}
 .schedule_poster .on span {width: 20px; height: 20px; line-height: 20px;}
@@ -363,14 +367,32 @@ h2 {font-size: 190%;}
 .layer_View_cont a.campaign i {background-position: -22px -3px;}
 .layer_View_cont a.campaign:hover i {background-position: -22px -3px;}
 .campaign_swiper span.more {display:inline-block;}
+.layer_View_inner {padding: 20px 0;}
+.layer_View_inner > h2 {font-size: 160%; margin-bottom: 10px;}
 .layer_View_cont .campaign-pagination {display:none;}
 
 /* schedule */
+.schedule {margin: 20px auto;}
+.schedule_month {width:100%; text-align: center; margin-bottom:10px;}
+.schedule_month p {display:inline-block;}
+.schedule_month a {display:inline-block; width:auto; padding: 0 24px 0 7px;}
+.schedule_poster {margin-top: 15px;}
+.schedule_day {float:left; width:100%;}
+.schedule-button-prev {left: 0px;}
+.schedule-button-next {right: 0px;}
+
 .schedule_poster .on {padding: 35px 0 0 20px;}
-.schedule_poster ul li, 
+.schedule_poster ul li {width: 50%;}
 .schedule_poster ul li img {width:100%;}
+.schedule_poster ul li:nth-of-type(3),
+.schedule_poster ul li:nth-of-type(4),
+.schedule_poster ul li:nth-of-type(5) {display: none;}
+.schedule_poster .on {padding: 25px 0 0 20px;}
+/* .schedule_poster ul li, .schedule_poster ul li img {width:100%;} */
 
 /* media */
+.media {padding: 20px 0;}
+.media h2 {font-size: 160%; margin-bottom: 10px;}
 .media_swiper {padding-bottom: 35px;}
 .media_swiper .text p span {width: 32px; height: 32px; font-size: 80%; line-height: 32px;}
 .media_swiper .text dl {top: 24%;}
