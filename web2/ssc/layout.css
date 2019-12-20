@@ -133,6 +133,7 @@ transform: rotate(180deg);}
 .footer_bottom .copyright {text-align: center;}
 .footer_bottom .link {width: 100%; text-align: center;}
 .footer_bottom .link a {margin: 0 2px; font-size: 90%; }
+.footer_bottom .link a:nth-of-type(4) {display:none;}
 
 #footer .viewer {float:inherit; width:270px; text-align: center; margin:0 auto 0;}
 .footer_bottom .family {position: inherit;}
