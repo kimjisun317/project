@@ -9,7 +9,14 @@ $(document).ready(function(){
 			pager : false,
 		  });
 	});
-	$("#footer").load("cni/footer.html");
+	$("#footer").load("cni/footer.html", function () {
+		//관련사이트	
+	$('.footer_bottom a').click(function () {
+		$(this).toggleClass('openbox');
+		//$(this).next("ul").toggleClass('openbox');
+		$(this).next("p").slideToggle(300);
+	});
+	});
 	
  });
 
