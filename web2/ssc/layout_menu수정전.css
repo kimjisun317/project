@@ -10,23 +10,22 @@
 
 .red {color: #ee2d2e;}
 
-#wrap {width:100%; overflow:hidden; background: url(../gmi/cni/header_bg.gif) repeat-x center top;}
+#wrap {width:100%; overflow:hidden;}
 
 /* header */
-#header {position: relative; width:1350px; height:150px; margin:0 auto;}
-#header h1 {margin: 0 auto; padding-top:29px; text-align: center; height:90px;}
+#header {position: relative; width:1350px; height:100px; margin:0 auto;}
+#header h1 {margin: 0 auto; padding-top:33px; text-align: center;}
 #header a:hover {opacity: 0.5;}
 
-#header .m_menu {display:none;}
+#header .topmenu {position: absolute; left:0; top:23px; }
+#header .topmenu a {float:left; width:36px; height:55px;  background: url(../gmi/cni/menu.gif) no-repeat left top; }
+#header .topmenu a span {float:left; width:100%; text-align:center; font-size:75%; font-weight:bold; padding-top:42px; letter-spacing: 0px; color: #595959;}
 
-#header .gnb {position: absolute; left:0; top:35px;}
-#header .gnb li {display:inline; margin-right:25px;}
-#header .gnb li a {font-size:90%; line-height:14px; color: #999;}
-#header .gnb li a i {display:inline-block; width:12px; height: 14px; background: url(../gmi/cni/gnb_icon.gif) no-repeat left top; vertical-align: middle; margin-right:8px;}
-#header .gnb li:nth-of-type(2) a i {background-position: -14px top;}
-#header .gnb li:nth-of-type(3) a i {background-position: -27px top;}
+#header .gnb {position: absolute; left:40px; top:35px;}
+#header .gnb li {display:inline; margin-left:25px; }
+#header .gnb li a {font-size:90%;}
 
-#header .calendar {position: absolute; right:0; top:20px; width:200px; height:60px;}
+#header .calendar {position: absolute; right:0; top:25px; width:200px; height:60px;}
 #header .calendar .text > a {display:block; float: left; width: 140px; text-align: right; font-size: 90%; color: #999; line-height:16px;}
 #header .calendar .text > a span {display:block; font-size: 90%; }
 
@@ -36,14 +35,12 @@
 #header .bx-controls-direction {width: 35px; height: 9px; margin: 0;}
 #header .bx-controls-direction a {width:5px; height:9px; background: url(../gmi/cni/calendar_next.png) no-repeat left top;}
 #header a.bx-next {background-position: -5px top;}
+
+
 #header .bx-controls-auto {top: -11px; right: 10px;}
 #header .bx-controls-auto a {width:7px; height: 9px; }
 #header .bx-controls-auto a:before {background: url(../gmi/cni/calendar_control.png); margin: -2px 0 0 -2px; background-position: 7px top;}
 #header a.bx-start:before {background-position: 0px top;}
-
-#header .topmenu {width:100%; height:60px;}
-#header .topmenu li {float:left; width:14.28%; text-align: center;}
-#header .topmenu li a {width:100%; line-height:60px; font-size: 120%;}
 
 /* container */
 #container {width:100%; overflow: hidden;}
@@ -99,8 +96,8 @@ transform: rotate(180deg);}
 .footer_con {width:100%;}
 
 /* header */
-#header .m_menu {left: 20px;}
-#header .gnb {left: 20px;}
+#header .topmenu {left: 20px;}
+#header .gnb {left: 60px;}
 #header .calendar {right:20px;}
 
 /* footer */
@@ -109,16 +106,8 @@ transform: rotate(180deg);}
 
 /********************** 768px **********************/
 @media all and (max-width:768px){
-#wrap {background: none;}
-
-
 /* header */
-#header {height:90px;}
-#header .m_menu {display:block; position: absolute; left:20px; top:19px; }
-#header .m_menu a {float:left; width:36px; height:55px;  background: url(../gmi/cni/menu.gif) no-repeat left top; }
-#header .m_menu a span {float:left; width:100%; text-align:center; font-size:75%; font-weight:bold; padding-top:42px; letter-spacing: 0px; color: #595959;}
-#header .gnb,
-#header .topmenu {display:none;}
+#header .gnb {display:none;}
 
 
 /* footer */
@@ -132,9 +121,9 @@ transform: rotate(180deg);}
 #header {height: 70px;}
 #header h1 {padding-top: 22px;}
 #header h1 img {height: 26px;}
-#header .m_menu {top: 11px;}
-#header .m_menu a {background-position: center top; background-size: 30px auto;}
-#header .m_menu a span {padding-top:36px;}
+#header .topmenu {top: 11px;}
+#header .topmenu a {background-position: center top; background-size: 30px auto;}
+#header .topmenu a span {padding-top:36px;}
 #header .calendar {display:none;}
 
 /* footer */
