@@ -17,14 +17,12 @@
 #header h1 {margin: 0 auto; padding-top:29px; text-align: center; height:90px;}
 #header a:hover {opacity: 0.5;}
 
-#header .m_menu {display:none;}
-
-#header .gnb {position: absolute; left:0; top:35px;}
-#header .gnb li {display:inline; margin-right:25px;}
-#header .gnb li a {font-size:90%; line-height:14px; color: #999;}
-#header .gnb li a i {display:inline-block; width:12px; height: 14px; background: url(../gmi/cni/gnb_icon.gif) no-repeat left top; vertical-align: middle; margin-right:8px;}
-#header .gnb li:nth-of-type(2) a i {background-position: -14px top;}
-#header .gnb li:nth-of-type(3) a i {background-position: -27px top;}
+#header .global {position: absolute; left:0; top:35px;}
+#header .global li {display:inline; margin-right:25px;}
+#header .global li a {font-size:90%; line-height:14px; color: #999;}
+#header .global li a i {display:inline-block; width:12px; height: 14px; background: url(../gmi/cni/gnb_icon.gif) no-repeat left top; vertical-align: middle; margin-right:8px;}
+#header .global li:nth-of-type(2) a i {background-position: -14px top;}
+#header .global li:nth-of-type(3) a i {background-position: -27px top;}
 
 #header .calendar {position: absolute; right:0; top:20px; width:200px; height:60px;}
 #header .calendar .text > a {display:block; float: left; width: 140px; text-align: right; font-size: 90%; color: #999; line-height:16px;}
@@ -41,9 +39,33 @@
 #header .bx-controls-auto a:before {background: url(../gmi/cni/calendar_control.png); margin: -2px 0 0 -2px; background-position: 7px top;}
 #header a.bx-start:before {background-position: 0px top;}
 
-#header .topmenu {width:100%; height:60px;}
-#header .topmenu li {float:left; width:14.28%; text-align: center;}
-#header .topmenu li a {width:100%; line-height:60px; font-size: 120%;}
+/* menu */
+#header .layerGnb{z-index:500; width:100%; height: 60px;}	
+#header .layerGnb .bgLayer{display:none; position:fixed; top:150px; left:0; right:0;height:242px; background: #f8f8f8; z-index:400; border-top: 1px solid #eee;}
+#header .layerGnb .wrapCnt {width:100%; height:100%;}
+#header .gnb {/* float:right;  */ width:100%; height:100%; text-align:center; }
+#header .gnb:after{content:''; display:block; clear:both;}
+#header .gnb > ul > li{display:inline-block; float:left; position:relative; width: 14.28%; line-height:60px;}
+#header .gnb li a{display:block; font-size:120%;}
+#header .gnb li a:hover,
+#header .gnb li a:focus,
+#header .gnb li.active > a{text-decoration:none;}
+#header .gnb li.active > a{color:#ee2d2e; opacity: 1;}
+
+#header .gnb .depth2{display:none; position:absolute; top:60px; right:0; left:0; height:242px; z-index:500; padding: 10px 0; border-left: 1px solid #eee;}
+#header .gnb ul > li:nth-of-type(1) .depth2 {border-left: none;}
+#header .gnb .depth2 > li{display:block; width:100%; margin:0; line-height: 20px;}
+#header .gnb .depth2 li a {font-size:95%; text-align:center; padding:4px 0 4px 0;}
+#header .gnb .depth2 li a:hover,
+#header .gnb .depth2 li a:active,
+#header .gnb .depth2 li a:focus{color:#ee2d2e; opacity: 1; text-decoration:underline;}
+#header .gnb .depth2 li.on a{color:#333;font-weight:600; text-decoration:underline;}
+#header .gnb .depth2 li.on a:hover,
+#header .gnb .depth2 li.on a:active,
+#header .gnb .depth2 li.on a:focus{color:#ee2d2e;}
+
+#header .m_logo,
+.hidePc{display:none;}
 
 /* container */
 #container {width:100%; overflow: hidden;}
@@ -99,26 +121,69 @@ transform: rotate(180deg);}
 .footer_con {width:100%;}
 
 /* header */
-#header .m_menu {left: 20px;}
-#header .gnb {left: 20px;}
+#header .global {left: 20px;}
 #header .calendar {right:20px;}
 
 /* footer */
 .footer_con {padding: 25px 20px;}
 }
 
+/********************** 1024px **********************/
+@media all and (max-width:1024px){
+/* header */
+#header .global li {margin-right:15px;}
+}
+
 /********************** 768px **********************/
-@media all and (max-width:768px){
+@media all and (max-width:785px){
 #wrap {background: none;}
 
 
 /* header */
 #header {height:90px;}
+#header .m_logo {display:block; text-align: center; width:100%; margin-top:12px;}
+#header .m_logo img {height: 20px;}
+
+#header .global {left:0; top:42px; width:100%;}
+#header .global ul {width:100%;}
+#header .global li {width: 47%; float: left; text-align: center; border: 1px solid #ccc; margin: 0 0 0 2%; padding: 5px 0;}
+#header .global li:nth-of-type(1) {display:none;}
+
+#header .layerGnb {display:none;position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.7);z-index:9999; height:100%;}
+#header .layerGnb .wrapCnt{overflow:scroll;position:absolute;top:0;bottom:0;left:0;width:260px;background:#fff;}
+#header .gnb {float:none; width:100%; height:auto; margin-top:48px; border-bottom:1px solid #ddd;}
+#header .gnb a {opacity: 1;}
+#header .gnb ul {width:100%;}
+#header .gnb ul li{display:block; width:100%; padding: 0; line-height:45px;}
+#header .gnb > ul > li:last-child {padding: 0;}
+#header .gnb > ul > li > a{position:relative;padding:0px 22px !important; font-size: 120%; text-align:left;border-top:1px solid #ddd;}
+#header .gnb > ul > li > a:before{content:''; display:inline-block; position:absolute; top:50%; right:34px; width:13px; height:9px; margin-top:-4px; background: url(../gmi/cni/mmenu_icon.gif) no-repeat left top;/* transform:rotate(90deg); */}
+
+
+#header .gnb > ul > li > a:hover,
+#header .gnb > ul > li > a:active,
+#header .gnb > ul > li > a:focus{color:#ee2d2e;}
+/* #header .gnb > ul > li > a:hover:before,
+#header .gnb li.active > a:before{background-position: left -9px;} */
+#header .gnb li.on > a{background:#2a4c76}
+
+#header .gnb .depth2{position:static;width:100%;height:auto;padding:5px 0;border:0; border-top:1px solid #ddd; background: #f8f8f8;}
+#header .gnb .depth2 li a{float:inherit; width:100%; padding:8px 23px; text-decoration:none !important; text-align: left; box-sizing:border-box; font-size:100%; background:#f8f8f8;}
+#header .gnb .depth2 li a:hover,
+#header .gnb .depth2 li a:active,
+#header .gnb .depth2 li a:focus{/* background: #ddd; */}
+#header .gnb .depth2 li:first-child a{border:0;}
+#header .gnb .depth2 li a br{display:none}
+#header .gnb .depth2 .on a{text-decoration:underline !important;background:#f8f8f8;}
+
 #header .m_menu {display:block; position: absolute; left:20px; top:19px; }
 #header .m_menu a {float:left; width:36px; height:55px;  background: url(../gmi/cni/menu.gif) no-repeat left top; }
 #header .m_menu a span {float:left; width:100%; text-align:center; font-size:75%; font-weight:bold; padding-top:42px; letter-spacing: 0px; color: #595959;}
-#header .gnb,
-#header .topmenu {display:none;}
+
+.hidePc{display:block;}
+#header .btnToggleMn{position:absolute; top:19px; left:20px; }
+#header .btnToggleMn a{display:block; position:relative; width:36px; height:55px; background: url(../gmi/cni/menu.gif) no-repeat left top;}
+#header .btnToggleMn a span {float:left; width:100%; text-align:center; font-size:75%; font-weight:bold; padding-top:42px; letter-spacing: 0px; color: #595959;}
 
 
 /* footer */
@@ -132,9 +197,9 @@ transform: rotate(180deg);}
 #header {height: 70px;}
 #header h1 {padding-top: 22px;}
 #header h1 img {height: 26px;}
-#header .m_menu {top: 11px;}
-#header .m_menu a {background-position: center top; background-size: 30px auto;}
-#header .m_menu a span {padding-top:36px;}
+#header .btnToggleMn {top: 11px;}
+#header .btnToggleMn a {background-position: center top; background-size: 30px auto;}
+#header .btnToggleMn a span {padding-top:36px;}
 #header .calendar {display:none;}
 
 /* footer */

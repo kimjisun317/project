@@ -43,8 +43,7 @@
 #header .gnb .depth2 li.on a{color:#333;font-weight:600;text-decoration:underline;}
 #header .gnb .depth2 li.on a:hover,
 #header .gnb .depth2 li.on a:active,
-#header .gnb .depth2 li.on a:focus{color:#fff}
-
+#header .gnb .depth2 li.on a:focus{color:#fff;}
 .hidePc{display:none;}
 
 /* container */
