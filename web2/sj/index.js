@@ -17,6 +17,23 @@ $(document).ready(function(){
 			$(this).next("p").slideToggle(300);
 		});
 	});
+
+	//quickmenu
+	$(window).scroll(function () {
+		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+			lastPostFunc();
+		}
+		else {
+			lastPostFunc2();
+		}
+	});
+	function lastPostFunc() {
+		$('.quickFix').css('margin-bottom', '250px');
+	};
+	function lastPostFunc2() {
+		$('.quickFix').css('margin-bottom', '250px');
+	};
+
 	
  });
 
@@ -185,5 +202,8 @@ $(function(){
 	});
 });
 
-
-
+//퀵메뉴
+/* $(function(){
+    
+  });
+ */

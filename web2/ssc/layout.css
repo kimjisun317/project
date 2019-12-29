@@ -115,6 +115,34 @@ transform: rotate(180deg);}
 .footer_bottom .family_open:nth-of-type(2) p {height:283px; overflow-y: scroll;}
 .footer_bottom .family_open p a:last-child {border-bottom:none;}
 
+/* quickmenu */
+.quickFix{height:332px; position:fixed; z-index:999; right:50px; bottom:-210px;-moz-transition: all 1s;-webkit-transition: all 1s;-ms-transition: all 1s;-o-transition: all 1s;transition: all 1s;}
+.quickFix ul{float:right;}
+.quickFix ul li{width:75px; height:65px; margin-bottom:10px;}
+.quickFix ul li a {display:block; color:#333; text-align: center;}
+.quickFix ul li a i {display:block; margin:0 auto; width: 45px; height: 45px; border-radius: 50%; background: #b9b9b9 url(../gmi/cni/quick_icon.png) no-repeat 0px top; background-size: 100% auto;}
+.quickFix ul li a:hover i {background-color: #52c0c7;}
+.quickFix ul li:nth-of-type(2) a i {background-position: 0px -45px;}
+.quickFix ul li:nth-of-type(3) a i {background-position: 0px -90px;}
+.quickFix ul li:nth-of-type(4) a i {background-position: 0px -135px;}
+.quickFix ul li a span {display:block; width:100%; margin-top:5px; font-size:80%;}
+.goTop {float:right; height:22px !important; text-align:center; line-height:22px;font-weight:lighter;}
+.goTop a {display:block; width:44px; height:100%; margin:0 auto; color:#fff !important;font-size:18px !important; background:#43464f url(../gmi/cni/quick_top.png) no-repeat center 7px; border-radius: 25px;}
+.goTop a:hover {background-color: #ee2d2e;}
+
+/********************** 1650px **********************/
+@media all and (max-width:1650px){
+/* quickmenu */
+.quickFix{right:0px;}
+}
+
+/********************** 1500px **********************/
+@media all and (max-width:1500px){
+/* quickmenu */
+.quickFix{display:none}
+}
+
+
 /********************** 1400px **********************/
 @media all and (max-width:1400px){
 #header,
