@@ -116,7 +116,7 @@ transform: rotate(180deg);}
 .footer_bottom .family_open p a:last-child {border-bottom:none;}
 
 /* quickmenu */
-.quickFix{height:332px; position:fixed; z-index:999; right:50px; bottom:-210px;-moz-transition: all 1s;-webkit-transition: all 1s;-ms-transition: all 1s;-o-transition: all 1s;transition: all 1s;}
+.quickFix{height:332px; position:fixed; z-index:999; right:30px; bottom:-210px;-moz-transition: all 1s;-webkit-transition: all 1s;-ms-transition: all 1s;-o-transition: all 1s;transition: all 1s;}
 .quickFix ul{float:right;}
 .quickFix ul li{width:75px; height:65px; margin-bottom:10px;}
 .quickFix ul li a {display:block; color:#333; text-align: center;}
