@@ -18,24 +18,25 @@ $(document).ready(function(){
 		});
 	});
 
-	//quickmenu
-	$(window).scroll(function () {
-		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-			lastPostFunc();
-		}
-		else {
-			lastPostFunc2();
-		}
+	$(".quickFix").load("cni/quick.html", function () {
+		//quickmenu
+		$(window).scroll(function () {
+			if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+				lastPostFunc();
+			}
+			else {
+				lastPostFunc2();
+			}
+		});
+		function lastPostFunc() {
+			$('.quickFix').css('margin-bottom', '250px');
+		};
+		function lastPostFunc2() {
+			$('.quickFix').css('margin-bottom', '250px');
+		};
 	});
-	function lastPostFunc() {
-		$('.quickFix').css('margin-bottom', '250px');
-	};
-	function lastPostFunc2() {
-		$('.quickFix').css('margin-bottom', '250px');
-	};
-
 	
- });
+});
 
 //menu
 $(window).on('load resize', function(){	
@@ -201,9 +202,3 @@ $(function(){
 	breakpoints: {1250: {slidesPerView: 4, spaceBetween: 30, slidesPerGroup: 4}, 1024: {slidesPerView: 3, spaceBetween: 30, slidesPerGroup: 3}, 640: {slidesPerView: 2, spaceBetween: 30, slidesPerGroup: 2}}
 	});
 });
-
-//퀵메뉴
-/* $(function(){
-    
-  });
- */
