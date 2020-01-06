@@ -7,20 +7,6 @@
 .sub_top h2 {width: auto; height:170px; margin:0 auto; padding-top: 70px; font-size: 220%; font-weight:400; color: #fff; text-align: center;}
 
 /* lnb */
-/* .lnb {width:100%; height: auto; z-index: 10;}
-.lnb > ul.depth1 {width:1350px; margin: 0 auto;}
-.lnb > ul.depth1 > li {float:left; text-align: center; height:50px; line-height:50px;} 
-.lnb > ul.depth1 > li > a {display:inline-block; font-size:110%; width:100%; color: #fff;}
-.lnb > ul.depth1 > li > a:hover,
-.lnb > ul.depth1 > li > a:focus,
-.lnb > ul.depth1 > li.on {background: #b60305;}
-
-
-.lnb > ul.depth1 > li > ul.depth2 {float:left; width:1350px; height:auto; border-bottom:1px solid #cbcbcb;}
-.lnb > ul.depth1 > li > ul.depth2 > li {float:left; width: auto;}
-
-.lnb > ul.lnb_5 > li {width:20%;} */  
-
 .lnb {width:100%; height: auto; overflow: hidden; z-index: 10;}
 .lnb > ul.depth1 {width:1350px; margin:0 auto;}
 .lnb > ul.depth1 > li {float:left; text-align: center;} 
