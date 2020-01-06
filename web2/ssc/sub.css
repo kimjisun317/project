@@ -7,21 +7,35 @@
 .sub_top h2 {width: auto; height:170px; margin:0 auto; padding-top: 70px; font-size: 220%; font-weight:400; color: #fff; text-align: center;}
 
 /* lnb */
-.lnb {width:100%; height: auto; overflow: hidden; z-index: 10;}
-.lnb ul.depth1 {width:1350px; margin:0 auto;}
-.lnb ul.depth1 li {float:left; text-align: center;} 
-.lnb ul.depth1 li a {display: block; width:100%; color: #fff; line-height:50px; font-size:110%; border-right: 1px solid #30302f; text-decoration: none;}
-.lnb ul.depth1 li:first-child a {border-left: 1px solid #30302f;}
-.lnb ul.depth1 li:hover,
-.lnb ul.depth1 li:focus,
-.lnb ul.depth1 li.on {background: #b60305;}
-.lnb_5 li {width: 20%;}
+/* .lnb {width:100%; height: auto; z-index: 10;}
+.lnb > ul.depth1 {width:1350px; margin: 0 auto;}
+.lnb > ul.depth1 > li {float:left; text-align: center; height:50px; line-height:50px;} 
+.lnb > ul.depth1 > li > a {display:inline-block; font-size:110%; width:100%; color: #fff;}
+.lnb > ul.depth1 > li > a:hover,
+.lnb > ul.depth1 > li > a:focus,
+.lnb > ul.depth1 > li.on {background: #b60305;}
 
-.lnb ul.depth2 {width:1350px; height:auto; margin: 0 auto; overflow: hidden; border-bottom:1px solid #cbcbcb;}
-.lnb ul.depth2 li {float:left; width:auto !important; background: url(../gmi/sub/depth2_bar.gif) no-repeat right top;}
-.lnb ul.depth2 li a {display: block; height:50px; line-height:50px; padding: 0 33px; color: #787878; font-size:110%; text-decoration: none;}
-.lnb ul.depth2 li.on a {color: #000; border-bottom:2px solid #232323; background: url(../gmi/sub/depth2_on.gif) no-repeat 80% 50%; padding: 0 53px 0 33px;}
-.lnb ul.depth2 li:hover a {color: #000; border-bottom:2px solid #232323;}
+
+.lnb > ul.depth1 > li > ul.depth2 {float:left; width:1350px; height:auto; border-bottom:1px solid #cbcbcb;}
+.lnb > ul.depth1 > li > ul.depth2 > li {float:left; width: auto;}
+
+.lnb > ul.lnb_5 > li {width:20%;} */  
+
+.lnb {width:100%; height: auto; overflow: hidden; z-index: 10;}
+.lnb > ul.depth1 {width:1350px; margin:0 auto;}
+.lnb > ul.depth1 > li {float:left; text-align: center;} 
+.lnb > ul.depth1 > li > a {display: block; width:100%; color: #fff; line-height:50px; font-size:110%; border-left: 1px solid #30302f; text-decoration: none;}
+.lnb > ul.depth1 > li:first-child > a {border-left: none;}
+.lnb > ul.depth1 > li > a:hover,
+.lnb > ul.depth1 > li > a:focus,
+.lnb > ul.depth1 > li.on {background: #b60305;}
+.lnb > ul.lnb_5 > li {width: 20%;}
+
+.lnb > ul.depth1 > li > ul.depth2 {width:1350px; height:auto; margin: 0 auto; overflow: hidden; border-bottom:1px solid #cbcbcb;}
+.lnb > ul.depth1 > li > ul.depth2 > li {float:left; width:auto !important; background: url(../gmi/sub/depth2_bar.gif) no-repeat right top;}
+.lnb > ul.depth1 > li > ul.depth2 > li > a {display: block; height:50px; line-height:50px; padding: 0 33px; color: #787878; font-size:110%; text-decoration: none;}
+.lnb > ul.depth1 > li > ul.depth2 > li.on > a {color: #000; border-bottom:2px solid #232323; background: url(../gmi/sub/depth2_on.gif) no-repeat 80% 50%; padding: 0 53px 0 33px;}
+.lnb > ul.depth1 > li > ul.depth2 > li:hover > a {color: #000; border-bottom:2px solid #232323;}
 
 /* sub_head */
 .sub_head {width:1350px; margin:70px auto 50px;}

@@ -29,10 +29,10 @@ $(document).ready(function(){
 			}
 		});
 		function lastPostFunc() {
-			$('.quickFix').css('margin-bottom', '250px');
+			$('.quickFix').css('margin-bottom', '250px'); //250
 		};
 		function lastPostFunc2() {
-			$('.quickFix').css('margin-bottom', '250px');
+			$('.quickFix').css('margin-bottom', '250px'); //250
 		};
 	});
 	
