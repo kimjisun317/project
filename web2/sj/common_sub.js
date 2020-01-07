@@ -19,7 +19,7 @@ $(document).ready(function(){
 		});
 	});
 
-	$(".quickFix").load("../cni/quick.html", function () {
+	$(".quickFix").load("../cni/quick_sub.html", function () {
 		//quickmenu
 		$(window).scroll(function () {
 			if ($(window).scrollTop() == $(document).height() - $(window).height()) {
