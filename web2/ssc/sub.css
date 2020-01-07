@@ -49,6 +49,7 @@ ul.location li a i {display: block; width:100%; height:100%; background: url(../
 /* .lnb > ul.depth1 > li > ul.depth2, */
 .sub_head,
 .content {width:100%;}
+.content {padding: 0 20px;}
 }
 
 /********************** 1200px **********************/
@@ -57,16 +58,34 @@ ul.location li a i {display: block; width:100%; height:100%; background: url(../
 
 /********************** 1040px **********************/
 @media all and (max-width:1040px){
+.sub_head {margin: 30px auto;}
 .lnb > ul.depth1 > li > a {font-size: 100%;}
+
 
 }
 
 /********************** 768px **********************/
 @media all and (max-width:768px){
-.lnb > ul.depth1 > li > a {font-size: 90%;}
+#container {background-size: auto 100px;}
+
+.sub_head {margin: 20px auto;}
+.sub_head h3 {font-size:180%;}
+ul.location {margin-top: 5px;}
+ul.location li {font-size:80%; padding-left: 20px; background-position: 8px 45%;}
+
+.sub_top {background-position: center 100px; background-size: auto 40px;}
+.sub_top h2 {height: 100px; padding-top: 38px; font-size:200%;}
+
+.lnb > ul.depth1 > li > a {font-size: 90%; line-height: 40px;}
+.lnb > ul.depth1 > li > ul.depth2 > li > a {font-size: 90%; height: 40px; line-height: 40px;}
 }
 
 /********************** 640px **********************/
 @media all and (max-width:640px){
+#container {background-size: auto 70px;}
+.sub_head h3 {font-size:170%;}
+.sub_top {background: none;}
+.sub_top h2 {height: 70px; padding-top: 23px; font-size:170%;}
+
 .lnb {display: none;}
 }
