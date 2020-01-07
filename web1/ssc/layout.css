@@ -12,7 +12,8 @@
 #wrap {width:100%; overflow:hidden;}
 
 /* header */
-#header {position: relative; width:1200px; height:90px; margin:0 auto; z-index:1000;}
+#header {position: relative; width:100%; /* width:1200px; */ height:90px; margin:0 auto; z-index:1000;}
+#header h1.mobile_logo {display:none;}
 #header h1 {float:left; margin-top: 20px;}
 
 #header .global {position: absolute; right:0; top:0px;}
@@ -21,8 +22,8 @@
 
 /* menu */
 #header .layerGnb{z-index:500; width:100%; height: 100%;}	
-#header .layerGnb .bgLayer{display:none; position:fixed; top:90px; left:0; right:0;height:242px; background:#f49821; z-index:400; }
-#header .layerGnb .wrapCnt {width:100%; height:100%;}
+#header .layerGnb .bgLayer{display:none; /* position:fixed; */ position: absolute;; top:90px; left:0; right:0;height:242px; background:#f49821; z-index:400; }
+#header .layerGnb .wrapCnt {position: relative; /* width:100%; */ width:1250px;  margin:0 auto; height:100%;}
 #header .gnb {float:right; width:auto; height:auto; margin-top:40px; text-align:center; }
 #header .gnb:after{content:''; display:block; clear:both;}
 #header .gnb > ul > li{display:inline-block; float:left; position:relative; padding: 0 40px;}
@@ -63,7 +64,8 @@
 
 /********************** 1240px **********************/
 @media all and (max-width:1240px){
-#header,
+/* #header, */
+#header .layerGnb .wrapCnt,
 #footer .link ul,
 #footer .copyright {width:100%;}
 
@@ -88,8 +90,9 @@
 
 
 #header {width:100%; height:60px; float:left; /* overflow: hidden; */}
-#header h1 {float:initial; margin: 13px auto 0; text-align: center;}
-#header h1 img {height: 35px;}
+#header h1.mobile_logo {display:block;}
+#header h1.mobile_logo {float:initial; margin: 13px auto 0; text-align: center;}
+#header h1.mobile_logo img {height: 35px;}
 
 #header .global {left:0; background: #f49821; width:100%;}
 #header .global li {float:left; width:50%; margin:0;}
@@ -99,6 +102,7 @@
 
 #header .layerGnb {display:none;position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.7);z-index:9999;}
 #header .layerGnb .wrapCnt{overflow:scroll;position:absolute;top:0;bottom:0;left:0;width:260px;background:#4e5366;}
+#header .layerGnb .wrapCnt h1 {display:none;}
 #header .gnb {float:none; width:100%; margin-top:40px; border-bottom:1px solid #111319;}
 #header .gnb ul {width:100%;}
 #header .gnb ul li{display:block; width:100%; padding: 0;}
