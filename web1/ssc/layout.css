@@ -126,7 +126,7 @@
 .board_search select {margin-right:2px; font-size:100%; width:150px; height:40px; line-height:40px; font-size:100%; border-radius:0; border:1px solid #ddd; background: #fff url('/gmi/cni/bs_arr.gif') no-repeat right top; -webkit-appearance: none; -moz-appearance: none; selec::-ms-expand: none; appearance: none;}
 .board_search select::-ms-expand{display: none;}
 .board_search .inputText { width:300px; height:40px; line-height:40px; font-size:100%; border-radius:0; border-left:1px solid #ddd; border-top:1px solid #ddd; border-bottom:1px solid #ddd; border-right:0px; background: #fff;}
-.board_search button.txt_button {float:right; display:inline-block; width:40px; height:40px; background:#fff url(../gmi/cni/btn_search.png) no-repeat 50% 45%; border-right:1px solid #ddd; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+.board_search button.txt_button {float:right; display:inline-block; width:40px; height:40px; background:#fff url(../gmi/cni/btn_search.png) no-repeat left 45%; border-right:1px solid #ddd; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
 
 /* board_게시판 */
 .board_list{ margin-bottom: 40px; border:0; border-collapse:collapse; width:100%; border-top:3px solid #395980;}
@@ -229,9 +229,8 @@
 
 /* board_검색 */
 .board_search {float:left; text-align:left; width:100%;}
-.board_search .inputText {width:80%;}
-.board_search button.txt_button {width:20%;}
-
+.board_search .inputText {float:left; width:80%;}
+.board_search button.txt_button {float:left;}
     
     
 }
