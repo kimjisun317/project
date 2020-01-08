@@ -125,7 +125,7 @@
 .board_search legend { position:absolute; width:0; height:0; overflow:hidden; visibility:hidden;}
 .board_search select {margin-right:2px; font-size:100%; width:150px; height:40px; line-height:40px; font-size:100%; border-radius:0; border:1px solid #ddd; background: #fff url('/gmi/cni/bs_arr.gif') no-repeat right top; -webkit-appearance: none; -moz-appearance: none; selec::-ms-expand: none; appearance: none;}
 .board_search select::-ms-expand{display: none;}
-.board_search .inputText { width:300px; height:40px; line-height:40px; font-size:100%; border-radius:0; border-left:1px solid #ddd; border-top:1px solid #ddd; border-bottom:1px solid #ddd; border-right:0px; }
+.board_search .inputText { width:300px; height:40px; line-height:40px; font-size:100%; border-radius:0; border-left:1px solid #ddd; border-top:1px solid #ddd; border-bottom:1px solid #ddd; border-right:0px; background: #fff;}
 .board_search button.txt_button {float:right; display:inline-block; width:40px; height:40px; background:#fff url(../gmi/cni/btn_search.png) no-repeat 50% 45%; border-right:1px solid #ddd; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
 
 /* board_게시판 */
