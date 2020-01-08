@@ -62,6 +62,96 @@
 #footer .copyright address {font-style:normal; display:inline-block; margin-right:10px;}
 #footer .copyright span:nth-of-type(2) {display:block;}
 
+/* board_paging */
+.board_paging {margin-top:0px; overflow: hidden; position: relative; text-align: center; width: 100%;}
+.paginate_wrap{position:relative;z-index:0;width:100%;line-height:18px;text-align:center}
+.paginate{display:inline-block;margin:20px 0px 0px 0px;text-align:center;}
+.paginate a,
+.paginate strong,
+.paginate span{float:left;display:inline-block;width:48px;height:48px;margin:0 0 0 -1px;line-height:48px;border:1px solid #d9d9d9; letter-spacing:-1px;text-align:center;vertical-align:top;}
+.paginate strong{background-color:#777777;color:#fff;}
+.paginate a.pg_num{background-color: #fff}
+.paginate a:hover{background-color:#606976;color:#fff;}
+.paginate .first{background:#fff url(../gmi/cni/btn_pg.gif) no-repeat 0px 0px; font-size:0 ;line-height:0; text-indent:-9999px;}
+.paginate .last {background:#fff url(../gmi/cni/btn_pg.gif) no-repeat -138px 0px; font-size:0 ;line-height:0; text-indent:-9999px;}
+
+.paginate .prev{background:#fff url(../gmi/cni/btn_pg.gif) no-repeat -46px 0px; font-size:0 ;line-height:0; text-indent:-9999px;}
+.paginate .next{background:#fff url(../gmi/cni/btn_pg.gif) no-repeat -92px 0px; font-size:0 ;line-height:0; text-indent:-9999px;}
+.paginate span.pre{background:url(../gmi/cni/btn_pg.gif) no-repeat -46px 0px; font-size:0 ;line-height:0; text-indent:-9999px;}
+.paginate span.next{background:url(../gmi/cni/btn_pg.gif) no-repeat -92px 0px; font-size:0 ;line-height:0; text-indent:-9999px;}
+.paginate .first *,
+.paginate .last *,
+.paginate .prev *,
+.paginate .next *{font-size:0;line-height:0;}
+.paginate .first:hover,
+.paginate .last:hover,
+.paginate .prev:hover,
+.paginate .next:hover{background-color:#fff;}
+.paginate a span,
+.paginate .first span,
+.paginate .last span,
+.paginate .pre span,
+.paginate .prev span,
+.paginate .next span,
+.paginate .pre_end span,
+.paginate .next_end span{border:none;}
+
+.paginate strong.m_pg{padding:0 7px 0 20px;width:auto;height:auto;color:#e73444;font-weight:bold;background:none;border:none;}
+.paginate a.m_pg_num{padding:0 20px 0 0px;width:auto;height:auto;color:#000;background:none;border:none;}
+
+
+.paginate_wrap.pc{display:block;}
+.paginate_wrap.mo{display:none;}
+
+/* board */
+.board { clear:both; margin:-20px 0 0 0px;  padding:0 0 0 0;  width:100%; font-size:100%;}
+.board:after { content:""; display:block; float:none; clear:both;}
+.board img { vertical-align:middle;}
+.board caption { font-size:0; line-height:0; text-indent:-9999px; }
+
+/* board_상단 */
+.boardtop {margin:0 0 20px 0; padding:0px; width:100%; overflow:hidden;}
+
+/* board_페이지수 */
+.page_num {margin:0px; padding-top:20px; float:left; width:200px; height:44px;}
+.page_num span { color:#fb5c05 ; font-weight:bold; margin:0px 3px 0 5px; padding:0px;}
+
+/* board_검색 */
+.board_search { margin:0px; padding:0px; overflow:hidden; width:auto; float:right; text-align:right;  }
+.board_search::after {clear: both; content: ""; display: block;}
+.board_search fieldset{ border:0; margin:0; padding:0; clear:both;}
+.board_search fieldset:after { content:""; display:block; float:none; clear:both;}
+.board_search fieldset *{ vertical-align:middle;}
+.board_search legend { position:absolute; width:0; height:0; overflow:hidden; visibility:hidden;}
+.board_search select {margin-right:2px; font-size:100%; width:150px; height:40px; line-height:40px; font-size:100%; border-radius:0; border:1px solid #ddd; background: #fff url('/gmi/cni/bs_arr.gif') no-repeat right top; -webkit-appearance: none; -moz-appearance: none; selec::-ms-expand: none; appearance: none;}
+.board_search select::-ms-expand{display: none;}
+.board_search .inputText { width:300px; height:40px; line-height:40px; font-size:100%; border-radius:0; border-left:1px solid #ddd; border-top:1px solid #ddd; border-bottom:1px solid #ddd; border-right:0px; }
+.board_search button.txt_button {float:right; display:inline-block; width:40px; height:40px; background:#fff url(../gmi/cni/btn_search.png) no-repeat 50% 45%; border-right:1px solid #ddd; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+
+/* board_게시판 */
+.board_list{ margin-bottom: 40px; border:0; border-collapse:collapse; width:100%; border-top:3px solid #395980;}
+.board_list thead th { padding:15px 10px 14px 10px; white-space:nowrap; text-align:center; border:none; background:#f9f9f9; border-left:1px solid #d7d6d6;  border-bottom:1px solid #d7d6d6; font-weight:600; color: #333333;}
+.board_list thead th:first-child {border-left:none;;}
+.board_list thead th:last-child {border-right:none;;}
+.board_list tbody th,
+.board_list tbody td {margin:0px; padding:15px 7px; white-space:normal; border-bottom:1px solid #cccccc; text-align:center; line-height:normal; font-weight:normal; letter-spacing:-1px;}
+.board_list tbody th { letter-spacing:-0.5px; border-left:none;}
+.board_list tbody td.subject { text-align:left; padding:15px 15px; margin:0px; white-space:normal;  }
+.board_list tbody td.subject a { float:left;}
+.board_list tbody td a {font-size:100%;}
+.board_list tbody td img {margin:-3px 0 0 7px; vertical-align:middle; padding:0; line-height:0; font-size:0;}
+.board_list tbody td img.lock {margin:-1px 5px 0 0px;}
+.board_list tbody td span {display:block; width:57px; margin:0 auto; letter-spacing:-2px;}
+.board_list tbody td.alt {text-align:left; padding:15px 15px; }
+.board_list .num {width:60px;}
+.board_list .subject {width:auto;}
+.board_list .file {width:70px;}
+.board_list .writer {width:90px;}
+.board_list .date {width:100px;}
+.board_list .counter {width:70px;}
+.board_list .answer {width:90px;}
+.board_list .state {width:90px;}
+
 /********************** 1240px **********************/
 @media all and (max-width:1240px){
 /* #header, */
@@ -80,7 +170,7 @@
 #header .gnb li a {font-size: 125%;}
 #header .gnb .depth2 li a {font-size: 95%;}
 
-/* footer */
+/* board_paging */
 #footer .link ul {padding: 0 20px;}
 #footer .copyright {padding: 20px 20px 30px 20px;}
 
@@ -129,6 +219,18 @@
 #header .btnToggleMn a{display:block; position:relative; width:43px; height:43px; background:#4d4d4d; border-radius: 3px;}
 #header .btnToggleMn a:before{content:''; display:block; position:absolute; top:50%; left:50%; width:23px; height:20px; margin:-9px 0 0 -11px;background: url(../gmi/cni/btnToggleMn_bg.png) no-repeat center top;}
     
+
+/* 게시판 카운터 */
+.paginate_wrap.pc{display:none;}
+.paginate_wrap.mo{display:block;}
+
+/* board_페이지수 */
+.page_num {width:100%; height:auto; margin-bottom:5px; padding:0;}
+
+/* board_검색 */
+.board_search {float:left; text-align:left; width:100%;}
+.board_search .inputText {width:80%;}
+.board_search button.txt_button {width:20%;}
 
     
     
