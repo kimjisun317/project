@@ -44,6 +44,16 @@ ul.location li:nth-of-type(1) {width:15px; height:15px; background: url(../gmi/s
 .thema_list dd.thema_icon a:nth-of-type(1):hover {background: url(../gmi/main/thema_icon01.gif) no-repeat left -18px;}
 .thema_list dd.thema_icon a:nth-of-type(2):hover {background: url(../gmi/main/thema_icon02.gif) no-repeat left -18px;}
 
+/* festival */
+.festival {width:100%; letter-spacing: -1px;}
+.festival dl {float:left; width:49%; padding: 20px 20px; position: relative; border:1px solid #e7e7e7; background: #fff;}
+.festival dt {margin: 0 0 8px 35.5%;}
+.festival dt a {display:block; font-size: 120%; font-weight: bold; width:90%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.festival dd.photo {position: absolute; left:0; top:0; margin:0; padding:0; width:32.31%;}
+.festival dd {margin: 0 0 1px 35.5%; padding-left:9px; font-size:90%; color: #898989; background: url(../gmi/main/calender_dot.gif) no-repeat left 50%;}
+.festival dd.text {background:none; padding-left:0px; margin-bottom:10px; font-size:100%;}
+.festival dd span {font-size:100%;}
+
 /********************** 1400px **********************/
 @media all and (max-width:1400px){
 }
@@ -75,6 +85,9 @@ ul.location li:nth-of-type(1) {width:15px; height:15px; background: url(../gmi/s
 .thema_list li:nth-of-type(11) {margin-left:0;}
 .thema_list dl {padding-bottom:10px;}
 .thema_list dd.photo a img {width:100%;}
+
+/* festival */
+.festival dl {width:100%;}
 }
 
 /********************** 640px **********************/
