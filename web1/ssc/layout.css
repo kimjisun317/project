@@ -152,6 +152,17 @@
 .board_list .answer {width:90px;}
 .board_list .state {width:90px;}
 
+/* 자주 물어보는 질문 */
+.accor_list { margin-top:10px;  }
+.accor_list>ul>li {margin-top:8px; border:1px solid #d4d4d4; background: #fff url('../gmi/sub/accor_open.png') no-repeat 98% center;}
+.accor_list>ul>li>.tit>a {  display:block; padding:10px 50px; line-height:40px; background:url('../gmi/sub/accor_blet.png') no-repeat 20px center; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-weight:600; color:#555; transition:all .1s ease; }
+.accor_list>ul>li.select {background:#333237 url('../gmi/sub/accor_close.png') no-repeat 98% 20px; }
+.accor_list>ul>li.select>.tit>a { padding:10px 50px; background:url('../gmi/sub/accor_blet_on.png') no-repeat 20px center; color:#fff; }
+.accor_list>ul>li.select+li { border-top-style:solid; border-top-color:#aaa; }
+.accor_list>ul>li .con { display:none; padding:2% 3%; background:#fff; }
+.accor_list>ul>li .con table { margin:0px;} 
+.accor_list>ul>li.nodata  { background:0px; }
+
 /********************** 1240px **********************/
 @media all and (max-width:1240px){
 /* #header, */

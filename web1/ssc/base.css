@@ -536,13 +536,12 @@ h5 { font-size:110%; margin:0 0 15px 0;}
 ul.list_type1,
 ul.list_type2 { font-size:90%; }
  
-.boxTab ul.tab7 li {width:25%;}
+.boxTab ul li {width:25%;}
 .boxTab ul li.Tabon,
 .boxTab ul li:nth-child(1),
 .boxTab ul li:nth-child(2),
 .boxTab ul li:nth-child(3),
 .boxTab ul li:nth-child(4) {border-bottom:0px;}
-.boxTab ul.tab7 li:nth-child(7) {width:50%;}
 
 .basic { font-size:90%;}
 

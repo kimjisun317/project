@@ -102,3 +102,17 @@ $(window).on('load resize', function(){
 
 	
 });
+
+/* 자주하는 질문 */
+$(window).load(function(){
+	$('.accor_list.first_open ul li:first-child').addClass('select').children('.con').slideDown();
+	$('.accor_list.all_open ul li').addClass('select').children('.con').slideDown();
+	$(".accor_list .tit").click(function(){
+		$(this).parent().toggleClass('select');
+		$(this).parent().siblings().removeClass('select');
+		$(this).next('.con').slideToggle();
+		$(this).parent().siblings().children('.con').slideUp();		
+		//$(this).next().slideDown();
+		return false;	
+	});	
+});
