@@ -649,12 +649,16 @@ h5 { font-size:110%; margin:0 0 15px 0;}
 ul.list_type1,
 ul.list_type2 { font-size:90%; }
  
-.boxTab ul li {width:25%;}
+.boxTab ul li {width:25% !important;}
 .boxTab ul li.Tabon,
 .boxTab ul li:nth-child(1),
 .boxTab ul li:nth-child(2),
 .boxTab ul li:nth-child(3),
 .boxTab ul li:nth-child(4) {border-bottom:0px;}
+.boxTab ul.tab13 li {width:14.28% !important;}
+.boxTab ul.tab13 li:nth-child(1) {width:28.56% !important;}
+.boxTab ul.tab13 li:nth-child(5),
+.boxTab ul.tab13 li:nth-child(6) {border-bottom:0px;}
 
 .basic { font-size:90%;}
 
