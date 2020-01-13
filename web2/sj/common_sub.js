@@ -33,7 +33,7 @@ $(document).ready(function(){
 			$('.quickFix').css('margin-bottom', '250px');
 		};
 		function lastPostFunc2() {
-			$('.quickFix').css('margin-bottom', '250px');
+			$('.quickFix').css('margin-bottom', '50px');
 		};
 	});
 
