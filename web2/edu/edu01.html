@@ -8,7 +8,7 @@
 	<meta name="description" content="수원미디어센터 포트폴리오">
 	<meta name="og:description" content="수원미디어센터 포트폴리오">
 	<meta name="viewport" content="user-scalable=yes,initial-scale=1.0,maximum-scale=10.0,minimum-scale=1.0,width=device-width">
-	<title>교육안내 - 김지선 포트폴리오</title>
+	<title>신청 - 김지선 포트폴리오</title>
 
 	<meta http-equiv="Content-Script-Type" content="text/javascript">
 	<meta http-equiv="Content-Style-Type" content="text/css">
@@ -40,22 +40,53 @@
 				<h2>미디어교육</h2>
 				<nav class="lnb">
 					<ul class="depth1 lnb_3">
-						<li class="on"><a href="../edu/edu01.html">교육안내</a></li>
-                        <li><a href="../edu/edu02.html">교육신청</a></li>
-                        <li><a href="../edu/edu03.html">교육자료</a></li>
+						<li class="on"><a href="../edu/edu01.html">시민미디어강좌</a>
+							<ul class="depth2">
+								<li class="on"><a href="#">신청</a></li>
+								<li><a href="#">안내</a></li>
+							</ul>
+						</li>
+                        <li><a href="../edu/edu02.html">미디어체험프로그램</a></li>
+                        <li><a href="../edu/edu03.html">특별프로그램</a></li>
 					</ul>					
 				</nav>
 				
 			</article>
 
 			<article class="sub_head">
-				<h3>교육안내</h3>
+				<h3>신청</h3>
 				<ul class="location">
-					<li><a href="../"><i></i></a></li><li>미디어교육</li><li>교육안내</li>
+					<li><a href="../"><i></i></a></li><li>미디어교육</li><li>시민미디어강좌</li><li>신청</li>
 				</ul>
 			</article>
 			<article class="content">
-				내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+
+				<!-- boardTop -->
+				<div class="boardtop">
+					
+					<div class="board_search"> 	
+						<form name="searchfrm" class="search" method="post" action="#">
+						   <fieldset>
+							 <legend>게시물 검색</legend>  
+							 <label for="strSearch_div2" class="skip">검색선택</label>
+							 <select id="strSearch_div2" name="search"> 	
+							 <option value="1">제목</option><option value="2">작성자</option><option value="3">내용</option>   
+							 </select>
+							 <label for="strSearch_text" class="skip">검색어</label>
+							 <input type="text" name="str" class="inputText" id="strSearch_text" style="ime-mode:active;" value="" placeholder="검색어를 입력하세요.">
+							 <button type="submit" class="txt_button">검색</button>
+						   </fieldset>
+						   <input type="hidden" name="cate" value="notice">	       
+						 </form>
+					</div>   
+
+					<p class="page_num">전체 <span> 14</span>건 <span>1/2</span>페이지</p> 
+				</div>
+				<!-- boardTop_End --> 
+
+
+
+				
 			</article>
 			
 		</section>

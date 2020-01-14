@@ -7,8 +7,8 @@
 .sub_top h2 {width: auto; height:170px; margin:0 auto; padding-top: 70px; font-size: 220%; font-weight:400; color: #fff; text-align: center;}
 
 /* lnb */
-.lnb {width:100%; height: auto; overflow: hidden; z-index: 10;}
-.lnb > ul.depth1 {width:1350px; margin:0 auto;}
+.lnb {width:100%; height: auto; /* overflow: hidden; */ z-index: 10; display: inline-block;}
+.lnb > ul.depth1 {width:1350px; margin:0 auto; position: relative;}
 .lnb > ul.depth1 > li {float:left; text-align: center;} 
 .lnb > ul.depth1 > li > a {display: block; width:100%; color: #fff; line-height:50px; font-size:110%; border-left: 1px solid #30302f; text-decoration: none;}
 .lnb > ul.depth1 > li:first-child > a {border-left: none;}
@@ -22,11 +22,12 @@
 .lnb > ul.lnb_5 > li {width: 20%;}
 .lnb > ul.lnb_6 > li {width: 16.66%;}
 
-.lnb > ul.depth1 > li > ul.depth2 {width:1350px; height:auto; margin: 0 auto; overflow: hidden; border-bottom:1px solid #cbcbcb;}
+.lnb > ul.depth1 > li > ul.depth2 {display: inline-block; position: absolute; left: 0; top: 50px; width: 100%; border-bottom:1px solid #cbcbcb;}
 .lnb > ul.depth1 > li > ul.depth2 > li {float:left; width:auto !important; background: url(../gmi/sub/depth2_bar.gif) no-repeat right top;}
 .lnb > ul.depth1 > li > ul.depth2 > li > a {display: block; height:50px; line-height:50px; padding: 0 33px; color: #787878; font-size:110%; text-decoration: none;}
 .lnb > ul.depth1 > li > ul.depth2 > li.on > a {color: #000; border-bottom:2px solid #232323; background: url(../gmi/sub/depth2_on.gif) no-repeat 80% 50%; padding: 0 53px 0 33px;}
 .lnb > ul.depth1 > li > ul.depth2 > li:hover > a {color: #000; border-bottom:2px solid #232323;}
+
 
 /* sub_head */
 .sub_head {width:1350px; margin:70px auto 50px;}
@@ -43,6 +44,10 @@ ul.location li a i {display: block; width:100%; height:100%; background: url(../
 /* quick */
 .quickFix {bottom: 50px;}
 
+/* pc-mobile */
+.isPc {width: auto; max-width: 100%;}
+.isMobile {display:none; width:100%;}
+
 /* greeting */
 .greeting {width:100%; height:auto; text-align: center; font-size:110%; line-height:32px;}
 .greeting > strong {font-size:100%;}
@@ -55,7 +60,7 @@ ul.location li a i {display: block; width:100%; height:100%; background: url(../
 
 /* centerBuz */
 .centerBusiness {margin-top:70px;}
-.centerBusiness > h3 {text-align: center; font-size:170%; margin-bottom:30px;}
+.centerBusiness > h4 {text-align: center; font-size:170%; margin-bottom:30px; padding:0; border:none;}
 .centerBuz {display:-webkit-box; display:-ms-flexbox; display:flex;}
 .centerBuz > div {-webkit-box-flex:1; -ms-flex-positive:1; flex-grow:1; height:400px; margin:0 15px; border:1px solid #d9d9d9; width:0%;}
 .centerBuz > div:before {content:''; display:block; width:149px; height:149px; margin:20px auto; background:url(../gmi/sub/center01_img02.png) no-repeat;}
@@ -71,6 +76,7 @@ ul.location li a i {display: block; width:100%; height:100%; background: url(../
 .centerBuz dl {width:90%; margin:0 auto;}
 .centerBuz dt {text-align: center; font-size:130%; font-weight:bold; color: #5e5e5e; margin-bottom:15px;}
 .centerBuz dd {text-align: center; font-size:105%; color: #999; line-height:25px; margin-bottom:6px;}
+
 /********************** 1350px **********************/
 @media all and (max-width:1350px){
 .lnb > ul.depth1,
@@ -91,7 +97,7 @@ ul.location li a i {display: block; width:100%; height:100%; background: url(../
 
 /********************** 1040px **********************/
 @media all and (max-width:1040px){
-.sub_head {margin: 30px auto;}
+.sub_head {}
 .lnb > ul.depth1 > li > a {font-size: 100%;}
 
 .centerResponse {height: 769px; background: url(../gmi/sub/center01_img0102.png) no-repeat center top; background-size: contain;}
@@ -117,6 +123,10 @@ ul.location li {font-size:80%; padding-left: 20px; background-position: 8px 45%;
 
 .lnb > ul.depth1 > li > a {font-size: 90%; line-height: 40px;}
 .lnb > ul.depth1 > li > ul.depth2 > li > a {font-size: 90%; height: 40px; line-height: 40px;}
+
+/* pc-mobile */
+.isPc {display:none;}
+.isMobile {display:block;}
 
 .centerBuz {display:block;}
 .centerBuz > div {width: auto; height:200px; margin: 0 0 10px 0; padding: 30px;}
@@ -148,7 +158,7 @@ ul.location li {font-size:80%; padding-left: 20px; background-position: 8px 45%;
 .lnb {display: none;}
 
 .centerResponse {height: 450px;}
-.centerBusiness > h3 {font-size: 150%; margin-bottom: 15px;}
+.centerBusiness > h4 {font-size: 150%; margin-bottom: 15px;}
 .centerBuz > div {height:auto !important; padding:15px 10px !important; text-align: center;}
 .centerBuz > div:before {margin:0px !important;}
 .centerBuz > div > dl {width:100%; margin:0;}
