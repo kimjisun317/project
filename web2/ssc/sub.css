@@ -89,23 +89,65 @@ ul.location li a i {display: block; width:100%; height:100%; background: url(../
 
 .mediaProgram li dl {float:left; width: calc(100% - 290px); height:100%;}
 .mediaProgram li dt span {display:inline-block; margin:25px 0 10px; padding: 5px 30px; border-radius: 25px;}
-.mediaProgram li dt a {display:block; width: 80%; font-size:135%; font-weight:bold; margin-bottom:30px;}
+.mediaProgram li dt a {display:block; width: 80%; font-size:135%; font-weight:bold; margin-bottom:30px; line-height: 30px;}
 .mediaProgram li dd {font-size:110%; color: #474747; margin-bottom:9px;}
 .mediaProgram li dd span {display:inline-block; font-size:110%; width:120px;}
 .mediaProgram li p {position: absolute; right:0; top:50%; margin-top:-10px; display: inline-block;}
 .mediaProgram li p a {font-size:110%; padding: 12px 24px; border-radius: 9px; display:inline-block;}
 .mediaProgram li p a:hover {background: #000; color: #FFF;}
 
+/* calendarTop */
+.calendarTop {width:100%; position: relative;}
+
+/* calendarDate */
+.calendarDate {width:100%; text-align: center; font-size:240%; font-weight:600; margin-bottom:15px;}
+.calendarDate a {font-size: 0; margin: 0 15px;}
+.calendarDate a::before {content:''; display:inline-block; width: 30px; height: 30px; vertical-align: top; margin-top:6px; background: url(../gmi/cni/calendar_arr.png) no-repeat left top;}
+.calendarDate a:last-child::before {background-position: -30px top;}
+
+/* calendarCategory */
+.calendarCategory {position: absolute; right:0; bottom:5px; width:auto;}
+.calendarCategory li {display:inline-block; width:auto; margin-left:15px;}
+.calendarCategory li:before {content: ''; display: inline-block; vertical-align: middle; width: 27px; height: 27px; line-height:28px; border-radius: 25px; margin-right: 4px; color: #fff; font-size:11px; text-align: center;}
+.calendarCategory li:nth-of-type(1)::before {background: #29304a; content: '정기';}
+.calendarCategory li:nth-of-type(2)::before {background: #d44232; content: '기획';}
+.calendarCategory li:nth-of-type(3)::before {background: #476c12; content: '수다';}
+
+/* cinemaCalendar */
+.cinemaCalendar {width:100%; border-top: 2px solid #000; margin-bottom: 60px;}
+.cinemaCalendar li {width:100%; height:auto; padding: 30px 0; display: inline-block; border-bottom: 1px solid #d9d9d9; position: relative;}
+.cinemaCalendar li p.time {display: inline-block; font-size:170%; width:290px;}
+.cinemaCalendar li p.time span:nth-of-type(1) {font-size:100%; margin-left:25px;}
+.cinemaCalendar li p.time span:nth-of-type(2) {display:inline-block; width: 50px; height: 50px; line-height: 50px; text-align: center; color: #FFF; vertical-align: middle; border-radius: 25px; margin-left:10px;}
+.cinemaCalendar li dl {display: inline-block; margin-left:30px; width: calc(100% - 460px); vertical-align: middle;}
+.cinemaCalendar li dt {width:100%; margin-bottom:10px;} 
+.cinemaCalendar li dt a {font-size:160%;} 
+.cinemaCalendar li dt a > span {width: 48px; height: 20px; display: inline-block; vertical-align: middle; border-radius: 10px; color: #FFF; font-size: 55%; line-height:20px; text-align: center; margin-left: 10px;}
+.cinemaCalendar li dd {display:inline; line-height:24px;}
+.cinemaCalendar li dd::before {content:''; display:inline-block; width: 1px; height: 18px; margin: 0 10px; border-left: 1px solid #d9d9d9; vertical-align: middle;}
+.cinemaCalendar li dd:last-child {display:block;}
+.cinemaCalendar li dd:first-of-type::before,
+.cinemaCalendar li dd:last-child::before {margin: 0 10px 0 0;}
+.cinemaCalendar li > span {position: absolute; right:0; top:50%; margin-top:-20px;}
+.cinemaCalendar li > span a {font-size:110%; padding: 12px 30px; border-radius: 9px; display:inline-block;}
+.cinemaCalendar li > span a:hover {background: #000; color: #FFF;}
+
+/* program_btn */
 span.end {background: #5e5e5e; color: #FFF;} 
-p > a.end {background: #d9d9d9;}
-
+a.end {background: #d9d9d9;}
 span.receipt,
-p > a.receipt {background: #d44232; color: #FFF;} 
+a.receipt {background: #FFF; border: 1px solid #000;} 
 span.standby,
-p > a.standby {background: #445180; color: #FFF;} 
+a.standby {background: #445180; color: #FFF;} 
 span.standbyRequest,
-p > a.standbyRequest {background: #476c12; color: #FFF;} 
+a.standbyRequest {background: #476c12; color: #FFF;} 
 
+.fixed {background: #29304a;}
+.plan {background: #d44232;}
+.theater {background: #476c12;}
+.all {background: #5e5e5e;}
+.adult {background: #d44232;}
+.bulGv {display: inline-block; font-size: 90%; color: #FFF; background: #29304a; padding: 0 14px; margin-left: 10px; line-height: 22px;}
 
 /********************** 1350px **********************/
 @media all and (max-width:1350px){
@@ -137,6 +179,15 @@ p > a.standbyRequest {background: #476c12; color: #FFF;}
 .centerBuz > div:nth-of-type(4)::before {background-position:-296px 0;}
 .centerBuz > div:nth-of-type(5)::before {background-position:-396px 0;}
 .centerBuz dd {line-height: 20px;}
+
+/* .calendarDate */
+.calendarDate {width:auto; display: inline-block;}
+.calendarCategory {top:10px;}
+/* cinemaCalendar */
+.cinemaCalendar li p.time {width:170px; position: relative; vertical-align: middle;}
+.cinemaCalendar li p.time span:nth-of-type(1) {display:block; margin: 10px 0 0 0;}
+.cinemaCalendar li p.time span:nth-of-type(2) {position: absolute; right:0; top:10px;}
+.cinemaCalendar li dl {width: calc(100% - 340px);}
 }
 
 /********************** 900px **********************/
@@ -144,6 +195,10 @@ p > a.standbyRequest {background: #476c12; color: #FFF;}
 /* mediaProgram */
 .mediaProgram li a.mediaImg {display:none;}
 .mediaProgram li dl {width:100%;}
+
+/* mediaProgram */
+.cinemaCalendar li dd {display: inline-block; margin-right:10px;}
+.cinemaCalendar li dd::before {margin: 0 10px 0 0;}
 
 }
 
@@ -182,6 +237,9 @@ ul.location li {font-size:80%; padding-left: 20px; background-position: 8px 45%;
 .centerBuz dt,
 .centerBuz dd {text-align: left;}
 
+/* cinemaCalendar */
+.cinemaCalendar li p.time {width:150px; font-size: 150%;}
+.cinemaCalendar li dl {width: calc(100% - 310px); margin-left:20px;}
 
 }
 
@@ -206,5 +264,22 @@ ul.location li {font-size:80%; padding-left: 20px; background-position: 8px 45%;
 /* mediaProgram */
 .mediaProgram li p {position: relative; margin:10px 0 0 0;}
 .mediaProgram li dt span {margin:0 0 5px 0;}
-.mediaProgram li dt a {margin-bottom:20px;}
+.mediaProgram li dt a {width: 95%; margin-bottom:20px;}
+
+/* .calendarDate */
+.calendarTop {margin-bottom:5px;}
+.calendarDate {width:100%; display: inline-block; font-size: 200%; margin-bottom: 5px}
+.calendarDate a::before {margin-top:2px;}
+.calendarCategory {display:none; position: relative; top:0; text-align: center;}
+
+/* cinemaCalendar */
+.cinemaCalendar li {padding: 15px 0;}
+.cinemaCalendar li p.time {width:100%; font-size: 140%;}
+.cinemaCalendar li p.time span:nth-of-type(1) {display:inline-block; margin: 0px;}
+.cinemaCalendar li p.time span:nth-of-type(2) {position: relative; font-size:65%; width: 35px; height: 35px; line-height: 35px; border-radius: 25px; margin-left: 10px; top:0px;}
+.cinemaCalendar li dl {width:100%; margin:0 0 0 0;}
+.cinemaCalendar li dt {font-size:80%;}
+.cinemaCalendar li > span {position: relative; display: block; margin-top:10px;}
+.cinemaCalendar li > span a {font-size: 100%;padding: 6px 30px;}
+
 }
