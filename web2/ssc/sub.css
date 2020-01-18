@@ -340,6 +340,7 @@ ul.location li {font-size:80%; padding-left: 20px; background-position: 8px 45%;
 .librarySearch dt {font-weight:bold;}
 .librarySearch dd label {margin: 5px 0;}
 .librarySearch dd label span {margin-left: 0px; font-size:100%;}
-.libraryList ul li {width:100%;}
+.libraryList ul li:first-child {margin-top:10px;}
+.libraryList ul li {width:100%; padding: 10px 0; margin-bottom: 10px;}
 .libraryList ul li a img {width:100%; height:auto;}
 }
