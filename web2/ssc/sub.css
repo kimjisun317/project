@@ -160,6 +160,7 @@ a.standbyRequest {background: #476c12; color: #FFF;}
 .librarySearch > p {display: inline-block; height: 42px; line-height: 42px; padding-left: 50px; font-size: 130%; font-weight:bold; color: #d44232; background: url(../gmi/sub/librarySearch_icon01.png) no-repeat left top;}
 .librarySearch > button {float:right; background: #f4f5f9;}
 .librarySearch dl:nth-of-type(1) {margin-top:20px;}
+.librarySearch dl:last-child {border-bottom: none;}
 .librarySearch dl {width:100%; padding: 20px 0; border-bottom: 1px solid #d9d9d9;}
 .librarySearch dt,
 .librarySearch dd {display: inline-block; vertical-align: top; font-size:110%;}
@@ -185,6 +186,7 @@ a.standbyRequest {background: #476c12; color: #FFF;}
 .content {padding: 0 20px;}
 
 /* libraryList */
+.librarySearch dd label span {margin-left: 10px;}
 .libraryList ul li a img {width:185px; height:267px;}
 }
 
@@ -195,7 +197,6 @@ a.standbyRequest {background: #476c12; color: #FFF;}
 .centerBuz > div:last-child {margin:0 0 0 10px;}
 
 /* librarySearch */
-.librarySearch dd label span {margin-left: 10px;}
 .librarySearch dd label {width: 25%;}
 .libraryList ul li {width:33.33%;}
 .libraryList ul li a img {width: 215px; height: 311px;}
@@ -279,7 +280,11 @@ ul.location li {font-size:80%; padding-left: 20px; background-position: 8px 45%;
 .cinemaCalendar li dl {width: calc(100% - 310px); margin-left:20px;}
 
 /* librarySearch */
-.librarySearch dd label {width: 50%;}
+.librarySearch {padding:40px;}
+.librarySearch dt,
+.librarySearch dd {width:100%;}
+.librarySearch dl:nth-of-type(1) {margin-top:5px;}
+.librarySearch dl {padding: 15px 0;}
 .libraryList ul li a img {width:195px; height:282px;}
 }
 
@@ -332,13 +337,9 @@ ul.location li {font-size:80%; padding-left: 20px; background-position: 8px 45%;
 .librarySearch {padding: 20px;}
 .librarySearch > p {height: 30px; line-height: 30px; padding-left: 35px; font-size: 110%; background-size: auto 30px;}
 .librarySearch > button {height:30px; line-height:28px; font-size: 90%; padding: 0 15px; letter-spacing: -2px;}
-.librarySearch dl:nth-of-type(1) {margin-top: 5px; /* border-top: 1px solid #d9d9d9; */}
-.librarySearch dl:last-child {border-bottom: none;}
 .librarySearch dl {padding: 10px 5px 12px 5px;}
-.librarySearch dt,
-.librarySearch dd {width:100%;}
 .librarySearch dt {font-weight:bold;}
-.librarySearch dd label {margin: 5px 0;}
+.librarySearch dd label {width: 50%; margin: 5px 0;}
 .librarySearch dd label span {margin-left: 0px; font-size:100%;}
 .libraryList ul li:first-child {margin-top:10px;}
 .libraryList ul li {width:100%; padding: 10px 0; margin-bottom: 10px;}
