@@ -631,10 +631,11 @@ ul.list_type2 { font-size:90%; }
 .warning dt { font-size:100%; }
 .warning dd {  font-size:90%; }
 
-.boardList li {display: block; height:80px; padding:12px 0px 10px 0;}
+.boardList li {display: block; height:auto; padding:12px 0px 10px 0;}
 .boardList li p {display: block;}
 .boardList li p.status span {font-size:80%; width: 90px;}
 .boardList li p.subject a {width:95%; font-size: 95%;}
+p.status {display: none !important;}
 p.subject {width:100%;}
 
 }
