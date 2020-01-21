@@ -8,7 +8,7 @@
 
 /* lnb */
 .lnb {width:100%; height: auto; /* overflow: hidden; */ z-index: 10; display: inline-block;}
-.lnb > ul.depth1 {width:1350px; margin:0 auto; position: relative;}
+.lnb > ul.depth1 {width:1350px; margin:0 auto; overflow: hidden;}
 .lnb > ul.depth1 > li {float:left; text-align: center;} 
 .lnb > ul.depth1 > li > a {display: block; width:100%; color: #fff; line-height:50px; font-size:110%; border-left: 1px solid #30302f; text-decoration: none;}
 .lnb > ul.depth1 > li:first-child > a {border-left: none;}
@@ -22,12 +22,19 @@
 .lnb > ul.lnb_5 > li {width: 20%;}
 .lnb > ul.lnb_6 > li {width: 16.66%;}
 
-.lnb > ul.depth1 > li > ul.depth2 {display: inline-block; position: absolute; left: 0; top: 50px; width: 100%; border-bottom:1px solid #cbcbcb;}
+.lnb > ul.depth2 {width:1350px; margin:0 auto; overflow: hidden; border-bottom:1px solid #cbcbcb;}
+.lnb > ul.depth2 > li {float:left; width:auto !important; background: url(../gmi/sub/depth2_bar.gif) no-repeat right top;}
+.lnb > ul.depth2 > li > a {display: block; height:50px; line-height:50px; padding: 0 33px; color: #787878; font-size:110%; text-decoration: none;}
+.lnb > ul.depth2 > li.on > a {color: #000; border-bottom:2px solid #232323; background: url(../gmi/sub/depth2_on.gif) no-repeat 80% 50%; padding: 0 53px 0 33px;}
+.lnb > ul.depth2 > li:hover > a {color: #000; border-bottom:2px solid #232323;}
+
+
+/* .lnb > ul.depth1 > li > ul.depth2 {display: inline-block; position: absolute; left: 0; top: 50px; width: 100%; border-bottom:1px solid #cbcbcb;}
 .lnb > ul.depth1 > li > ul.depth2 > li {float:left; width:auto !important; background: url(../gmi/sub/depth2_bar.gif) no-repeat right top;}
 .lnb > ul.depth1 > li > ul.depth2 > li > a {display: block; height:50px; line-height:50px; padding: 0 33px; color: #787878; font-size:110%; text-decoration: none;}
 .lnb > ul.depth1 > li > ul.depth2 > li.on > a {color: #000; border-bottom:2px solid #232323; background: url(../gmi/sub/depth2_on.gif) no-repeat 80% 50%; padding: 0 53px 0 33px;}
 .lnb > ul.depth1 > li > ul.depth2 > li:hover > a {color: #000; border-bottom:2px solid #232323;}
-
+ */
 
 /* sub_head */
 .sub_head {width:1350px; margin:70px auto 50px;}
@@ -180,7 +187,7 @@ a.standbyRequest {background: #476c12; color: #FFF;}
 /********************** 1350px **********************/
 @media all and (max-width:1350px){
 .lnb > ul.depth1,
-/* .lnb > ul.depth1 > li > ul.depth2, */
+.lnb > ul.depth2,
 .sub_head,
 .content {width:100%;}
 .content {padding: 0 20px;}
@@ -253,7 +260,7 @@ ul.location li {font-size:80%; padding-left: 20px; background-position: 8px 45%;
 .sub_top h2 {height: 100px; padding-top: 38px; font-size:200%;}
 
 .lnb > ul.depth1 > li > a {font-size: 90%; line-height: 40px;}
-.lnb > ul.depth1 > li > ul.depth2 > li > a {font-size: 90%; height: 40px; line-height: 40px;}
+.lnb > ul.depth2 > li > a {font-size: 90%; height: 40px; line-height: 40px;}
 
 /* pc-mobile */
 .isPc {display:none;}
