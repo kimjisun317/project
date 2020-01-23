@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 	$("#footer").load("../cni/footer_sub.html", function () {
 		//푸터관련사이트	
-		$('.footer_bottom a').click(function () {
+		$('.family_open a').click(function () {
 			$(this).toggleClass('openbox');
 			$(this).next("p").slideToggle(300);
 		});
