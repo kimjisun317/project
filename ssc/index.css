@@ -79,7 +79,7 @@
 .profile dt {color:#777777;}
 .profile dt span {font-size:120%; font-weight: 600; display: block; }
 .profile dd {margin:25px 0 0 0; line-height: 24px; word-wrap:break-word;}
-.profile dd span {width:65px; display: table; float:left; padding-top:2px;}
+.profile dd span {width:35px; display: table; float:left; padding-top:2px;}
 .profile ul li:nth-child(1),
 .profile ul li:nth-child(2) {border-top:none;}
 .profile ul li:nth-child(1),
