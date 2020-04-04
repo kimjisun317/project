@@ -4,5 +4,5 @@
 
 .contain-board li {width:100%; padding: 27px 16px; box-sizing:border-box; border-bottom: 1px solid #eaeaea; letter-spacing: -1;}
 .contain-board p.subject {width:100%;}
-.contain-board p.subject a {display: inline-block; width:80%; font-size: 15px; font-weight: 700; color: #222222; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.contain-board p.subject a {display: inline-block; width:90%; font-size: 15px; font-weight: 700; color: #222222; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .contain-board p.date {margin-top:6px; font-size: 14px; color: #999999;}
