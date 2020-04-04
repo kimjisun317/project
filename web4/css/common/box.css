@@ -1,0 +1,10 @@
+.divline-type1 {display:block;margin:0;padding:0;width:100%;height:1px;background:#f0f0f0;border:none;}
+
+.box-form {overflow:hidden;margin:10px 0;}
+.box-form dt {position:relative;margin-bottom:8px;font-size:14px;}
+.box-form dt.necessary::after {content:'*';display:inline-block;margin:0 0 0 4px;vertical-align:middle;color:#ff0000;}
+.box-form dd {position:relative;font-size:16px;color:#222;}
+.box-form.fixed {position:relative;margin:5px 0;}
+.box-form.fixed dt {position:absolute;left:0;top:0;margin:0;padding:0;width:100px;line-height:24px;}
+.box-form.fixed dd {margin:0;padding:0 0 0 100px;line-height:24px;font-weight:700;color:#999;}
+.box-form dt .text-addtion {position:absolute;right:0;top:0;color:#364d8e;}

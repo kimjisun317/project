@@ -1,0 +1,26 @@
+@import url('common/reset.css');
+@import url('common/title.css');
+@import url('common/text.css');
+@import url('common/button.css');
+@import url('common/form.css');
+@import url('common/box.css');
+@import url('common/table.css');
+@import url('common/bbs.css');
+@import url('common/popup.css');
+@import url('common/alert.css');
+
+/* Layout */
+.area-header {position:fixed;left:0;top:0;z-index:2;width:100%;height:50px;border-bottom:1px solid #eaeaea;background:#fff;}
+.area-header .title {text-align:center;line-height:50px;font-size:16px;}
+.area-header span[class^='btn'] {display:block;position:absolute;top:13px;width:24px;height:24px;background:red;}
+.area-header span[class^='btn'] button {display:block;width:100%;height:100%;background:none;text-indent:-1000px;overflow:hidden;}
+.area-header .btn-historyback {left:15px;background:url() no-repeat 50%;background-size:auto;}
+.area-header .btn-navigation {left:54px;background:url() no-repeat 50%;background-size:auto;}
+.area-header .btn-search {right:54px;background:url() no-repeat 50%;background-size:auto;}
+.area-header .btn-home {right:15px;background:url() no-repeat 50%;background-size:auto;}
+
+.area-content {padding:50px 0 0 0;}
+.area-content .area-inner {padding-top:30px;}
+.area-content.aside-bottom {padding-bottom:54px;}
+
+.area-aside.bottom {position:fixed;left:0;bottom:0;z-index:2;width:100%;}
