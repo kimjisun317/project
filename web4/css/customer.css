@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .contain-board {margin-top: -30px;}
-.contain-board li {padding: 27px 16px; border-bottom: 1px solid #eaeaea; letter-spacing: -1; /* box-sizing:border-box; */}
+.contain-board li {padding: 27px 16px; border-bottom: 1px solid #eaeaea; letter-spacing: -1;}
 .contain-board p.subject > a {display: inline-block; width:95%; font-size: 15px; font-weight: 700; color: #222; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .contain-board p.subject > a > span {margin-right: 5px;}
 .contain-board p.date {margin-top:6px; font-size: 14px; color: #999;}
@@ -16,3 +16,47 @@
 .box-view-content p.file a {color: #364d8e; line-height:18px;}
 .box-view-content p.file a::before {content:''; display:inline-block; margin: 0 8px 0 3px; width:14px; height:18px; background:url(../images/img_board_file.png) no-repeat left 50%;background-size:100%; vertical-align: middle;}
 .box-view-content p.content {padding:25px 0; font-size:15px; color: #222;}
+
+legend{overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;}
+.contain-faq-head {margin: 0 15px 30px;}
+.contain-faq-head h2 {margin-bottom:30px;}
+.box-faq-search {position: relative; border:1px solid #d9d9d9;}
+.box-faq-search label {margin-bottom:0px;}
+.box-faq-search input {width: calc(100% - 60px); border:none;}
+.box-faq-search button {position: absolute; top:0; right:0; width:60px; height:100%; text-indent: -1000px; overflow: hidden; background:url(../images/img_head_search.png) no-repeat 21px 50%; background-size:22px auto;}
+
+.dl.faq{border-top:1px solid #e3e3e3; margin-bottom: 30px;}
+.dl.faq .dt{background: #f8f8f8; border-bottom:1px solid #e3e3e3; cursor:pointer;}
+.dl.faq .dt > .dt_wrap{display: table; min-height:60px; width: 100%; table-layout: fixed}
+.dl.faq2 .dt > .dt_wrap{min-height:90px;}
+.dl.faq .dt > .dt_wrap > div{display: table-cell; text-align: center; vertical-align: middle; padding: 10px 0;}
+.dl.faq .dt > .dt_wrap > div.line{width: 220px; color: #222; font-weight: 700; font-size: 16px;}
+.dl.faq .dt > .dt_wrap > div.num{color: #222; font-weight: 700; font-size: 16px; width: 110px; font-family: 'Open Sans', sans-serif }
+.dl.faq .dt > .dt_wrap > div.subject{padding-left: 40px; text-align: left; overflow: hidden;}
+.dl.faq .dt > .dt_wrap > div.subject h3{color: #666; font-size: 16px; line-height: 1em; white-space: nowrap;overflow: hidden;text-overflow: ellipsis; max-width: 770px;}
+.dl.faq .dt > .dt_wrap > div.subject h3 span.bar{color: #666; display: inline-block; width: 35px; text-align: center;}
+.dl.faq .dt > .dt_wrap > div.subject p{color: #222; font-size: 14px; line-height: 1em; margin-top: 10px;}
+.dl.faq .dt > .dt_wrap > div.subject p span{display: inline-block; vertical-align: top;}
+.dl.faq .dt > .dt_wrap > div.subject p span.name{}
+.dl.faq .dt > .dt_wrap > div.subject p span.hit{}
+.dl.faq .dt > .dt_wrap > div.subject p span.bar{margin: 2px 10px 0; width: 1px; height: 12px; background:#e3e3e3 ;}
+.dl.faq .dt > .dt_wrap > div.name,
+.dl.faq .dt > .dt_wrap > div.date{color: #222; font-size: 14px; width: 113px; font-family: 'Open Sans', sans-serif;  }
+/* ���� : ������ : 2019-09-11, �������� : css ���� */
+/* ���� : ������ : 2019-09-06, �������� : css ���� */
+.dl.faq .dt > .dt_wrap > div.btnarea{width: 80px;}
+.dl.faq .dt > .dt_wrap > div.btnarea a{display: block; width: 40px; margin: 0 auto; height: 40px; overflow:hidden; border:1px solid #e3e3e3;}
+.dl.faq.g_ty01_n .dt > .dt_wrap > div.btnarea{width: 160px;}
+.dl.faq.g_ty01_n .dt > .dt_wrap > div.btnarea a{display: block; width: 120px; margin: 0 auto; height: 40px; overflow:hidden; border:1px solid #e3e3e3; text-align:right;}
+/* �� : ������ : 2019-09-06, �������� : css ���� */
+/* �� : ������ : 2019-09-11, �������� : css ���� */
+.dl.faq .dt > .dt_wrap > div.btnarea a img{transform:rotate(180deg); transition:all .5s ease-out}
+.dl.faq .dt.on > .dt_wrap > div.btnarea a img{transform:rotate(0deg); transition:all .5s ease-out}
+.dl.faq .dd{border-bottom:1px solid #e3e3e3; padding: 60px 150px; color: #666; font-size: 16px; display: none;	}
+
+.dl.faq_map .dd{padding: 60px;}
+.dl.faq .dd h3{color: #222; font-size: 16px; margin-bottom: 20px;}
+.dl.faq .dd h3 span.bar{color: #666; display: inline-block; width: 35px; text-align: center;}
+.dl.faq .dd .a{color: #666; font-size: 16px; font-weight:700;  font-family: 'Open Sans', sans-serif ;margin-bottom: 10px;}
+
+.dl.lost_faq dd{line-height: 45px;}
