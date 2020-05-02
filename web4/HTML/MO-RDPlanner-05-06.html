@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>대명 아임레디</title>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/join.css'>
+    <script src="../js/lib.js"></script>
+    <script src="../js/style.js"></script>
+</head>
+<body>
+
+<!-- 헤더 -->
+<header class="area-header">
+    <div class="area-inner">
+        <span class="btn-historyback"><button>이전으로</button></span>
+        <span class="btn-navigation"><button>메뉴</button></span>
+        <h1 class="title">레디플래너 신청</h1>
+        <span class="btn-search"><button>검색</button></span>
+        <span class="btn-home"><button>홈으로</button></span>
+    </div>
+</header>
+<!-- //헤더 -->
+
+<!-- 본문 -->
+<div class="area-content">
+    <div class="area-inner">
+
+        <div class="contain-join-head">
+            <h2 class="title-step">신청정보입력</h2>
+            <div class="box-step">
+                <span>01</span>
+                <span class="on">02</span>
+                <span>03</span>
+            </div>
+        </div>
+        <div class="contain-join-body">
+
+            <p class="text-information-type1">대명 아임레디 상품을 <br ><span class="text-point1">본인의 블로그, 카페, SNS 사이트</span> <br >정보를 입력해 주세요.</p>
+
+            <hr class="divline-type1" >
+
+            <p class="text-notice-type2 form">* 필수</p>
+
+            <dl class="box-form fixed">
+                <dt>이름</dt>
+                <dd>홍길동</dd>
+            </dl>
+            <dl class="box-form fixed">
+                <dt>휴대폰 번호</dt>
+                <dd>000-0000-0000</dd>
+            </dl>
+            <dl class="box-form">
+                <dt class="necessary">이메일 주소</dt>
+                <dd><input type="text" >
+                    <label class="form-alert">이메일 주소를 입력해 주세요.</label>
+                </dd>
+            </dl>
+            <dl class="box-form">
+                <dt class="necessary">홍보사이트<span class="text-addtion">1개 이상 필수</span></dt>
+                <dd><span class="form-addbutton"><input type="text" placeholder="http://" ><span class="btn-type-text1"><button>추가</button></span></span>
+                    <label class="form-alert">홍보사이트를 입력해 주세요.</label>
+                </dd>
+                <dd>
+                    http://naver.com <span class="btn-type-icon1 delete"><button>삭제</button></span>
+                </dd>
+            </dl>
+            <dl class="box-form">
+                <dt><label>홍보사이트의 운영 성격은?</label></dt>
+                <dd><span class="form-textarea"><textarea placeholder="예) 취미생활 블로그"></textarea><i>0/00</i></span></dd>
+            </dl>
+            <dl class="box-form">
+                <dt>홍보사이트를 설명하는 주제는?<span class="text-addtion">중복선택 가능</span></dt>
+                <dd class="box-checkitem">
+                    <label class="form-checkbox checked"><input type="checkbox" >출산/유아동</label>
+                    <label class="form-checkbox"><input type="checkbox" >뷰티</label>
+                    <label class="form-checkbox"><input type="checkbox" >여성패션</label>
+                    <label class="form-checkbox"><input type="checkbox" >생활용품</label>
+                    <label class="form-checkbox"><input type="checkbox" >생활가전</label>
+                    <label class="form-checkbox"><input type="checkbox" >디지털가전</label>
+                    <label class="form-checkbox"><input type="checkbox" >스포츠/레져</label>
+                    <label class="form-checkbox"><input type="checkbox" >헬스/건강</label>
+                    <label class="form-checkbox"><input type="checkbox" >문구/오피스</label>
+                    <label class="form-checkbox"><input type="checkbox" >도서</label>
+                    <label class="form-checkbox"><input type="checkbox" >음반/DVD</label>
+                    <label class="form-checkbox"><input type="checkbox" >인테리어</label>
+                </dd>
+            </dl>
+            <dl class="box-form">
+                <dt>레디플래너 가입 경로는?</dt>
+                <dd><input type="text" ></dd>
+            </dl>
+
+            <dl class="box-form">
+                <dt>현재 관심사는 무엇인가요?</dt>
+                <dd><input type="text" ></dd>
+            </dl>
+
+            <hr class="divline-type1" >
+
+            <dl class="box-form">
+                <dt>소속구분</dt>
+                <dd class="box-radio">
+                    <label class="form-radio checked"><input type="radio" name="name1" >일반</label>
+                    <label class="form-radio"><input type="radio" name="name1" >임직원</label>
+                </dd>
+                <dd><input type="text" placeholder="사원번호 입력" ></dd><!-- 임직원일때만 노출 -->
+            </dl>
+
+        </div>
+
+        <!-- 하단 고정버튼 -->
+        <div class="fixed-box-button">
+            <span class="btn-type-text1"><button>다음</button></span><!-- 활성화 버튼 --><!-- 비활성화 시 disabled 클래스 추가 -->
+        </div>
+        <!-- //하단 고정버튼 -->
+
+    </div>
+</div>
+<!-- //본문 -->
+
+<script src="../js/dom.js"></script>
+
+</body>
+</html>

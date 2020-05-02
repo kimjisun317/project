@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>대명 아임레디</title>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/lib.css'>
+    <link rel='stylesheet' type='text/css' href='../css/myplanner.css'>
+    <script src="../js/lib.js"></script>
+    <script src="../js/style.js"></script>
+</head>
+<body>
+
+<!-- 헤더 : 하위카테고리 -->
+<header class="area-header">
+    <div class="area-inner">
+        <span class="btn-historyback"><button>이전으로</button></span>
+        <h1 class="title"><button>리워드 지급내역</button></h1>
+        <span class="btn-search"><button>검색</button></span>
+    </div>
+</header>
+<!-- //헤더 : 하위카테고리 -->
+<!-- 하위 카테고리 -->
+<nav class="area-category">
+    <div class="area-inner">
+        <span><a href="">캠페인 생성</a></span>
+        <span><a href="">리워드 실적조회</a></span>
+        <span class="on"><a href="">리워드 지급내역</a></span>
+        <span><a href="">커뮤니티</a></span>
+        <span><a href="">프로필 관리</a></span>
+        <span><a href="">공지사항</a></span>
+        <span><a href="">활용가이드</a></span>
+        <span><a href="">레디플래너 약관</a></span>
+        <span><a href="">레디플래너 운영정책</a></span>
+        <span><a href="">레디플래너 FAQ</a></span><!-- 고객센터 > 레디플래너 이동 -->
+    </div>
+</nav>
+<!-- //하위 카테고리 -->
+
+<!-- 본문 -->
+<div class="area-content"> <!-- 하단 탭바일때 aside-tabbar 클래스 추가 -->
+    <div class="area-inner">
+
+    <div class="contain-reward">        
+        <div class="box-reward-inner">
+                
+            <!-- start -->
+            <div class="box-reward-search">
+                <h2>조회년도</h2>
+                <span class="form-select">
+                    <select>
+                        <option>2020년</option>
+                        <option>2021년</option>
+                        <option>2022년</option>
+                        <option>2023년</option>
+                    </select>
+                </span>
+            </div>
+
+            <div class="table-type2">
+                <table>
+                    <colgroup>
+                        <col style="width: 90px" />
+                        <col style="width: 100px" />
+                        <col style="width: 100px" />
+                        <col style="width: 90px" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>정산월</th>
+                            <th>지급금액</th>
+                            <th>지급일시</th>
+                            <th>지급여부</th>
+                        </tr>
+                        <tr>
+                            <td>2020-03</td>
+                            <td><button class="btn-provide">000,000</button></td>
+                            <td>2020-03-03<br />15:06:20</td>
+                            <td>지급완료</td>
+                        </tr>
+                        <tr>
+                            <td>2020-03</td>
+                            <td><button class="btn-provide">000,000</button></td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2020-03</td>
+                            <td><button class="btn-provide">000,000</button></td>
+                            <td>2020-03-03<br />15:06:20</td>
+                            <td>지급완료</td>
+                        </tr>
+                        <tr>
+                            <td>2020-03</td>
+                            <td><button class="btn-provide">000,000</button></td>
+                            <td>2020-03-03<br />15:06:20</td>
+                            <td>지급완료</td>
+                        </tr>
+                        <tr>
+                            <td>2020-03</td>
+                            <td><button class="btn-provide">000,000</button></td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-empty-data">지급내역이 없습니다.</p>
+
+            <div class="box-reward-content">                    
+                <span class="content-add">안내문구 추가 / 콘텐츠 수급 예정</span>
+            </div>
+            <!-- end -->
+
+        </div>        
+    </div>
+
+    </div>
+</div>
+<!-- //본문 -->
+
+<!-- 하단 탭바 -->
+<aside class="area-aside bottom">
+    <div class="area-inner">
+        <div class="contain-tabbar">
+            <span class="btn-tabbar1"><button>카테고리</button></span> <!-- 하단 탭바 활성화시 on추가 / ex) class="btn-tabbar1 on" -->
+            <span class="btn-tabbar2"><button>추천</button></span>            
+            <span class="btn-tabbar3"><a href="">홈</a></span>                       
+            <span class="btn-tabbar4"><a href="">레디플래너</a></span>
+            <span class="btn-tabbar5"><a href="">My계약</a></span> 
+        </div>
+    </div>
+</aside>
+<!-- //하단 탭바 -->
+
+<script src="../js/dom.js"></script>
+
+</body>
+</html>

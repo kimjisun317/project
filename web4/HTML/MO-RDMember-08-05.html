@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>대명 아임레디</title>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/lib.css'>
+    <link rel='stylesheet' type='text/css' href='../css/myplanner.css'>
+    <script src="../js/lib.js"></script>
+    <script src="../js/style.js"></script>
+</head>
+<body>
+
+<!-- 헤더 : 하위카테고리 -->
+<header class="area-header">
+    <div class="area-inner">
+        <span class="btn-historyback"><button>이전으로</button></span>
+        <h1 class="title"><button>캠페인 생성</button></h1>
+        <span class="btn-search"><button>검색</button></span>
+    </div>
+</header>
+<!-- //헤더 : 하위카테고리 -->
+<!-- 하위 카테고리 -->
+<nav class="area-category">
+    <div class="area-inner">
+        <span class="on"><a href="">캠페인 생성</a></span>
+        <span><a href="">리워드 실적조회</a></span>
+        <span><a href="">리워드 지급내역</a></span>
+        <span><a href="">커뮤니티</a></span>
+        <span><a href="">프로필 관리</a></span>
+        <span><a href="">공지사항</a></span>
+        <span><a href="">활용가이드</a></span>
+        <span><a href="">레디플래너 약관</a></span>
+        <span><a href="">레디플래너 운영정책</a></span>
+        <span><a href="">레디플래너 FAQ</a></span><!-- 고객센터 > 레디플래너 이동 -->
+    </div>
+</nav>
+<!-- //하위 카테고리 -->
+
+<!-- 본문 -->
+<div class="area-content"> <!-- 하단 탭바일때 aside-tabbar 클래스 추가 -->
+    <div class="area-inner">
+
+    <div class="contain-campaign">    
+        <div class="box-campaign-search">
+            <h2 class="title">상품검색</h2>
+            <div class="box-campaign-form">
+                <span class="form-select">
+                    <select>
+                        <option>전체</option>
+                        <option>카테고리명1</option>
+                        <option>카테고리명2</option>
+                        <option>카테고리명3</option>
+                    </select>
+                </span>
+                <input type="text" placeholder="찾고 싶은 상품을 검색해 보세요" />
+                <span class="btn-search"><button>검색</button></span>
+            </div>
+        </div>
+
+        <div class="box-product-search">
+            <span class="data-count">12,849개</span>
+            <div class="box-category-more">
+                <!-- 인기순(디폴트), 판매순, 최근등록순 -->
+                <button class="btn-category">인기순</button>
+                <div class="box-category-inner">
+                    <span><label class="form-radio-category checked"><input type="radio" name="name1">인기순</label></span>
+                    <span><label class="form-radio-category"><input type="radio" name="name1">판매순</label></span>
+                    <span><label class="form-radio-category"><input type="radio" name="name1">최근등록순</label></span>
+                </div>
+            </div>         
+        </div>
+
+        <!-- 페이지당 20개 출력 -->
+        <div class="box-store-list">
+            <a href="#">
+                <dl class="detail-product-type1 type2">
+                    <dd class="image">
+                        <span class="soldout"><span>SOLD OUT</span></span>
+                        <img src="../images/img_photo_sample2.png" alt="">                        
+                    </dd>
+                    <dt>
+                        <span class="catchphrase2">SK매직 정수기 렌탈비 70만원 지원</span>
+                        <span class="reward">리워드 : 00,000원</span>
+                    </dt>
+                    <!-- 자격 정지 일 때, 버튼 선택 불가 -->
+                    <dd class="btn-campaign"><button>캠페인 생성</button></dd>
+                </dl>
+            </a>
+            <a href="#">
+                <dl class="detail-product-type1 type2">
+                    <dd class="image">
+                        <img src="../images/img_photo_sample2.png" alt="">                        
+                    </dd>
+                    <dt>
+                        <span class="catchphrase2">SK매직 정수기 렌탈비 70만원 지원</span>
+                        <span class="reward">리워드 : 00,000원</span>
+                    </dt>
+                    <dd class="btn-campaign"><button>캠페인 생성</button></dd>
+                </dl>
+            </a>
+            <a href="#">
+                <dl class="detail-product-type1 type2">
+                    <dd class="image">
+                        <img src="../images/img_photo_sample2.png" alt="">                        
+                    </dd>
+                    <dt>
+                        <span class="catchphrase2">SK매직 정수기 렌탈비 70만원 지원</span>
+                        <span class="reward">리워드 : 00,000원</span>
+                    </dt>
+                    <dd class="btn-campaign"><button>캠페인 생성</button></dd>
+                </dl>
+            </a>
+        </div>
+        <!-- 페이징 -->
+        <div class="paginate">
+            <button class="first">처음으로</button>
+            <button class="prev">이전목록</button>
+            <span>
+                <button class="on">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+            </span>
+            <button class="next">다음목록</button>
+            <button class="last">마지막목록</button>
+        </div>
+        <!-- //페이징 -->
+    </div>
+
+    </div>
+</div>
+<!-- //본문 -->
+
+<!-- 하단 탭바 -->
+<aside class="area-aside bottom">
+    <div class="area-inner">
+        <div class="contain-tabbar">
+            <span class="btn-tabbar1"><button>카테고리</button></span> <!-- 하단 탭바 활성화시 on추가 / ex) class="btn-tabbar1 on" -->
+            <span class="btn-tabbar2"><button>추천</button></span>            
+            <span class="btn-tabbar3"><a href="">홈</a></span>                       
+            <span class="btn-tabbar4"><a href="">레디플래너</a></span>
+            <span class="btn-tabbar5"><a href="">My계약</a></span> >
+        </div>
+    </div>
+</aside>
+<!-- //하단 탭바 -->
+
+<script src="../js/dom.js"></script>
+
+</body>
+</html>
