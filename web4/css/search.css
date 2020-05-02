@@ -1,1 +1,50 @@
 @charset "utf-8";
+
+/* 검색 */
+.box-search {position: relative; margin-bottom:30px; border-bottom:1px solid #5d5d5d;}
+.box-search label {margin-bottom:0px;}
+.box-search input {width: calc(100% - 60px); border:none;}
+.box-search button {position: absolute; top:0; right:0; width:60px; height:100%; text-indent: -1000px; overflow: hidden; background:url(../images/img_head_search.png) no-repeat 21px 50%; background-size:22px auto;}
+.box-search legend {overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;}
+
+/* 인기 키워드 */
+.box-hotkeyword {margin:30px 15px; overflow: hidden;}
+.box-hotkeyword h2 {font-size: 22px; margin-bottom: 10px;}
+
+.box-search-underline {display: block; margin: 30px 0; padding: 0; width: 100%; height: 5px; background: #f0f0f0; border: none;}
+.box-search-result {margin: 30px 15px;}
+.box-search-result > p {font-size: 15px;}
+.box-search-result > hr {margin-top: 30px;}
+
+/* 상품리스트 */
+.box-product-list {margin:30px 0px;}
+
+/* 큐레이션 */
+.contain-curation {margin: 0 15px;}
+.contain-curation .text-empty-data {padding: 30px 0;}
+.box-curation-head {text-align: center; margin: 30px 0;}
+.box-curation-head h2 {margin-bottom: 8px;}
+.box-curation-head > p {margin-bottom: 30px;}
+
+.box-curation-step {text-align: center; margin-bottom: 30px;}
+.box-curation-step h3 {text-align: left; margin: 0 15px 20px 15px;}
+.box-curation-step h3 > span {display: table; font-size: 14px; margin-bottom: 30px; text-decoration: underline;}
+
+.box-curation-icon {margin: 0 auto 6px; width: 315px; overflow: hidden;}
+.box-curation-icon > .keyword {float: none;}
+.curation-icon {float:left; display: table; width:90px; height:90px; background-color: #f2f2f2; border-radius: 50%; margin: 0 22px 24px 0;}
+.box-curation-icon > span:nth-of-type(3n) {margin:0 0 24px 0;}
+.curation-icon a {display: table-cell; vertical-align: middle; font-size: 18px; color:#777; text-decoration: none;}
+.curation-icon.on {background: #364d8e;}
+.curation-icon.on a {color: #fff;}
+.box-curation-step:last-child > hr {display:none;}
+
+.btn-type-text4 button::after {content: ''; display: inline-block; margin: 0 0 -1px 5px; width: 13px; height: 13px; background: url(../images/img_link_arrow.png) no-repeat 50%; background-size: 13px auto;}
+
+.box-curation-list {margin: 30px 0px;}
+.detail-product-type1 .image {margin-bottom:0px;}
+
+
+
+
+

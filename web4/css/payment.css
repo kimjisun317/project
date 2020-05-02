@@ -1,1 +1,55 @@
 @charset "utf-8";
+.box-detail-product11 {position:relative;margin:10px 15px 0 15px;padding:8px 0;}
+.box-detail-product11 .detail1 {margin-bottom:8px;font-size:22px;}
+.box-detail-product11 .detail2 {text-align:right;font-size:20px;color:#364d8e;font-weight:700;}
+.box-detail-product11 .detail3 {position:absolute;left:0;bottom:8px;font-size:15px;color:#9e9e9e;}
+.box-detail-product12 {margin:0 15px 10px 15px;padding:8px 0;border-top:1px solid #f0f0f0;}
+.box-detail-product12 .detail1 {font-size:15px;color:#364d8e;}
+.box-detail-product12 .detail2 {font-size:18px;}
+
+.contain-step {overflow:hidden;height:60px;border-bottom:1px solid #eaeaea;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.contain-step .fixed-box-button {display:none;}
+.contain-step.on {height:auto;}
+.contain-step.on .fixed-box-button {display:block;}
+.contain-step.complete {height:60px;}
+.title-step-order::after {content:'';display:block;position:absolute;right:15px;top:18px;width:30px;height:25px;font-size:15px;color:#979797;text-align:right;line-height:25px;background:url(../images/img_accordion.png) no-repeat right 50%;background-size:25px auto;}
+.contain-step.on .title-step-order::after {background:url(../images/img_accordion_on.png) no-repeat 50%;background-size:25px auto;}
+.contain-step.complete .title-step-order::after {content:'완료';background:none;}
+.contain-step .box-inner {padding:25px 15px 20px 15px;background:#f8f8f8;}
+
+span.btn-type-allagree {margin-bottom:20px;height:auto;background:#fff;border:1px solid #999;border-radius:20px;}
+span.btn-type-allagree button {height:35px;text-align:center;font-size:13px;line-height:35px;}
+span.btn-type-allagree button::before {content:'';display:inline-block;width:24px;height:24px;margin-bottom:6px;vertical-align:middle;background:url(../images/img_checkbox3_unchecked.png) no-repeat 50%;background-size:24px auto;}
+span.btn-type-allagree.checked {border:1px solid #364d8e;background:#364d8e;}
+span.btn-type-allagree.checked button {color:#fff;}
+span.btn-type-allagree.checked button::before {background:url(../images/img_checkbox3_checked.png) no-repeat 50%;background-size:24px auto;}
+
+.contain-step .box-agreement {padding:0 15px;}
+.contain-step .box-agreement .form-checkbox {display:block;margin:0 0 10px 0;font-size:14px;}
+.contain-step .box-agreement .form-checkbox:before {margin-right:0;}
+.contain-step .box-agreement .form-checkbox i {font-style:normal;color:#999;}
+.contain-step .box-agreement .form-checkbox .necessary {color:#ff0000;}
+.contain-step .box-agreement .act-agreement {display:block;position:relative;}
+.contain-step .box-agreement .act-agreement::before {content:'';display:block;position:absolute;left:0;top:0;right:0;bottom:0;z-index:1;background:url(../images/img_icon_link1.png) no-repeat right 50%;background-size:20px auto;}
+.contain-step .text-information {margin-bottom:20px;font-size:15px;text-align:center;}
+
+.step-certification {text-align:center;}
+.step-certification li {position:relative;display:inline-block;margin:0 13px;width:85px;font-size:14px;text-align:center;vertical-align:top;color:#9e9e9e;}
+.step-certification li::after {content:'';display:block;position:absolute;left:-20px;top:37px;width:10px;height:18px;background:url(../images/img_arrow_step.png) no-repeat 50%;background-size:10px auto;}
+.step-certification li:first-child::after {content:none;}
+.step-certification .step1::before {content:'';display:block;margin:0 auto 12px auto;width:83px;height:83px;background:#fff url(../images/img_step_certification1.png) no-repeat 50%;background-size:40px auto;border-radius:100%;}
+.step-certification .step2::before {content:'';display:block;margin:0 auto 12px auto;width:83px;height:83px;background:#fff url(../images/img_step_certification2.png) no-repeat 50%;background-size:51px auto;border-radius:100%;}
+.step-certification .step3::before {content:'';display:block;margin:0 auto 12px auto;width:83px;height:83px;background:#fff url(../images/img_step_certification3.png) no-repeat 50%;background-size:31px auto;border-radius:100%;}
+
+.box-certification-kakao-complete {padding:70px 0 30px 0;}
+.box-certification-kakao-complete .text-information::before {content:'';display:block;margin:0 auto 12px auto;width:83px;height:83px;background:#fff url(../images/img_step_certification3.png) no-repeat 50%;background-size:31px auto;border-radius:100%;}
+
+
+
+
+.contain-information-payment-layer {padding:20px 15px;}
+.contain-information-payment-layer .text-normal-type1 {font-size:12px;color:#999;}
