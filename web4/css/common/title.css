@@ -1,0 +1,10 @@
+.title-step {font-size:16px;font-weight:700;color:#364d8e;line-height:28px;}
+.box-step {position:absolute;right:0;top:0;padding:0;overflow:hidden;text-align:right;}
+.box-step span {display:inline-block;width:28px;height:28px;vertical-align:middle;font-size:12px;color:#fff;font-weight:700;text-align:center;line-height:30px;background:#c2c9dd;border-radius:100%;}
+.box-step span.on {background:#364d8e;}
+
+.title-step-order {display:block;position:relative;padding:0 15px;height:60px;font-weight:normal;color:#222;line-height:60px;text-align:left;font-size:15px;}
+
+.contain-join-body h2.title {padding:0;font-size:16px;text-align:left;color:#222;}
+
+.title-agreement {margin:20px 15px;font-size:16px;color:#364d8e;font-weight:700;}
