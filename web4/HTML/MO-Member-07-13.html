@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>대명 아임레디</title>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/mypage.css'><!-- 카테고리별 css 변경 -->
+    <script src="../js/lib.js"></script>
+    <script src="../js/style.js"></script>
+</head>
+<body>
+
+<!-- 헤더 : 하위카테고리 -->
+<header class="area-header">
+    <div class="area-inner">
+        <span class="btn-historyback"><button>이전으로</button></span>
+        <h1 class="title"><button>납입/환급금 조회</button></h1>
+        <span class="btn-search"><button>검색</button></span>
+    </div>
+</header>
+<!-- //헤더 : 하위카테고리 -->
+<!-- 하위 카테고리 -->
+<nav class="area-category">
+    <div class="area-inner">
+        <span><a href="">가입내역 조회</a></span>
+        <span class="on"><a href="">납입/환급금 조회</a></span>
+        <span><a href="">배송/지원혜택 조회</a></span>
+        <span><a href="">결제수단 변경 신청</a></span>
+        <span><a href="">철회/해약 신청</a></span>
+        <span><a href="">양도/양수 신청</a></span>
+        <span><a href="">멤버십 카드 조회</a></span>
+        <span><a href="">라이프서비스 신청</a></span>
+    </div>
+</nav>
+<!-- //하위 카테고리 -->
+
+<!-- 본문 -->
+<div class="area-content"> <!-- 하단 탭바일때 aside-tabbar 클래스 추가 -->
+    <div class="area-inner">
+
+        <div class="area-mypage contain-payment">
+
+
+            <p class="text-information-type2">* 상품의 상세 납입현황을 조회합니다.<br >청약가입한철회/행사/해약 상품 내역은 표시 되지 않습니다.</p>
+            <p class="text-information-type2">* 자세한 납입정보는 [납입증서] 를 참고하시기 바랍니다.</p>
+
+            <hr class="divline-type5">
+
+            <div class="contain-history-subscripton1">
+                <button>
+                <dl>
+                    <dt><span class="num-member">회원번호 0000AA0000</span>배달의 민족 매월 2만 포인트 지원</dt>
+                    <dd class="date">0000.00.00</dd>
+                    <dd class="stat">가입</dd>
+                </dl>
+                </button>
+                <div class="box-button">
+                    <span class="btn-type-text7"><button>납입증서</button></span>
+                    <span class="btn-type-text7"><button>납입상세</button></span>
+                    <span class="btn-type-text7"><button>환급금 조회</button></span>
+                    <span class="btn-type-text7"><button>환급금 상세조회</button></span>
+                </div>
+            </div>
+
+            <div class="contain-history-subscripton1">
+                <button>
+                <dl>
+                    <dt><span class="num-member">회원번호 0000AA0000</span>배달의 민족 매월 2만 포인트 지원</dt>
+                    <dd class="stat">접수</dd>
+                </dl>
+                </button>
+            </div>
+
+            <div class="contain-history-subscripton1">
+                <button>
+                <dl>
+                    <dt><span class="num-member">회원번호 0000AA0000</span>배달의 민족 매월 2만 포인트 지원</dt>
+                    <dd class="stat">정상</dd>
+                </dl>
+                </button>
+                <div class="box-button">
+                    <span class="btn-type-text7"><button>납입증서</button></span>
+                    <span class="btn-type-text7"><button>납입상세</button></span>
+                    <span class="btn-type-text7"><button>환급금 조회</button></span>
+                    <span class="btn-type-text7"><button>환급금 상세조회</button></span>
+                </div>
+            </div>
+
+            <hr class="divline-type5">
+
+            <p class="text-information-type2">* 납입금액은 상조부금, 결합상품 금액, 추가부담금 등을 종합하여 표기 됩니다.</p>
+            <p class="text-information-type2">* 납입내역은 [납입상세]를 통해 기간별 납입내역을 조회하실 수 있습니다.</p>
+
+
+        </div>
+
+    </div>
+</div>
+<!-- //본문 -->
+
+<!-- 하단 탭바 -->
+<aside class="area-aside bottom">
+    <div class="area-inner">
+        <div class="contain-tabbar">
+            <span class="btn-tabbar1"><button>카테고리</button></span> <!-- 하단 탭바 활성화시 on추가 / ex) class="btn-tabbar1 on" -->
+            <span class="btn-tabbar2"><button>추천</button></span>            
+            <span class="btn-tabbar3"><a href="">홈</a></span>                       
+            <span class="btn-tabbar4"><a href="">레디플래너</a></span>
+            <span class="btn-tabbar5"><a href="">My계약</a></span> 
+        </div>
+    </div>
+</aside>
+<!-- //하단 탭바 -->
+
+<!-- 레이어 팝업 : 납입상세 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">납입상세</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <h2 class="title-paymentdetail">배달의 민족 매월 2만 포인트 지원</h2>
+
+                <div class="box-scroll-paymenttable">
+                    <div class="table-type3">
+                        <table>
+                            <colgroup>
+                            <col width="60px">
+                            <col width="100px">
+                            <col width="100px">
+                            <col width="150px">
+                            <col width="150px">
+                            <col width="180px">
+                            <col width="150px">
+                            <col width="120px">
+                            <col width="120px">
+                            </colgroup>
+                            <tr>
+                                <th>회차</th>
+                                <th>월분</th>
+                                <th>납입일자</th>
+                                <th>상조부금 납입금</th>
+                                <th>결합상품 납입금</th>
+                                <th>결합상품 추가 납입금</th>
+                                <th>월 납입금 총액</th>
+                                <th>납입방법</th>
+                                <th>상태</th>
+                            </tr>
+                            <tr>
+                                <td>000</td>
+                                <td>0000-0</td>
+                                <td>0000-00-00</td>
+                                <td>0,000</td>
+                                <td>00,000</td>
+                                <td>0</td>
+                                <td>00,000</td>
+                                <td>카드</td>
+                                <td>정상</td>
+                            </tr>
+                            <tr>
+                                <td>000</td>
+                                <td>0000-0</td>
+                                <td>0000-00-00</td>
+                                <td>0,000</td>
+                                <td>00,000</td>
+                                <td>0</td>
+                                <td>00,000</td>
+                                <td>카드</td>
+                                <td>정상</td>
+                            </tr>
+                            <tr>
+                                <td>000</td>
+                                <td>0000-0</td>
+                                <td>0000-00-00</td>
+                                <td>0,000</td>
+                                <td>00,000</td>
+                                <td>0</td>
+                                <td>00,000</td>
+                                <td>카드</td>
+                                <td>정상</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 : 납입상세 -->
+
+<!-- 레이어 팝업 : 환급금 조회 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">환급금 조회</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <div class="box-information-mypage">
+                    <h2 class="text-title-type3">현재 가입중인 상품의<br > <span class="text-point1">해약환급금 정책</span>을 확인할 수 있습니다.</h2>
+                    <ul class="list-type2">
+                        <li>대명아임레디의 만기 환급금은 납입 금액의 100% 입니다. (만기 납입 완료 후 익월 해약 신청 시)</li>
+                        <li>중도해약에 대한 환급 기준은 상조 서비스 약관 규정에 의해 환금 됩니다.<br >(결합 상품 가입의 경우, 지원 혜택은 상조서비스 이용 또는 만기 납입 완료 시에만 제공되며, 중도 해약 시 결합 상품 지원금액은 본인 부담입니다.)</li>
+                        <li>이미 해약했거나, 행사(서비스 이용 완료) 내역은 표시되지 않습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="contain-history-subscripton1">
+                    <dl>
+                        <dt><span class="num-member">홍길동 / 회원번호 0000AA0000</span>LG전자 공기ㅣ청정기 40만원 지원</dt>
+                        <dd class="detail">
+                            <dl>
+                                <dt>상품금액 :</dt>
+                                <dd>0,000,000원</dd>
+                            </dl>
+                            <dl>
+                                <dt>만기회차 :</dt>
+                                <dd>000회</dd>
+                            </dl>
+                            <dl>
+                                <dt>만기환급률 :</dt>
+                                <dd>00%</dd>
+                            </dl>
+                        </dd>
+                        <dd class="detail">
+                            <dl>
+                                <dt>납입회차</dt>
+                                <dd>00회</dd>
+                            </dl>
+                            <dl>
+                                <dt>납입금액</dt>
+                                <dd>000,000원</dd>
+                            </dl>
+                        </dd>
+                        <dd class="detail">
+                            <dl>
+                                <dt>중도해약 환급률 :</dt>
+                                <dd>00%</dd>
+                            </dl>
+                            <dl>
+                                <dt>중도해약 환급금 :</dt>
+                                <dd>000,000원</dd>
+                            </dl>
+                        </dd>
+                        <dd class="date">0000.00.00</dd>
+                        <dd class="stat">접수</dd>
+                    </dl>
+                </div>
+
+                <div class="box-information-mypage">
+                    <p class="text-normal-type2"><strong>상조부금 납입금이란?</strong></p>
+                    <p class="text-normal-type1">결합상품의 경우, 만기 환급 시에만 결합상품 지원 할부금을 포함하여 100% 환급이 되며, 중도해약 시 해약환급금은 결합상품 금액을 제외한 상조부금 납입금에서만 책정됩니다. <br >(일반상품은 전액 상조부금 납입금으로 해당사항 없음)</p>
+
+                    <hr class="divline-type3" >
+
+                    <p class="text-normal-type3">회원 약관 ‘상조서비스 약관 제15조 계약의 해지 및 해약환급금’의 산식 관련 내용입니다.</p>
+                    <hr class="divline-type5" >
+                    <p class="text-normal-type3">① 회원이 상조서비스를 이용할 의사가 없을 경우 계약을 해지할 수 있다.</p>
+                    <p class="text-normal-type3">② 회원의 사정으로 해지된 경우 회사는 회원의 납입금에서 모집수당, 기타 관리비 등을 공제한 아래 산식에 따른 해약환급금을 회원의 신청완료일로부터 3영업일 이내에 회원에게 환급하여야 한다. <br >단, 납입금의 범위 내에서 회원이 다른 서비스를 이용하였을 경우 해약환급금은 산식에 따른 환급금에서 회원이 이용한 서비스의 상품금액을 공제하여 환급한다.</p>
+                    <hr class="divline-type5" >
+                    <p class="text-normal-type3">[해약환급금 산식]</p>
+                    <p class="text-normal-type3">정기형</p>
+                    <p class="text-normal-type3">- 해약환급금 = 납입금 – 관리비 누계 – 모집수당 공제액</p>
+                    <p class="text-normal-type3">- 모집수당 공제액 = 모집수당 Ⅹ 0.75 + 모집수당 Ⅹ 0.25 Ⅹ (기 납입 월수 / 총 납입기간 월수)</p>
+                    <p class="text-normal-type3">- 관리비 = 납입금의 5%(총 관리비 상한 50만원)</p>
+                    <p class="text-normal-type3">- 모집수당 = 계약대금의 10%(상한 50만원) 납입금 누계가 관리 누계와 모집수당 공제액의 합보다 적은 경우에는 해약환급금을 0으로 한다. <br >모집수당은 총 계약대금 대비 10%로 하되, 500,000원을 초과할 수 없음.</p>
+                    <p class="text-normal-type3">부정기형</p>
+                    <p class="text-normal-type3">- 해약환급금 = 납입금 누계 Ⅹ 0.85</p>
+                    <hr class="divline-type5" >
+                    <p class="text-normal-type3">중도 해약 시 해약환급금은 정해진 산식에 따라 산정되며, 별도 신청절차를 거쳐, 최종 해약처리 이후 3영업일 이내 환급함. (최종 만기 시에는 만기 익월부터 100% 환급)</p>
+                    <p class="text-normal-type3">정기형이란, 총 계약대금을 1년 이상의 기간을 두고 월별로 균분하여, 납입하는 선불식 할부계약 형태를 말한다.</p>
+                    <p class="text-normal-type3">부정기형이란, 정기형을 제외한 선불식 할부계약 형태를 말한다.</p>
+                    <p class="text-normal-type3">위의 산식은 공정거래위원회 ‘상조해약환급금 산정기준 고시’을 준수하고 있으며, 상품 및 회차에 따른 해약환급률은 홈페이지(www.daemyunglifeway.com)를 통하여 확인 가능합니다.</p>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 : 환급금 조회 -->
+
+<!-- 레이어 팝업 : 환급금 상세조회 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">납입상세</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <h2 class="title-paymentdetail">배달의 민족 매월 2만 포인트 지원</h2>
+
+                <div class="box-scroll-paymenttable">
+                    <div class="table-type3">
+                        <table>
+                            <colgroup>
+                            <col width="60px">
+                            <col width="100px">
+                            <col width="60px">
+                            <col width="100px">
+                            <col width="60px">
+                            <col width="100px">
+                            </colgroup>
+                            <tr>
+                                <th>회차</th>
+                                <th>해약금</th>
+                                <th>회차</th>
+                                <th>해약금</th>
+                                <th>회차</th>
+                                <th>해약금</th>
+                            </tr>
+                            <tr>
+                                <td>000</td>
+                                <td>00,000</td>
+                                <td>000</td>
+                                <td>00,000</td>
+                                <td>000</td>
+                                <td>00,000</td>
+                            </tr>
+                            <tr>
+                                <td>000</td>
+                                <td>00,000</td>
+                                <td>000</td>
+                                <td>00,000</td>
+                                <td>000</td>
+                                <td>00,000</td>
+                            </tr>
+                            <tr>
+                                <td>000</td>
+                                <td>00,000</td>
+                                <td>000</td>
+                                <td>00,000</td>
+                                <td>000</td>
+                                <td>00,000</td>
+                            </tr>
+                            <tr>
+                                <td>000</td>
+                                <td>00,000</td>
+                                <td>000</td>
+                                <td>00,000</td>
+                                <td>000</td>
+                                <td>00,000</td>
+                            </tr>
+                            <tr>
+                                <td>000</td>
+                                <td>00,000</td>
+                                <td>000</td>
+                                <td>00,000</td>
+                                <td>000</td>
+                                <td>00,000</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 : 환급금 상세조회 -->
+
+<script src="../js/dom.js"></script>
+
+</body>
+</html>

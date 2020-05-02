@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>대명 아임레디</title>
-    <link rel='stylesheet' type='text/css' href='../css/lib.css'>
     <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/lib.css'>
+    <link rel='stylesheet' type='text/css' href='../css/join.css'>
     <script src="../js/lib.js"></script>
     <script src="../js/style.js"></script>
+    <style>
+    body {padding:50px 0;}
+    .guide-title {margin:20px;font-size:30px;}
+    fieldset {display:block;position:relative;margin:20px;padding:20px;border:3px solid #ccc;}
+    fieldset legend {margin:10px 10px 0 10px;padding:10px 10px 0 10px;font-size:14px;font-weight:700;}
+    </style>
 </head>
 <body>
 
+<h1 class="guide-title">HTML GUIDE</h1>
+
 <!-- Common -->
-<section>
+<fieldset><legend>컨텐츠 구분선</legend>
 
-<hr class="divline-type1" >
+<hr class="divline-type0" ><!-- 선없이 상하 마진 30 -->
 
-</section>
+<hr class="divline-type1" ><!-- 마진 없는 선 -->
+
+<hr class="divline-type2" ><!-- 마진없는 굵은 선 -->
+
+<hr class="divline-type3" ><!-- 상하 마진 20 선 -->
+
+</fieldset>
 <!-- Common -->
 
 
 <!-- Title -->
-<section>
+<fieldset><legend>타이틀 / 헤더</legend>
 
-<h2 class="title">레디플레너 로그인</h2>
+<h2 class="title">레디플래너 로그인</h2>
 
 <div class="contain-join-head">
     <h2 class="title-step">신청정보입력</h2>
@@ -34,74 +49,219 @@
     </div>
 </div>
 
-</section>
+</fieldset>
 
 
 <!-- Text -->
-<section>
+<fieldset><legend>텍스트</legend>
 
-    <p class="text-notice-type1">회원번호를 꼭 기억해 주세요!</p>
-    <p class="text-normal-type1">신청 승인이 완료되면 회원번호로 로그인 후, 아이디 생성 및 정산에 필요한 정보를 입력해 주셔야 최종 승인처리 됩니다.</p>
-    <p class="text-normal-type1">심사 결과는 입력해 주신 휴대폰 번호로 통보됩니다.</p>
+    <p class="text-empty-data">등록된 상품 Q&amp;A가 없습니다.</p>
 
-</section>
+    <p class="text-normal-type1">내용입니다.</p>
+    <p class="text-normal-type2">내용입니다.</p>
+
+    <p class="text-information-type1"><span class="text-point1">홍길동</span> 님, <br >레디플래너 신청 정보는 <br ><strong class="text-point2">심사 중</strong>에 있습니다.</p>
+    <p class="text-information-type1 notice1"><span class="text-point1">홍길동</span> 님, <br >레디플래너 신청 정보는 <br ><strong class="text-point2">심사 중</strong>에 있습니다.</p>
+    <p class="text-information-type2">내용입니다.</p>
+    <p class="text-information-type3">내용입니다..</p>
+
+    <p class="text-notice-type1">내용입니다.</p>
+    <p class="text-notice-type2">내용입니다.</p>
+    <p class="text-notice-type2 form">*필수</p>
+    <p class="text-notice-type3">* 내용입니다.</p>
+
+</fieldset>
 
 
 <!-- Container -->
-<section>
+<fieldset><legend>컨텐츠 컨테이너</legend>
+
 <div class="contain-">
     Content
 </div>
 
-</section>
+</fieldset>
 
 
 <!-- Box -->
-<section>
+<fieldset><legend>컨텐츠 박스</legend>
 
-<div class="box-login">
+<div class="box-">
     Content
 </div>
 
-</section>
+<div class="box-movie">
+
+</div>
+
+</fieldset>
+
+<!-- Tab -->
+<fieldset><legend>탭</legend>
+
+    <!-- 탭 헤더 : 고정 -->
+    <div class="box-tab-head">
+        <span class="on"><button>아이디 찾기</button></span>
+        <span><button>비밀번호 찾기</button></span>
+    </div>
+    <!-- //탭 헤더 : 고정 -->
+    <!-- 탭 내용 -->
+    <div class="box-tab-body tab1 on">
+        내용1
+    </div>
+    <div class="box-tab-body tab2">
+        <!-- 서브 탭 헤더 : 스크롤 -->
+        <div class="box-tab-sub-head swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide on"><button>전체</button></div>
+                <div class="swiper-slide"><button>가입문의</button></div>
+                <div class="swiper-slide"><button>멤버십</button></div>
+                <div class="swiper-slide"><button>상조서비스</button></div>
+                <div class="swiper-slide"><button>계약조회</button></div>
+                <div class="swiper-slide"><button>레디플래너</button></div>
+                <div class="swiper-slide"><button>라이프서비스</button></div>
+            </div>
+        </div>
+        <!-- //서브 탭 헤더 : 스크롤 -->
+        <!-- 서브 탭 내용 -->
+        <div class="box-tab-sub-body subtab1 on">서브 내용 1</div>
+        <div class="box-tab-sub-body subtab2">서브 내용 2</div>
+        <div class="box-tab-sub-body subtab3">서브 내용 3</div>
+        <div class="box-tab-sub-body subtab4">서브 내용 4</div>
+        <div class="box-tab-sub-body subtab5">서브 내용 5</div>
+        <div class="box-tab-sub-body subtab6">서브 내용 6</div>
+        <div class="box-tab-sub-body subtab7">서브 내용 7</div>
+    </div>
+
+    <!-- 탭 헤더 : 스크롤 -->
+    <div class="box-tab-head swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide on"><button>전체</button></div>
+            <div class="swiper-slide"><button>가입문의</button></div>
+            <div class="swiper-slide"><button>멤버십</button></div>
+            <div class="swiper-slide"><button>상조서비스</button></div>
+            <div class="swiper-slide"><button>계약조회</button></div>
+            <div class="swiper-slide"><button>레디플래너</button></div>
+            <div class="swiper-slide"><button>라이프서비스</button></div>
+        </div>
+    </div>
+    <!-- //탭 헤더 : 스크롤 -->
+    <!-- 탭 내용 -->
+    <div class="box-tab-body tab1 on">내용 1</div>
+    <div class="box-tab-body tab2">내용 2</div>
+    <div class="box-tab-body tab3">내용 3</div>
+    <div class="box-tab-body tab4">내용 4</div>
+    <div class="box-tab-body tab5">내용 5</div>
+    <div class="box-tab-body tab6">내용 6</div>
+    <div class="box-tab-body tab7">내용 7</div>
+    <!-- //탭 내용 -->
+
+</fieldset>
 
 
 <!-- Form -->
-<section>
+<fieldset><legend>폼</legend>
 
-<label class="form-ckeckbox"><input type="checkbox" >자동로그인</label>
-<label class="form-id-login"><input type="text" placeholder="아이디" ></label>
-<label class="form-password-login"><input type="password" placeholder="비밀번호" ></label>
-
-<div class="box-form">
-    <p class="text-input"><span>이름</span> 홍길동</p>
-    <p class="text-input"><span>휴대폰 번호</span> 000-0000-0000</p>
-</div>
-
-<div class="box-form">
-    <span><label>홍보사이트의 운영 성격은?</label></span>
-    <span><input type="text" ></span>
-</div>
-
+    <!-- Checkbox -->
+<label class="form-checkbox"><input type="checkbox" >자동로그인</label>
 <div class="box-checkitem">
     <label class="form-checkbox"><input type="checkbox" >출산/유아동</label>
     <label class="form-checkbox"><input type="checkbox" >뷰티</label>
-    <label class="form-checkbox"><input type="checkbox" >여성패션</label>
-    <label class="form-checkbox"><input type="checkbox" >생활용품</label>
-    <label class="form-checkbox"><input type="checkbox" >생활가전</label>
-    <label class="form-checkbox"><input type="checkbox" >디지털가전</label>
-    <label class="form-checkbox"><input type="checkbox" >스포츠/레져</label>
-    <label class="form-checkbox"><input type="checkbox" >헬스/건강</label>
-    <label class="form-checkbox"><input type="checkbox" >문구/오피스</label>
-    <label class="form-checkbox"><input type="checkbox" >도서</label>
-    <label class="form-checkbox"><input type="checkbox" >음반/DVD</label>
-    <label class="form-checkbox"><input type="checkbox" >인테리어</label>
 </div>
+<p class="text-agreement">
+    <label class="form-checkbox"><input type="checkbox" ></label>본인은 만 14세 이상이며, <button class="agreement1">버킷마켓 이용약관</button>, <button class="agreement2">레디플래너 서비스약관</button>, <button class="agreement3">개인정보 제 3자 제공 동의</button>, <button class="agreement4">개인정보 취급 위탁동의</button> 내용을 확인하였으며, 동의합니다.
+</p>
 
-</section>
+    <!-- Radio -->
+<label class="form-radio"><input type="radio" name="name1" >선택</label>
+<label class="form-radio"><input type="radio" name="name1" >선택</label>
+
+    <!-- text, password -->
+<label class="form-"><input type="text" placeholder="아이디" ></label>
+<label class="form-"><input type="password" placeholder="비밀번호" ></label>
+<span class="form-addbutton"><input type="text" placeholder="http://" ><span class="btn-type-text1"><button>추가</button></span></span>
+
+    <!-- output box -->
+<dl class="box-form fixed">
+    <dt>이름</dt>
+    <dd>홍길동</dd>
+</dl>
+
+    <!-- input box -->
+<input type="text" placeholder="입력하세요." >
+<input type="text" placeholder="입력할 수 없습니다." disabled >
+
+    <!-- input box & textarea  -->
+<span class="form-textarea"><textarea placeholder="예) 취미생활 블로그"></textarea><i>0/00</i></span>
+
+
+    <!-- select -->
+<span class="form-select">
+    <select>
+        <option>은행선택</option>
+    </select>
+</span>
+
+<dl class="box-form">
+    <dd>
+        <span class="form-birthday">
+            <label class="form-radio"><input type="radio" name="name1" >여자</label>
+            <label class="form-radio"><input type="radio" name="name1" >남자</label>
+            <input type="text" placeholder="생년월일20200101" >
+        </span>
+        <label class="form-alert">생년월일을 입력해 주세요.</label>
+    </dd>
+</dl>
+
+<dl class="box-form">
+    <dt><i>(필수)</i>추가정보
+        <span class="select">0개</span>
+    </dt>
+    <dd>
+        <dl class="box-form">
+            <dt>배달의 민족 로그인 아이디</dt>
+            <dd><input type="text" >
+                <label class="form-alert">혜택을 지급받을 아이디를 입력해주세요.</label>
+            </dd>
+            <dd><input type="text" >
+                <label class="form-alert">혜택을 지급받을 아이디를 입력해주세요.</label>
+            </dd>
+            <dd class="form-alert">가입구좌 수량만큼 아이디를 입력해 주세요.</dd>
+        </dl>
+    </dd>
+</dl>
+
+<dl class="box-form">
+    <dt><i>(필수)</i>배송/설치 정보
+        <span class="select">0개 선택 가능</span>
+    </dt>
+    <dd>
+        <label class="form-checkbox"><input type="checkbox" >가입자 주소와 동일</label>
+        <label class="form-checkbox"><input type="checkbox" >배송지 일괄입력</label>
+    </dd>
+    <dd>
+        <div class="box-order">
+            <span class="product">삼성냉장고(700L)</span>
+            <span class="option">블랙</span>
+            <span class="btn-type-text5"><button>배송지 등록</button></span>
+        </div>
+        <div class="box-order">
+            <span class="product">삼성냉장고(700L)</span>
+            <span class="option">블랙</span>
+            <span class="infor">홍길동 000-0000-0000</span>
+            <span class="address">서울시 강남구 역삼동 0번지 길동빌딩 0층 000호</span>
+            <span class="btn-type-text5"><button>배송지 수정</button></span>
+        </div>
+    </dd>
+    <dd class="form-alert">배송/설치 주소를 등록해 주세요.</dd>
+</dl>
+
+
+
+</fieldset>
 
 <!-- Table -->
-<section>
+<fieldset><legend>테이블</legend>
 
 <div class="table-type1">
     <table>
@@ -110,45 +270,232 @@
         <col >
         </colgroup>
         <tr>
-            <th>회원번호</th>
-            <td>AB00CD000 <span class="btn-text-type1"><button>복사하기</button></span></td>
+            <th>제목</th>
+            <td>내용 <span class="btn-text-type1"><button>복사하기</button></span></td>
         </tr>
         <tr>
-            <th>휴대폰 번호</th>
-            <td>000-0000-0000</td>
+            <th>제목</th>
+            <td>내용</td>
         </tr>
     </table>
 </div>
 
-</section>
+<div class="table-type2">
+    <table>
+        <colgroup>
+        <col >
+        <col >
+        </colgroup>
+        <tr>
+            <th>제목</th>
+            <th>제목</th>
+            <th>제목</th>
+        </tr>
+        <tr>
+            <td>내용</td>
+            <td>내용</td>
+            <td>내용</td>
+        </tr>
+    </table>
+</div>
+
+</fieldset>
 
 <!-- Button -->
-<section>
+<fieldset><legend>버튼</legend>
 
-<span class="btn-link-type1"><a href="">레디플래너 가입 신청 하러 가기</a></span>
+<span class="btn-type-text1"><a href="">텍스트 버튼</a></span>
+<span class="btn-type-text2"><a href="">텍스트 버튼</a></span>
+<span class="btn-type-text3"><a href="">텍스트 버튼</a></span>
+<span class="btn-type-text4"><a href="">텍스트 버튼</a></span>
+<span class="btn-type-text5"><a href="">텍스트 버튼</a></span>
+<span class="btn-type-text5"><a href="">텍스트 버튼</a></span>
 
-<span class="btn-text-type1"><button>복사하기</button></span>
+<span class="btn-type-icon1"><button>아이콘 버튼</button></span>
 
-</section>
+<span class="btn-share"><button>SNS</button></span>
+
+<span class="btn-help"><button class="help1">도움말</button></span>
+<span class="btn-help"><button class="help2">도움말</button></span>
+
+<!-- 하단 고정버튼 -->
+<div class="fixed-box-button">
+    <span class="btn-type-text1"><button>다이렉트 가입</button></span><!-- 활성화 버튼 --><!-- 비활성화 시 disabled 클래스 추가 -->
+</div>
+<!-- //하단 고정버튼 -->
+
+
+</fieldset>
+
+<!-- 도움말 -->
+<div class="box-help help1">
+    <div class="box-inner">
+        도움말 1
+    </div>
+</div>
+<!-- //도움말 -->
+<!-- 도움말 -->
+<div class="box-help help2">
+    <div class="box-inner">
+        도움말 2
+    </div>
+</div>
+<!-- //도움말 -->
 
 
 <!-- Link -->
-<span class="link-"><a href="">아이디/비밀번호 찾기</a></span>
-<span class="link-type1"><a href="">플래너 번호가 있으신가요?</a></span>
+<fieldset><legend>링크</legend>
 
+<span class="link-type1"><a href="">링크입니다.</a></span>
+
+</fieldset>
+
+<!-- 팝업 -->
+<fieldset><legend>팝업</legend>
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">휴대폰 폰인확인</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <!-- 팝업본문 -->
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
 
 <!-- 팝업 : 알럿 -->
-<div class="layer-popup">
+<div class="layer-popup2"><!-- 직접 show hide -->
     <div class="layer-inner">
-        <div class="contain-alert">
+        <!-- 팝업 내용 -->
+        <div class="contain-popup">
             <p class="text-head">텍스트.</p>
             <p class="text-body">내용입니다.<br >내용입니다.</p>
             <span class="btn-type1"><button>확인</button></span>
         </div>
+        <!-- //팝업 내용 -->
         <span class="btn-close"><button>닫기</button></span>
     </div>
 </div>
 <!-- //팝업 : 알럿 -->
+
+<!-- 기능 팝업 -->
+<div class="layer-alert" style="display:none;">
+    <div class="layer-inner">
+        <p>회원번호가 복사되었습니다.</p>
+    </div>
+</div>
+<!-- 기능 팝업 -->
+
+</fieldset>
+
+<!-- 기타 -->
+<fieldset><legend>기타</legend>
+
+    <!-- 페이징 -->
+<div class="paginate">
+    <button class="first">처음으로</button>
+    <button class="prev">이전목록</button>
+    <span>
+        <button class="on">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </span>
+    <button class="next">다음목록</button>
+    <button class="last">마지막목록</button>
+</div>
+    <!-- //페이징 -->
+
+    <!-- 제품 상세 -->
+<dl class="detail-product-type1">
+    <dd class="image"><img src="../images/img_photo_sample2.png" alt="" ><span class="ribbon-type1">40만원 지원</span></dd>
+    <dt><span></span>삼성 갤럭시탭S 5e</dt>
+    <dd class="benefit">40만원 지원</dd>
+    <dd class="payment">매월 00,000원 X 00회</dd>
+</dl>
+
+<!-- 헤더 -->
+<header class="area-header">
+    <div class="area-inner">
+        <span class="btn-historyback"><button>이전으로</button></span>
+        <span class="btn-navigation"><button>메뉴</button></span>
+        <h1 class="title">제목</h1>
+        <span class="btn-search"><button>검색</button></span>
+        <span class="btn-home"><button>홈으로</button></span>
+    </div>
+</header>
+<!-- //헤더 -->
+
+<!-- 헤더 : 하위카테고리 -->
+<header class="area-header">
+    <div class="area-inner">
+        <span class="btn-historyback"><button>이전으로</button></span>
+        <span class="btn-navigation"><button>메뉴</button></span>
+        <h1 class="title"><button>제목</button></h1>
+        <span class="btn-search"><button>검색</button></span>
+        <span class="btn-home"><button>홈으로</button></span>
+    </div>
+</header>
+<!-- //헤더 : 하위카테고리 -->
+<!-- 하위 카테고리 -->
+<nav class="area-category">
+    <div class="area-inner">
+        <span on><a href="">카테고리</a></span>
+        <span><a href="">카테고리</a></span>
+        <span><a href="">카테고리</a></span>
+        <span><a href="">카테고리</a></span>
+        <span><a href="">카테고리</a></span>
+        <span><a href="">카테고리</a></span>
+    </div>
+</nav>
+<!-- //하위 카테고리 -->
+
+<!-- 하단 탭바 -->
+<aside class="area-aside bottom">
+    <div class="area-inner">
+        <div class="contain-tabbar">
+            <span class="btn-tabbar1"><button>카테고리</button></span> <!-- 하단 탭바 활성화시 on추가 / ex) class="btn-tabbar1 on" -->
+            <span class="btn-tabbar2"><button>추천</button></span>            
+            <span class="btn-tabbar3"><a href="">홈</a></span>                       
+            <span class="btn-tabbar4"><a href="">레디플래너</a></span>
+            <span class="btn-tabbar5"><a href="">My계약</a></span> 
+        </div>
+    </div>
+</aside>
+<!-- //하단 탭바 -->
+
+
+</fieldset>
+
+<script>
+var temp1 = $('div[class^="box-tab-"].swiper-container').offset().left *2
+temp2()
+$(window).on('resize',function(event){
+    temp2()
+});
+function temp2(){
+    $('div[class^="box-tab-"].swiper-container').each(function(){
+        $(this).css({'width':$(window).width() - temp1});
+    });
+}
+</script>
+
+<script src="../js/dom.js"></script>
 
 </body>
 </html>

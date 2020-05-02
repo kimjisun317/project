@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>대명 아임레디</title>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/mypage.css'><!-- 카테고리별 css 변경 -->
+    <script src="../js/lib.js"></script>
+    <script src="../js/style.js"></script>
+</head>
+<body>
+
+<!-- 헤더 : 하위카테고리 -->
+<header class="area-header">
+    <div class="area-inner">
+        <span class="btn-historyback"><button>이전으로</button></span>
+        <h1 class="title"><button>MY 계약</button></h1>
+        <span class="btn-search"><button>검색</button></span>
+    </div>
+</header>
+<!-- //헤더 : 하위카테고리 -->
+<!-- 하위 카테고리 -->
+<nav class="area-category">
+    <div class="area-inner">
+        <span class="on"><a href="">가입내역 조회</a></span>
+        <span><a href="">납입/환급금 조회</a></span>
+        <span><a href="">배송/지원혜택 조회</a></span>
+        <span><a href="">결제수단 변경 신청</a></span>
+        <span><a href="">철회/해약 신청</a></span>
+        <span><a href="">양도/양수 신청</a></span>
+        <span><a href="">멤버십 카드 조회</a></span>
+        <span><a href="">라이프서비스 신청</a></span>
+    </div>
+</nav>
+<!-- //하위 카테고리 -->
+
+<!-- 본문 -->
+<div class="area-content"> <!-- 하단 탭바일때 aside-tabbar 클래스 추가 -->
+    <div class="area-inner">
+
+        <div class="box-information-mypage">
+            <p class="text-information-type1">본인확인</p>
+            <p class="text-information-type2">고객님의 소중한 가입/납입현황 등의 정보를 다루기 위한 보안 절차로 본인확인이 필요합니다. </p>
+        </div>
+
+        <div class="box-information-certifiphone">
+            <p>본인 명의의 휴대폰으로 인증합니다.</p>
+        </div>
+
+        <!-- 하단 고정버튼 -->
+        <div class="fixed-box-button">
+            <span class="btn-type-text1"><button>본인확인</button></span><!-- 활성화 버튼 --><!-- 비활성화 시 disabled 클래스 추가 -->
+        </div>
+        <!-- //하단 고정버튼 -->
+
+    </div>
+</div>
+<!-- //본문 -->
+
+
+<!-- 레이어 팝업 : 휴대폰 본인확인 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">휴대폰 본인확인</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <!-- 휴대폰 본인확인 -->
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 : 휴대폰 본인확인 -->
+
+<script src="../js/dom.js"></script>
+
+</body>
+</html>

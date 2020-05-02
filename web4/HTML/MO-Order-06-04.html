@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>대명 아임레디</title>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/lib.css'>
+    <link rel='stylesheet' type='text/css' href='../css/payment.css'>
+    <script src="../js/lib.js"></script>
+    <script src="../js/style.js"></script>
+</head>
+<body>
+
+<!-- 헤더 -->
+<header class="area-header">
+    <div class="area-inner">
+        <span class="btn-historyback"><button>이전으로</button></span>
+        <h1 class="title">전자청약 상품가입 신청</h1>
+    </div>
+</header>
+<!-- //헤더 -->
+
+<!-- 본문 -->
+<div class="area-content">
+    <div class="area-inner">
+
+        <!-- 상품정보 -->
+        <div class="contain-product1">
+            <div class="box-detail-product11">
+                <p class="detail1">밀리의 서재 70만원 지원</p>
+                <p class="detail2">월3만원 지원 <span class="btn-help"><button class="help2">도움말</button></p>
+                <p class="detail3">블랙</p>
+            </div>
+            <div class="box-detail-product12">
+                <p class="detail1">0개의 가입구좌</p>
+                <p class="detail2">00,000원/월 납부금 X 130회</p>
+            </div>
+        </div>
+        <!-- //상품정보 -->
+
+        <hr class="divline-type2" >
+
+        <!-- 가입결제 -->
+        <div class="contain-product11">
+            <div class="contain-inner">
+
+                <div class="contain-step complete">
+                    <h3 class="title-step-order">① 약관동의 및 본인확인</h3>
+                    <div class="box-inner">
+                        <span class="btn-type-allagree"><button>약관 전체동의</button></span>
+                        <div class="box-agreement">
+                            <span class="act-agreement"><label class="form-checkbox"><input type="checkbox" > <i class="necessary">(필수)</i>개인정보 조회 및 이용 동의서</label></span>
+                            <span class="act-agreement"><label class="form-checkbox"><input type="checkbox" > <i class="necessary">(필수)</i>개인정보수집 및 이용 동의</label></span>
+                            <span class="act-agreement"><label class="form-checkbox"><input type="checkbox" > <i class="necessary">(필수)</i>개인정보 제3자 제공 동의</label></span>
+                            <span class="act-agreement"><label class="form-checkbox"><input type="checkbox" > <i class="necessary">(필수)</i>상품가입약관</label></span>
+                            <span class="act-agreement"><label class="form-checkbox"><input type="checkbox" > <i class="necessary">(필수)</i>회원약관</label></span>
+                            <span class="act-agreement"><label class="form-checkbox"><input type="checkbox" > <i>(선택)</i>마케팅 정보 수신 동의</label></span>
+                            <span class="act-agreement"><label class="form-checkbox"><input type="checkbox" > <i>(선택)</i>혜택 제공의 위한 제3자 제공동의</label></span>
+                        </div>
+                    </div>
+                    <!-- 하단 고정버튼 -->
+                    <div class="fixed-box-button">
+                        <span class="btn-type-text1 disabled"><button disabled>본인확인</button></span><!-- 활성화 버튼 --><!-- 비활성화 시 disabled 클래스 추가 -->
+                    </div>
+                    <!-- //하단 고정버튼 -->
+                </div>
+                <div class="contain-step on">
+                    <h3 class="title-step-order">② 가입정보입력</h3>
+                    <div class="box-inner">
+                        <dl class="box-form">
+                            <dt><i>(필수)</i>가입자 정보</dt>
+                            <dd><input type="text" value="홍길동" disabled ></dd>
+                            <dd><input type="text" value="000-0000-0000" disabled ></dd>
+                        </dl>
+                        <dl class="box-form">
+                            <dd>
+                                <span class="form-birthday">
+                                    <label class="form-radio"><input type="radio" name="name1" >여자</label>
+                                    <label class="form-radio"><input type="radio" name="name1" >남자</label>
+                                    <input type="text" placeholder="생년월일20200101" >
+                                </span>
+                                <label class="form-alert">생년월일을 입력해 주세요.</label>
+                            </dd>
+                        </dl>
+                        <dl class="box-form">
+                            <dt class="hidden">주소</dt>
+                            <dd><span class="form-addbutton"><input type="text" placeholder="가입증서 배송지 선택" disabled ><span class="btn-type-text1"><button>주소검색</button></span></span></dd>
+                            <dd>
+                                <input type="text" placeholder="상세주소 입력" >
+                                <label class="form-alert">가입증서가 배송될 상세주소를 입력해 주세요.</label>
+                            </dd>
+                        </dl>
+                        <dl class="box-form">
+                            <dt>선택정보</dt>
+                            <dd><input type="text" placeholder="비상 연락처 (-없이 숫자만 입력)" ></dd>
+                            <dd>
+                                <input type="text" placeholder="이메일 주소" >
+                                <label class="form-alert">올바른 이메일 주소 형식으로 입력해 주세요.</label>
+                            </dd>
+                        </dl>
+                        <dl class="box-form">
+                            <dt><i>(필수)</i>라이프 서비스 신청
+                                <span class="select">0개 선택 가능</span>
+                            </dt>
+                            <dd>
+                                <span class="form-select">
+                                    <select>
+                                        <option>주 계약 선택</option>
+                                    </select>
+                                </span>
+                                <label class="form-alert">주계약 서비스를 신청해 주세요.</label>
+                            </dd>
+                            <dd>
+                                <span class="form-select">
+                                    <select>
+                                        <option>주 계약 선택</option>
+                                    </select>
+                                </span>
+                                <label class="form-alert">주계약 서비스를 신청해 주세요.</label>
+                            </dd>
+                            <dd class="form-alert">가입 구좌 수량만틈 주계약 서비스를 신청해 주세요.</dd>
+                        </dl>
+                        <dl class="box-form">
+                            <dt><i>(필수)</i>배송/설치 정보
+                                <span class="select">0개 선택 가능</span>
+                            </dt>
+                            <dd>
+                                <label class="form-checkbox"><input type="checkbox" >가입자 주소와 동일</label>
+                                <label class="form-checkbox"><input type="checkbox" >배송지 일괄입력</label>
+                            </dd>
+                            <dd>
+                                <div class="box-order">
+                                    <span class="product">삼성냉장고(700L)</span>
+                                    <span class="option">블랙</span>
+                                    <span class="btn-type-text5"><button>배송지 등록</button></span>
+                                </div>
+                                <div class="box-order">
+                                    <span class="product">삼성냉장고(700L)</span>
+                                    <span class="option">블랙</span>
+                                    <span class="infor">홍길동 000-0000-0000</span>
+                                    <span class="address">서울시 강남구 역삼동 0번지 길동빌딩 0층 000호</span>
+                                    <span class="btn-type-text5"><button>배송지 수정</button></span>
+                                </div>
+                            </dd>
+                            <dd class="form-alert">배송/설치 주소를 등록해 주세요.</dd>
+                        </dl>
+                        <dl class="box-form">
+                            <dt><i>(필수)</i>추가정보 <span class="btn-help"><button class="help1">도움말</button></span>
+                                <span class="select">0개</span>
+                            </dt>
+                            <dd>
+                                <dl class="box-form">
+                                    <dt>배달의 민족 로그인 아이디
+                                        <span class="select"><label class="form-checkbox"><input type="checkbox" >배송지 일괄입력</label></span>
+                                    </dt>
+                                    <dd><input type="text" >
+                                        <label class="form-alert">혜택을 지급받을 아이디를 입력해주세요.</label>
+                                    </dd>
+                                    <dd><input type="text" >
+                                        <label class="form-alert">혜택을 지급받을 아이디를 입력해주세요.</label>
+                                    </dd>
+                                    <dd class="form-alert">가입구좌 수량만큼 아이디를 입력해 주세요.</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                        <dl class="box-form">
+                            <dt><i>(필수)</i>해피콜 상담시간</dt>
+                            <dd>
+                                <span class="form-select">
+                                    <select>
+                                        <option>상담시간 선택</option>
+                                    </select>
+                                </span>
+                                <label class="form-alert">상담시간을 선택해 주세요.</label>
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <!-- 하단 고정버튼 -->
+                    <div class="fixed-box-button">
+                        <span class="btn-type-text1 disabled"><button disabled>결제하기</button></span><!-- 활성화 버튼 --><!-- 비활성화 시 disabled 클래스 추가 -->
+                    </div>
+                    <!-- //하단 고정버튼 -->
+                </div>
+                <div class="contain-step">
+                    <h3 class="title-step-order">③ 카카오페이 인증</h3>
+                    <div class="box-inner">
+                        <div class="box-certification-kakao">
+                            <p class="text-information">고객님의 휴대폰으로 <br >카카오페이 인증요청 메시지가 발송되었습니다. <br>카카오 앱에서 인증을 진행해 주세요.</p>
+                            <ul class="step-certification">
+                                <li class="step1"><strong>STEP01</strong> <br >카카오톡에서 <br >메세지 확인</li>
+                                <li class="step2"><strong>STEP02</strong> <br >카카오페이 <br >인증 진행</li>
+                                <li class="step3"><strong>STEP03</strong> <br >인증 완료 후 <br >현재 화면의 <br >인증 완료 출력</li>
+                            </ul>
+                        </div>
+                        <div class="box-certification-kakao-complete">
+                            <p class="text-information">전자서명이 인증완료되었습니다. <br >사전 결제금액을 결제하시면 가입신청이 완료됩니다.</p>
+                        </div>
+                    </div>
+                    <!-- 하단 고정버튼 -->
+                    <div class="fixed-box-button">
+                        <div class="box-button-certification">
+                            <span class="btn-type-text6"><button disabled>재요청</button></span>
+                            <span class="btn-type-text1"><button disabled>인증완료</button></span>
+                        </div>
+                    </div>
+                    <!-- //하단 고정버튼 -->
+                </div>
+
+            </div>
+        </div>
+        <!-- //가입결제 -->
+
+    </div>
+</div>
+<!-- //본문 -->
+
+<!-- 도움말 -->
+<div class="box-help help1">
+    <div class="box-inner">
+        도움말 1
+    </div>
+</div>
+<!-- //도움말 -->
+
+<!-- 도움말 -->
+<div class="box-help help2">
+    <div class="box-inner">
+        도움말 2
+    </div>
+</div>
+<!-- //도움말 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">개인정보 조회 및 이용 동의서</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <h2 class="title-agreement">개인정보 조회 및 이용 동의서</h2>
+
+                <div class="box-agreement scroll full">
+                    <div class="box-inner">
+                        <p class="title">제목</p>
+                        <p>텍스트</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">개인정보수집 및 이용 동의</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <h2 class="title-agreement">개인정보수집 및 이용 동의</h2>
+
+                <div class="box-agreement scroll full">
+                    <div class="box-inner">
+                        <p class="title">제목</p>
+                        <p>텍스트</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">개인정보 제3자 제공 동의</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <h2 class="title-agreement">개인정보 제3자 제공 동의</h2>
+
+                <div class="box-agreement scroll full">
+                    <div class="box-inner">
+                        <p class="title">제목</p>
+                        <p>텍스트</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">상품가입약관</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <h2 class="title-agreement">상품가입약관</h2>
+
+                <div class="box-agreement scroll full">
+                    <div class="box-inner">
+                        <p class="title">제목</p>
+                        <p>텍스트</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">회원약관</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <h2 class="title-agreement">회원약관</h2>
+
+                <div class="box-agreement scroll full">
+                    <div class="box-inner">
+                        <p class="title">제목</p>
+                        <p>텍스트</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">마케팅 정보 수신 동의</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <h2 class="title-agreement">마케팅 정보 수신 동의</h2>
+
+                <div class="box-agreement scroll full">
+                    <div class="box-inner">
+                        <p class="title">제목</p>
+                        <p>텍스트</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">혜택 제공의 위한 제3자 제공동의</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <h2 class="title-agreement">혜택 제공의 위한 제3자 제공동의</h2>
+
+                <div class="box-agreement scroll full">
+                    <div class="box-inner">
+                        <p class="title">제목</p>
+                        <p>텍스트</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">배송(설치)주소</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <div class="contain-information-payment-layer">
+                    <p class="text-normal-type1">* 배송/설치를 위한 수령인 정보를 입력해 주세요.</p>
+                    <hr class="divline-type3" >
+                    <label class="form-"><input type="text" placeholder="아이디"></label>
+                    <label class="form-"><input type="text" placeholder="아이디"></label>
+                    <label class="form-">
+                        <span class="form-addbutton"><input type="text" disabled><span class="btn-type-text1"><button>주소찾기</button></span></span>
+                    </label>
+
+                    <label class="form-"><input type="text" placeholder="아이디"></label>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1 active"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">추가정보</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <div class="contain-information-payment-layer">
+                    <p class="text-normal-type1">* 지원혜택을 받을 추가 정보를 입력해 주세요.</p>
+                    <hr class="divline-type3" >
+                    <dl class="box-form">
+                        <dt>밀리의 서재 로그인 아이디</dt>
+                        <dd><input type="text" placeholder="추가정보를 입력해주세요."></dd>
+                    </dl>
+                </div>
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">주소찾기</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <!-- 팝업본문 -->
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<!-- 레이어 팝업 -->
+<div class="layer-popup1"><!-- 활성화 시 active 클래스 추가 -->
+    <div class="layer-inner">
+        <!-- 헤더 -->
+        <header class="area-header-layer">
+            <div class="area-inner">
+                <h1 class="title">카드결제</h1>
+                <span class="btn-close"><button>닫기</button></span>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <!-- 본문 -->
+        <div class="area-content-layer">
+            <div class="area-inner">
+
+                <!-- 팝업본문 -->
+
+            </div>
+        </div>
+        <!-- //본문 -->
+    </div>
+</div>
+<!-- //레이어 팝업 -->
+
+<script src="../js/dom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>대명 아임레디</title>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/mypage.css'><!-- 카테고리별 css 변경 -->
+    <script src="../js/lib.js"></script>
+    <script src="../js/style.js"></script>
+</head>
+<body>
+
+<!-- 헤더 : 하위카테고리 -->
+<header class="area-header">
+    <div class="area-inner">
+        <span class="btn-historyback"><button>이전으로</button></span>
+        <h1 class="title"><button>MY 계약</button></h1>
+        <span class="btn-search"><button>검색</button></span>
+    </div>
+</header>
+<!-- //헤더 : 하위카테고리 -->
+<!-- 하위 카테고리 -->
+<nav class="area-category">
+    <div class="area-inner">
+        <span class="on"><a href="">가입내역 조회</a></span>
+        <span><a href="">납입/환급금 조회</a></span>
+        <span><a href="">배송/지원혜택 조회</a></span>
+        <span><a href="">결제수단 변경 신청</a></span>
+        <span><a href="">철회/해약 신청</a></span>
+        <span><a href="">양도/양수 신청</a></span>
+        <span><a href="">멤버십 카드 조회</a></span>
+        <span><a href="">라이프서비스 신청</a></span>
+    </div>
+</nav>
+<!-- //하위 카테고리 -->
+
+<!-- 본문 -->
+<div class="area-content"> <!-- 하단 탭바일때 aside-tabbar 클래스 추가 -->
+    <div class="area-inner">
+
+        <div class="box-information-mypage">
+            <p class="text-information-type1"><span class="text-point1">본인인증</span>이 필요합니다.</p><!-- 본인인증 전 -->
+            <p class="text-information-type1">환영합니다. <span class="text-point1">홍길동</span>님</p><!-- 본인인증 후 -->
+            <p class="text-information-type2">가입내용/납입내역 조회 및 가입한 상품에 <br >배송, 지원/혜택에 대한 상세 정보를 제공합니다.</p>
+        </div>
+
+        <hr class="divline-type1">
+
+        <div class="box-quicklink">
+            <span class="link1"><a href="">가입내역 <br >조회</a></span>
+            <span class="link2"><a href="">납입/환급금 <br >조회</a></span>
+            <span class="link3"><a href="">배송/지원혜택 <br >조회</a></span>
+            <span class="link4"><a href="">결제수단 변경 <br >신청</a></span>
+            <span class="link5"><a href="">멤버십카드 <br >조회</a></span>
+            <span class="link6"><a href="">라이프 서비스 <br >신청</a></span>
+        </div>
+
+        <div class="box-banner-type1">
+            <a href=""><img src="../images/img_banner_temp1.png" alt="" ></a>
+        </div>
+
+    </div>
+</div>
+<!-- //본문 -->
+
+<!-- 하단 탭바 -->
+<aside class="area-aside bottom">
+    <div class="area-inner">
+        <div class="contain-tabbar">
+            <span class="btn-tabbar1"><button>카테고리</button></span> <!-- 하단 탭바 활성화시 on추가 / ex) class="btn-tabbar1 on" -->
+            <span class="btn-tabbar2"><button>추천</button></span>            
+            <span class="btn-tabbar3"><a href="">홈</a></span>                       
+            <span class="btn-tabbar4"><a href="">레디플래너</a></span>
+            <span class="btn-tabbar5"><a href="">My계약</a></span> 
+        </div>
+    </div>
+</aside>
+<!-- //하단 탭바 -->
+
+<script src="../js/dom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>대명 아임레디</title>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/lib.css'>
+    <link rel='stylesheet' type='text/css' href='../css/customer.css'>
+    <script src="../js/lib.js"></script>
+    <script src="../js/style.js"></script>
+
+</head>
+<body>
+
+<!-- 헤더 -->
+<header class="area-header">
+    <div class="area-inner">
+        <span class="btn-historyback"><button>이전으로</button></span>
+        <h1 class="title"><button>1:1 문의</button></h1>
+        <span class="btn-search"><button>검색</button></span>
+    </div>
+</header>
+<!-- //헤더 -->
+<!-- 하위 카테고리 -->
+<nav class="area-category">
+    <div class="area-inner">
+        <span><a href="">공지사항</a></span>
+        <span><a href="">FAQ</a></span>
+        <span class="on"><a href="">1:1 문의</a></span>
+        <span><a href="">제휴문의</a></span>
+        <span><a href="">가입후기</a></span>
+    </div>
+</nav>
+<!-- //하위 카테고리 -->
+
+<!-- 본문 -->
+<div class="area-content">
+    <div class="area-inner">
+
+        <div class="box-tab-head">
+            <span><button>1:1 문의하기</button></span>
+            <span class="on"><button>나의 문의내역</button></span>
+        </div>
+        <div class="box-tab-body tab1">
+            <div class="box-inquiry">
+                <p class="text-notice-type2 form2">* 필수입력사항</p>
+                <div class="box-inquiry-title"><h2 class="title-step text-point3">기본정보 입력</h2></div>
+                <dl class="box-form">
+                    <dt class="necessary">이름</dt>
+                    <dd><input type="text" placeholder="홍길동"></dd>
+                </dl>
+                <dl class="box-form">
+                    <dt class="necessary">답변 받을 연락처</dt>
+                    <dd><input type="text" placeholder="'-' 없이 입력해주세요"></dd>
+                </dl>
+                <dl class="box-form">
+                    <dt class="necessary">비밀번호</dt>
+                    <dd><input type="password" placeholder="비밀번호를 입력해주세요"></dd>
+                </dl>
+            </div>
+            <hr class="box-customer-underline">
+            <div div class="box-inquiry">
+                <div class="box-inquiry-title"><h2 class="title-step text-point3">상세항목 입력</h2></div>
+                <dl class="box-form">
+                        <dt class="necessary">문의유형</dt>
+                        <dd>
+                            <span class="form-select">
+                                <select>
+                                    <option value="" selected="selected">문의 구분을 선택하세요</option>
+                                    <option value="상품문의1">상품문의1</option>
+                                    <option value="상품문의2">상품문의2</option>
+                                    <option value="상품문의3">상품문의3</option>
+                                </select>
+                            </span>
+                        </dd>
+                </dl>
+                <dl class="box-form">
+                    <dt class="necessary">문의 상품</dt>
+                    <dd><span class="form-addbutton"><input type="text" placeholder="골프상품3"><span class="btn-type-text1"><button>검색</button></span></span></dd>
+                    <!-- 검색버튼 클릭시 레이어로 MO-CS-09-07.html 열림 -->
+                </dl>
+                <dl class="box-form addi">
+                    <dt class="necessary">제목</dt>
+                    <dd><input type="text"><i>0/200</i></dd>
+                </dl>
+                <dl class="box-form">
+                    <dt class="necessary">내용</dt>
+                    <dd><span class="form-textarea"><textarea></textarea><i>0/500</i></span></dd>
+                </dl>
+                <h2 class="title-step text-point3">개인정보 수집 및 활용 동의</h2>
+                <span class="form-provision">개인정보 수집 및 활용 동의 약관 제공<br />개인정보 수집 및 활용 동의 약관 제공<br />개인정보 수집 및 활용 동의 약관 제공<br />개인정보 수집 및 활용 동의 약관 제공<br />개인정보 수집 및 활용 동의 약관 제공<br />개인정보 수집 및 활용 동의 약관 제공</span>
+                <label class="form-checkbox"><input type="checkbox">개인정보 수집 및 활용에 동의합니다.</label>
+            </div>
+
+            <!-- 하단 고정버튼 -->
+            <div class="fixed-box-button">
+                <span class="btn-type-text1"><button>저장</button></span>
+            </div><!-- 활성화 버튼 --><!-- 비활성화 시 disabled 클래스 추가 -->
+            <!-- //하단 고정버튼 -->
+        </div>
+
+        <div class="box-tab-body tab2 on">
+            <div class="box-information-searchresult">
+                <p class="text-information-type4">문의하신 내역이 없습니다.</p>
+            </div>
+            <!-- 하단 고정버튼 -->
+            <div class="fixed-box-button">
+                <span class="btn-type-text1"><button>1:1 문의하기</button></span>
+            </div><!-- 활성화 버튼 --><!-- 비활성화 시 disabled 클래스 추가 -->
+            <!-- //하단 고정버튼 -->
+        </div>
+
+    </div>
+</div>
+<!-- //본문 -->
+
+<script src="../js/dom.js"></script>
+
+</body>
+</html>
