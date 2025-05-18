@@ -73,7 +73,7 @@ body {/* width: 100%; height: 100%; */ overflow: hidden;}
     position: relative;
     z-index: 0;}
 
-    .chat-footer {    position: relative;}
+    .chat-footer {    position: relative; background-color: #ccc;}
 
     .chat-footer input {width: 90%; height: 40px;}
 
